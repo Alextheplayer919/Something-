@@ -33,6 +33,7 @@ jobs:
           npm run build
           npm run site
           npm run verify
+          npm run check:raw
       - name: Upload importable plugin website
         uses: actions/upload-pages-artifact@v3
         with:

@@ -2,7 +2,19 @@
 
 A **Vendetta-format Discord client plugin**, extracted from the supplied `dumsane-roadmanify.zip`. Converts text into playful London-inspired slang, using an automatic message filter or the `/roadmanify` command. **This repository builds a plugin link, not an APK.**
 
-## Plugin import link
+## Plugin import link (available from the PR branch)
+
+The compiled plugin is also published directly in this public repository, so installation does not depend on enabling Pages:
+
+```text
+https://raw.githubusercontent.com/Alextheplayer919/Something-/arena/3b59966b-something/published/Roadmanify/
+```
+
+Paste this folder URL into your Vendetta-compatible client's **Settings → Plugins → + / Install**. Keep the branch while using this URL. It tracks updates pushed to the current PR branch; deleting the branch will break future installs and updates from this URL.
+
+The `published/Roadmanify/` directory intentionally tracks only the small compiled manifest and bundle, as an exception to keeping generated builds out of Git. After source or dependency changes, run `npm run export:raw` and commit both updated files. CI checks that these files match a fresh build via `npm run check:raw`.
+
+### GitHub Pages alternative
 
 After a successful GitHub Pages deployment:
 
@@ -16,7 +28,7 @@ Requires a client with **Vendetta-compatible plugin APIs and URL installation**.
 
 The website root (`https://alextheplayer919.github.io/Something-/`) provides installation help and a copy-link button. The plugin folder serves `manifest.json` and `index.js`; it does not need its own browser homepage.
 
-> The URL is a deployment target, not a claim that it is already live. GitHub Pages was not enabled when this work was prepared. No remote deployment is performed just by editing these files.
+> The Pages URL above is a deployment target, not a claim that it is already live. GitHub Pages was not enabled when this work was prepared. No remote deployment is performed just by editing these files.
 
 ## Enable publishing once
 

@@ -5,7 +5,9 @@
     "build:all": "node build.mjs all",
     "test": "node --test",
     "site": "node scripts/prepare-site.mjs",
-    "verify": "node scripts/verify-dist.mjs"
+    "verify": "node scripts/verify-dist.mjs",
+    "export:raw": "npm run build && node scripts/export-raw.mjs",
+    "check:raw": "node scripts/export-raw.mjs --check"
   },
   "dependencies": {
     "@swc/helpers": "^0.5.17"
