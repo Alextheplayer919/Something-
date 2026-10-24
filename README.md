@@ -47,9 +47,12 @@ If you see a 404: check Pages is enabled, the deployment finished, and the URL's
 - `/roadmanify input:hello friend send:true` — send the transformed text to the current channel.
 - **Convert message before sending** enables/disables automatic conversion; it is **on by default**, as in the supplied plugin.
 - **Send command output by default** controls the command's default; initially **on**. Use `send:false` or disable this setting if you only want previews.
-- Sliders/numeric fields control slang, accent, openers, closers, tags, fillers and actions. Set every probability to `0` for unchanged output.
+- **Allow occasional added swearing** is **on by default**. Frustrated/exasperated phrases can occasionally use stronger language (for example, “I don’t care” → “man don't give a shit”). Switch it off for clean replacements; this does not censor profanity you typed yourself.
+- **No sliders or numeric fields.** A fixed, tuned preset handles slang and accent with occasional openers/closers. No random mid-sentence padding or roleplay actions.
+- Added swearing is limited to **one stronger phrase per message**, only on eligible phrases—not neutral greetings or compliments. Existing profanity in ordinary text suppresses further added swearing.
+- Existing installs keep their automatic-conversion and send-default switches. Old slider values are ignored so they cannot silently disable the new preset.
 
-Examples with decorations/accent disabled:
+Core replacements (the preset may add occasional accent changes or an opener/closer):
 
 | Input | Possible output |
 | --- | --- |
@@ -57,10 +60,13 @@ Examples with decorations/accent disabled:
 | `muscular` | `hench` |
 | `annoying` | `jarring` |
 | `out of money` | `skint` |
+| `I am hungry` | `man's after a munch` |
+| `come over` | `pull up` |
+| `let me know` | `give me a shout` |
 | `I understand` | `say less` |
 | `hang out with friends` | `roll with fam` |
 
-Choices are deterministic for the same input and settings. This is a playful text filter, not a context-aware translator or a complete representation of a real dialect. See [slang notes and research](docs/slang-research.md).
+Choices are deterministic for the same input and settings, so repeating a message does not reroll swearing. Stronger wording is authored for a small set of phrases; it is not an AI judgement about context. This is a playful text filter, not a context-aware translator or a complete representation of a real dialect. See [slang notes and research](docs/slang-research.md).
 
 ## Preservation and privacy
 
@@ -84,7 +90,7 @@ npm run verify
 
 The installable files are `dist/Roadmanify/{manifest.json,index.js}`. The SHA-256 in the manifest is computed from the compiled bundle. `dist/` and `node_modules/` are ignored; GitHub Actions publishes the built output.
 
-`npm run verify` checks site contents, manifest/hash, bundle syntax and plugin lifecycle against mocked Vendetta APIs, including private preview, outgoing messages, filter bypass, bounded history and unload. It is **not** an on-device compatibility test.
+`npm run verify` checks site contents, manifest/hash, bundle syntax and plugin lifecycle against mocked Vendetta APIs, including the three-switch settings screen, live swearing toggle, private preview, outgoing messages, filter bypass, bounded history and unload. It is **not** an on-device compatibility test.
 
 ### Archive contents
 

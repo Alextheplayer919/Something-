@@ -1,6 +1,6 @@
 {
 	"name": "Roadmanify",
-	"description": "Roadmanifies your text (London roadman / MLE style). As a filter on all your messages or through the /roadmanify command",
+	"description": "London-inspired slang with a simple on/off setup and occasional optional swearing. Convert outgoing messages or use /roadmanify.",
 	"authors": [{ "name": "Alextheplayer919" }, { "name": "meqativ :3", "id": "744276454946242723" }],
 	"main": "./index.js",
 	"vendetta": { "icon": "ic_application_command_24px" }

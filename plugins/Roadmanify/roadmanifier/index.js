@@ -5,12 +5,37 @@ import { clamp01, isAt, isDiscordToken, isUri, matchCase, splitProtected } from 
 const DEFAULTS = {
 	words: 1, // chance each slang swap applies
 	accent: 0.5, // chance each accent rule applies (dis, dat, -in', gonna...)
-	sentences: { openers: 0.25, closers: 0.35 }, // wagwan ... innit
-	spaces: { tags: 0.04, fillers: 0.025, actions: 0.015 }, // mid-sentence additions
+	sentences: { openers: 0.1, closers: 0.18 }, // occasional wagwan / innit
+	spaces: { tags: 0, fillers: 0 }, // no random mid-sentence padding
 };
 
-// Whole-phrase swaps, run before word swaps. [regex, [options]]
+// Whole phrases take priority over dictionary swaps. Optional third array contains
+// stronger alternatives, eligible only with swearing enabled and a per-message cap.
 const PHRASES = [
+	[/\bi (?:can['’]?t|cannot) be bothered\b/gi, ["man's not on it"], ["man can't be arsed"]],
+	[/\bi (?:don['’]?t|do not) care\b/gi, ["man couldn't care less"], ["man don't give a shit"]],
+	[/\bwhat the (?:hell|heck)\b/gi, ["what on earth"], ["what the fuck"]],
+	[/\bfor (?:goodness|heaven)['’]?s? sake\b/gi, ["oh my days"], ["for fuck's sake"]],
+	[/\b(?:so|really|very) (?:annoyed|angry|frustrated)\b/gi, ["bare vexed"], ["fucking vexed"]],
+	[/\b(?:this|that) is ridiculous\b/gi, ["that's a joke"], ["that's a piss-take"]],
+	[/\bstop messing (?:around|about)\b/gi, ["allow it"], ["stop taking the piss"]],
+	[/\bare you (?:joking|kidding)\b/gi, ["you havin' a laugh"], ["you taking the piss"]],
+	[/\bi (?:don['’]?t|do not) know\b/gi, ["dunno", "man dunno"]],
+	[/\bi am hungry\b/gi, ["man's after a munch"]],
+	[/\bi['’]m hungry\b/gi, ["man's after a munch"]],
+	[/\b(?:that['’]?s|that is) (?:unfortunate|unfair)\b/gi, ["that's peak"]],
+	[/\b(?:very|really) good\b/gi, ["proper peng", "proper decent"]],
+	[/\b(?:you['’]?re|you are) lying\b/gi, ["you're chatting breeze"]],
+	[/\bto be honest\b/gi, ["real talk"]],
+	[/\bnot going to lie\b/gi, ["not gonna lie"]],
+	[/\bsee you later\b/gi, ["catch you in a bit"]],
+	[/\blet['’]?s go\b/gi, ["let's roll"]],
+	[/\blet me know\b/gi, ["give me a shout"]],
+	[/\bmessage me\b/gi, ["hit me up"]],
+	[/\bcome over\b/gi, ["pull up"]],
+	[/\bcome here\b/gi, ["come thru"]],
+	[/\bgoing home\b/gi, ["heading yard"]],
+	[/\bat home\b/gi, ["at yard"]],
 	[/\bwhat(?:'|’)?s happening\b/gi, ["wagwan"]],
 	[/\bwhat do you mean\b/gi, ["what you sayin'"]],
 	[/\bare you serious\b/gi, ["are you for real"]],
@@ -56,6 +81,21 @@ const PHRASES = [
 
 // Single word swaps. Key is lowercase. Value is a list, one is picked.
 const WORDS = {
+	gossip: ["chat"],
+	genuinely: ["proper"],
+	definitely: ["defo"],
+	absolutely: ["proper"],
+	quickly: ["quick-time"],
+	relax: ["cotch"],
+	relaxing: ["cotching"],
+	leave: ["dip"],
+	leaving: ["dipping"],
+	rubbish: ["dead"],
+	nonsense: ["breeze"],
+	disrespectful: ["out of order"],
+	betrayal: ["snake behaviour"],
+	coward: ["bottlejob"],
+
 	muscular: ["hench"],
 	scared: ["shook"],
 	frightened: ["shook"],
@@ -131,7 +171,6 @@ const WORDS = {
 	difficult: ["long"],
 	boring: ["long"],
 	tiring: ["long"],
-	hard: ["long"],
 	unlucky: ["peak"],
 	unfortunate: ["peak"],
 	clothes: ["garms"],
@@ -140,7 +179,6 @@ const WORDS = {
 	trainers: ["creps"],
 	sneakers: ["creps"],
 	car: ["whip"],
-	home: ["ends"],
 	neighbourhood: ["ends"],
 	neighborhood: ["ends"],
 	area: ["ends"],
@@ -155,8 +193,6 @@ const WORDS = {
 	kid: ["yute"],
 	child: ["yute"],
 	children: ["yutes"],
-	kiss: ["lips"],
-	flirt: ["chirps"],
 	yes: ["yeah", "yeah bruv"],
 	yeah: ["yeah fam"],
 	no: ["nah"],
@@ -176,14 +212,14 @@ const OPENERS = ["wagwan", "oi", "yo", "oi oi", "bruv", "listen", "safe"];
 const CLOSERS = ["innit", "bruv", "fam", "you get me", "innit bruv", "on my life", "no cap", "still", "ting"];
 const TAGS = ["bruv", "fam", "blud", "g", "my guy"];
 const FILLERS = ["ya get me", "you get me", "like", "trust me", "bare times", "swear down"];
-const ACTIONS = ["*adjusts creps*", "*pulls up*", "*dap*", "*checks the ends*", "*hops in the whip*", "*hits the corner shop*"];
 
 export default class Roadmanifier {
-	constructor({ words = DEFAULTS.words, accent = DEFAULTS.accent, sentences = DEFAULTS.sentences, spaces = DEFAULTS.spaces } = {}) {
+	constructor({ words = DEFAULTS.words, accent = DEFAULTS.accent, sentences = DEFAULTS.sentences, spaces = DEFAULTS.spaces, swearing = true } = {}) {
 		this._words = clamp01(words);
 		this._accent = clamp01(accent);
 		this._sentences = { openers: clamp01(sentences?.openers), closers: clamp01(sentences?.closers) };
-		this._spaces = { tags: clamp01(spaces?.tags), fillers: clamp01(spaces?.fillers), actions: clamp01(spaces?.actions) };
+		this._spaces = { tags: clamp01(spaces?.tags), fillers: clamp01(spaces?.fillers) };
+		this._swearing = swearing === true;
 	}
 
 	pick(seed, arr) {
@@ -191,7 +227,7 @@ export default class Roadmanifier {
 	}
 
 	// swap whole phrases ("what's up" -> "wagwan")
-	roadmanifyPhrases(sentence, withWords = false) {
+	roadmanifyPhrases(sentence, withWords = false, context = { swears: 0 }) {
 		// One pass: phrase output must not be fed back into later rules.
 		const pattern = new RegExp(PHRASES.map(([regex]) => `(?:${regex.source})`).join("|"), "gi");
 		let out = "";
@@ -199,11 +235,18 @@ export default class Roadmanifier {
 		for (const match of sentence.matchAll(pattern)) {
 			const gap = sentence.slice(cursor, match.index);
 			out += withWords ? this.roadmanifyWords(gap) : gap;
-			const [, options] = PHRASES.find(([regex]) => new RegExp(`^(?:${regex.source})$`, "i").test(match[0]));
+			const [, options, stronger] = PHRASES.find(([regex]) => new RegExp(`^(?:${regex.source})$`, "i").test(match[0]));
 			const seed = new Seed(`${match[0]}|${match.index}`);
-			out += seed.random() < this._words
-				? matchCase(match[0], this.pick(seed, options))
-				: (withWords ? this.roadmanifyWords(match[0]) : match[0]);
+			if (seed.random() < this._words) {
+				let choices = options;
+				if (this._swearing && stronger && context.swears === 0 && seed.random() < 0.4) {
+					choices = stronger;
+					context.swears++;
+				}
+				out += matchCase(match[0], this.pick(seed, choices));
+			} else {
+				out += withWords ? this.roadmanifyWords(match[0]) : match[0];
+			}
 			cursor = match.index + match[0].length;
 		}
 		const tail = sentence.slice(cursor);
@@ -243,12 +286,11 @@ export default class Roadmanifier {
 			.join("");
 	}
 
-	// insert tags / fillers / actions after random words
+	// Optional internal tag/filler support; disabled in the fixed user preset.
 	roadmanifySpaces(sentence) {
-		const { tags, fillers, actions } = this._spaces;
+		const { tags, fillers } = this._spaces;
 		const tagT = tags;
 		const fillerT = tagT + fillers;
-		const actionT = fillerT + actions;
 		const tokens = sentence.split(/(\s+)/);
 		return tokens
 			.map((token, index) => {
@@ -260,7 +302,6 @@ export default class Roadmanifier {
 				const r = seed.random();
 				if (r < tagT) return `${token} ${this.pick(seed, TAGS)}`;
 				if (r < fillerT) return `${token} ${this.pick(seed, FILLERS)}`;
-				if (r < actionT) return `${token} ${this.pick(seed, ACTIONS)}`;
 				return token;
 			})
 			.join("");
@@ -301,8 +342,11 @@ export default class Roadmanifier {
 		if (/^\s*\//.test(sentence)) return sentence;
 		const parts = splitProtected(sentence);
 		if (!parts.some(({ text, protected: keep }) => !keep && /[\p{L}]/u.test(text))) return sentence;
+		// Existing profanity is preserved, but suppresses any additional swearing.
+		// The budget is shared across protected spans, not reset for every text chunk.
+		const context = { swears: parts.some(({ text, protected: keep }) => !keep && /\b(?:fuck\w*|shit\w*|piss\w*|arsed)\b/i.test(text)) ? 1 : 0 };
 		const out = parts.map(({ text, protected: keep }) => keep ? text
-			: this.roadmanifySpaces(this.roadmanifyPhrases(text, true))).join("");
+			: this.roadmanifySpaces(this.roadmanifyPhrases(text, true, context))).join("");
 		// Don't add decorations around code snippets or markdown links.
 		return sentence.includes("`") || /\[[^\]]*\]\(/.test(sentence) ? out : this.roadmanifyEnds(out);
 	}
@@ -315,19 +359,7 @@ export function getRoadmanifier() {
 	return state.roadmanifier;
 }
 export function reloadRoadmanifier(storage) {
-	const s = storage["settings"]["roadmanifier"];
-	const getNum = (v) => (Number.isNaN(parseFloat(v)) ? 0 : parseFloat(v));
-	state.roadmanifier = new Roadmanifier({
-		words: getNum(s["words"]),
-		accent: getNum(s["accent"]),
-		sentences: {
-			openers: getNum(s["sentences"]["openers"]),
-			closers: getNum(s["sentences"]["closers"]),
-		},
-		spaces: {
-			tags: getNum(s["spaces"]["tags"]),
-			fillers: getNum(s["spaces"]["fillers"]),
-			actions: getNum(s["spaces"]["actions"]),
-		},
-	});
+	// Old slider values are intentionally ignored: everyone gets the tuned preset.
+	// Preserve the message/send switches and the new explicit swearing preference.
+	state.roadmanifier = new Roadmanifier({ swearing: storage.settings.allow_swearing !== false });
 }

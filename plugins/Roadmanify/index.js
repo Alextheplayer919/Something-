@@ -17,19 +17,7 @@ const DEFAULT_STORAGE = {
 		history: [], // only remembers the last 25
 	},
 	settings: {
-		roadmanifier: {
-			words: 1, // slang swaps (bruv, peng, dench...)
-			accent: 0.5, // dis/dat/da, -in', gonna
-			sentences: {
-				openers: 0.25, // "wagwan, ..."
-				closers: 0.35, // "..., innit"
-			},
-			spaces: {
-				tags: 0.04, // bruv / fam / blud after random words
-				fillers: 0.025, // you get me / swear down
-				actions: 0.015, // *dap* / *pulls up*
-			},
-		},
+		allow_swearing: true,
 		convert_messages: true,
 		defaults: {
 			send: true,
