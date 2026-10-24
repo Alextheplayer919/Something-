@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs Roadmanify",
+    "build:all": "node build.mjs all",
+    "test": "node --test",
+    "site": "node scripts/prepare-site.mjs",
+    "verify": "node scripts/verify-dist.mjs"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.17"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.9",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@swc/core": "^1.3.35",
+    "esbuild": "^0.25.12",
+    "rollup": "^4.65.0",
+    "rollup-plugin-esbuild": "^6.2.1",
+    "vendetta-types": "2.4.21"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "react",
+        "react-native"
+      ]
+    }
+  },
+  "name": "roadmanify-plugins",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "overrides": {
+    "moment": "^2.30.1"
+  }
+}

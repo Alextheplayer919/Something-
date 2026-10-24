@@ -1,0 +1,63 @@
+name: Build and publish Roadmanify link
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: roadmanify-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Test text conversion
+        run: npm test
+      - name: Build only Roadmanify (not an APK)
+        run: |
+          rm -rf dist
+          npm run build
+          npm run site
+          npm run verify
+      - name: Upload importable plugin website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages (enable GitHub Actions in repository Pages settings first)
+        uses: actions/configure-pages@v5
+      - name: Publish plugin URL
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Show the link to import
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          echo '## Roadmanify plugin import link' >> "$GITHUB_STEP_SUMMARY"
+          echo "${PAGE_URL%/}/Roadmanify/" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Paste this folder URL into a Vendetta-compatible client plugin installer. No APK is produced.' >> "$GITHUB_STEP_SUMMARY"
