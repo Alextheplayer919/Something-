@@ -177,3 +177,96 @@ test('default output contains no roleplay actions or mid-sentence padding', () =
   const input = 'a simple message with no dictionary words here';
   assert.equal(withoutEnds.roadmanifySentence(input).split(/\s+/).length, input.split(/\s+/).length);
 });
+
+test('personal states preserve first-person meaning across common self-reference spellings', () => {
+  const r = new Roadmanifier({ ...quiet, swearing: false });
+  const states = [
+    ['hungry', "man's after a munch"],
+    ['thirsty', 'man needs a drink'],
+    ['sleepy', 'man needs some kip'],
+    ['tired', "man's knackered"],
+    ['angry', "man's vexed"],
+    ['excited', "man's gassed"],
+    ['sad', "man's feeling low"],
+    ['lonely', "man's feeling lonely"],
+    ['stressed', "man's stressing"],
+    ['worried', "man's on edge"],
+    ['bored', "man's bored"],
+    ['ill', "man's feeling rough"],
+    ['cold', "man's feeling the cold"],
+    ['hot', "man's feeling the heat"],
+    ['confused', "man's baffled"],
+  ];
+  for (const prefix of ['I am', "I'm", 'I’m', 'im', 'I feel', 'I am feeling', "I'm feeling"]) {
+    for (const [state, expected] of states) assert.equal(r.roadmanifySentence(`${prefix} ${state}`), expected, `${prefix} ${state}`);
+  }
+});
+
+test('personal intensity and mild qualifiers are not discarded', () => {
+  const r = new Roadmanifier({ ...quiet, swearing: false });
+  assert.equal(r.roadmanifySentence('I am really hungry'), "man's proper hungry");
+  assert.equal(r.roadmanifySentence('im very thirsty'), "man's proper thirsty");
+  assert.equal(r.roadmanifySentence('I feel so tired'), "man's proper knackered");
+  assert.equal(r.roadmanifySentence('I’m a bit hungry'), "man's a bit peckish");
+  assert.equal(r.roadmanifySentence('I feel slightly tired'), "man's a bit tired");
+  assert.equal(r.roadmanifySentence('im kinda sad'), "man's a bit down");
+  assert.equal(r.roadmanifySentence('I am really cold'), "man's freezing");
+  assert.equal(r.roadmanifySentence('I am a little cold'), "man's a bit chilly");
+});
+
+test('personal needs and wants keep the speaker as the subject', () => {
+  const r = new Roadmanifier({ ...quiet, swearing: false });
+  for (const input of ['I need food', 'I need some food', 'I need something to eat']) assert.equal(r.roadmanifySentence(input), 'man needs a munch');
+  for (const input of ['I need sleep', 'I need some sleep']) assert.equal(r.roadmanifySentence(input), 'man needs some kip');
+  for (const input of ['I need a drink', 'I need some water']) assert.equal(r.roadmanifySentence(input), 'man needs a drink');
+  for (const input of ['I need a break', 'I need to relax']) assert.equal(r.roadmanifySentence(input), 'man needs to cotch for a bit');
+  assert.equal(r.roadmanifySentence('I want to eat'), 'man wants to grab a munch');
+  assert.equal(r.roadmanifySentence('I want some food'), 'man wants a munch');
+  assert.equal(r.roadmanifySentence('I want to sleep'), 'man wants to get some kip');
+});
+
+test('negative statements do not become positive needs or feelings', () => {
+  const r = new Roadmanifier({ ...quiet, swearing: false });
+  for (const prefix of ['I am not', "I'm not", 'I’m not', 'im not']) {
+    assert.equal(r.roadmanifySentence(`${prefix} hungry`), "man's not hungry");
+    assert.equal(r.roadmanifySentence(`${prefix} thirsty`), "man's not thirsty");
+  }
+  assert.equal(r.roadmanifySentence('I do not feel hungry'), "man don't feel hungry");
+  assert.equal(r.roadmanifySentence('I don’t feel hungry'), "man don't feel hungry");
+  assert.equal(r.roadmanifySentence('I never feel hungry'), 'man never feel hungry');
+  assert.equal(r.roadmanifySentence('I do not need food'), 'man do not need grub');
+});
+
+test('other people are not converted into the speaker', () => {
+  const r = new Roadmanifier({ ...quiet, swearing: false });
+  for (const subject of ['you are', 'he is', 'she is', 'they are', 'we are', 'my friend is']) {
+    const output = r.roadmanifySentence(`${subject} hungry`);
+    assert.doesNotMatch(output, /\bman(?:'s)?\b/);
+    assert.ok(output.endsWith('hungry'));
+  }
+  assert.equal(r.roadmanifySentence('she needs food'), 'she needs grub');
+  assert.equal(r.roadmanifySentence('you want to eat'), 'you wanna eat');
+});
+
+test('personal phrases preserve surrounding text, protection, punctuation and casing', () => {
+  const r = new Roadmanifier({ ...quiet, swearing: false });
+  assert.equal(r.roadmanifySentence('I am hungry, and I feel thirsty!'), "man's after a munch, and man needs a drink!");
+  assert.equal(r.roadmanifySentence('im hungry right now'), "man's after a munch right now");
+  assert.equal(r.roadmanifySentence('IM HUNGRY!'), "MAN'S AFTER A MUNCH!");
+  assert.equal(r.roadmanifySentence('I am hungry <@123> `I am thirsty`'), "man's after a munch <@123> `I am thirsty`");
+  for (const input of ['`im hungry`', '```I need food```', '[I am hungry](https://example.com)', '/say I feel tired']) assert.equal(r.roadmanifySentence(input), input);
+});
+
+test('personal feelings do not get gratuitous profanity', () => {
+  const r = new Roadmanifier(quiet);
+  for (const input of ['I am hungry', 'im thirsty', 'I feel tired', 'I am lonely', 'I feel sad', 'I need sleep']) assert.equal(countSwears(r.roadmanifySentence(input)), 0);
+  const input = 'I am really angry. I feel so annoyed. I do not care.';
+  assert.ok(countSwears(r.roadmanifySentence(input)) <= 1);
+});
+
+test('figurative states are not replaced with physical needs', () => {
+  const r = new Roadmanifier({ ...quiet, swearing: false });
+  assert.equal(r.roadmanifySentence('I am sick of waiting'), "man's sick of waiting");
+  assert.equal(r.roadmanifySentence('I am hungry for success'), "man's hungry for success");
+  assert.equal(r.roadmanifySentence('im thirsty for knowledge'), "man's thirsty for knowledge");
+});

@@ -84,6 +84,23 @@ assert.ok(previews[0][1].includes('shook'));
 command.execute([{ name: 'input', value: 'scared' }, { name: 'send', value: true }]);
 assert.equal(sent.length, 1);
 assert.equal(sent[0][1]._command_output, true);
+for (const [input, expected] of [
+  ['I am hungry', "man's after a munch"],
+  ['im thirsty', 'man needs a drink'],
+  ['I need some sleep', 'man needs some kip'],
+]) {
+  const personal = ['test-channel', { content: input }];
+  beforeSend(personal);
+  // Automatic conversion was disabled above; re-enable it through the real UI.
+  assert.equal(personal[1].content, input);
+  rows.find((row) => row.label === 'Convert messages before sending').onValueChange(true);
+  beforeSend(personal);
+  assert.ok(personal[1].content.includes(expected), personal[1].content);
+  rows.find((row) => row.label === 'Convert messages before sending').onValueChange(false);
+}
+command.execute([{ name: 'input', value: 'I feel tired' }, { name: 'send', value: false }]);
+assert.ok(previews.at(-1)[1].includes("man's knackered"));
+
 for (let i = 0; i < 30; i++) command.execute([{ name: 'input', value: 'scared' }, { name: 'send', value: false }]);
 assert.equal(storage.stats.history.length, 25);
 plugin.onUnload();

@@ -47,3 +47,11 @@ More hand-authored phrases cover “I don't know”, hunger, “come over”, �
 Stronger alternatives are limited to exasperated phrases (such as “for goodness sake”, “I don't care”, “stop messing around”, “really annoyed”). Each eligible phrase has a 40% deterministic chance while the message's one-phrase budget remains. The budget is shared across protected spans; existing profanity in unprotected text prevents more being added. There are no profane random closers, added slurs or threats. This is literal phrase matching, not semantic understanding: previews are still recommended, particularly with sarcasm, quotations or sensitive contexts.
 
 The toggle only prevents **new** swearing; input profanity is not censored. Roleplay actions were removed entirely, mid-sentence insertions are disabled in the user preset, and opener/closer frequency has been reduced. Regression tests cover both swearing states, the per-message cap, neutral text, protected syntax, deterministic output and migration from old settings.
+
+## First-person feelings and needs
+
+Added a separate set of self-reference phrase rules in `personal.js`. These support `I am`, `I'm`, `I’m`, `im`, `I feel` and `I'm feeling`, with ordinary, mild and intensified variants. Examples: hungry → “man's after a munch”; thirsty → “man needs a drink”; tired → “man's knackered”; sleepy → “man needs some kip”; sad → “man's feeling low”; stressed → “man's stressing”. “Man” / “man's” refers to the speaker in these rewrites. Needs and wants (food, water, sleep, a break) also retain a first-person subject.
+
+These are handwritten stylistic equivalents, not newly researched claims about how every Londoner speaks. The rules intentionally do not insert a first-person subject for “you are hungry”, “she is hungry” or “my friend is hungry”. Negative prefixes stay negative, qualifiers such as “a bit” are not discarded, and common figurative uses such as “sick of waiting” and “hungry for success” avoid the physical-state idiom. Other figurative uses, questions and complex grammar can still exceed this literal filter's abilities.
+
+Regression coverage includes subject preservation, casual contractions, qualifiers, negation, other-person inputs, surrounding text, protected syntax and first-person output from the compiled message filter and command.

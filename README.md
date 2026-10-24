@@ -60,11 +60,18 @@ Core replacements (the preset may add occasional accent changes or an opener/clo
 | `muscular` | `hench` |
 | `annoying` | `jarring` |
 | `out of money` | `skint` |
-| `I am hungry` | `man's after a munch` |
+| `I am hungry` / `im hungry` | `man's after a munch` |
+| `I am really hungry` | `man's proper hungry` |
+| `I’m a bit hungry` | `man's a bit peckish` |
+| `I am thirsty` | `man needs a drink` |
+| `I feel tired` | `man's knackered` |
+| `I need some sleep` | `man needs some kip` |
 | `come over` | `pull up` |
 | `let me know` | `give me a shout` |
 | `I understand` | `say less` |
 | `hang out with friends` | `roll with fam` |
+
+Personal-state rules cover hunger, thirst, sleep, tiredness, mood, stress, illness and temperature. They match `I am`, `I'm`, `I’m`, casual `im`, and `I feel` / `I'm feeling`. They keep the speaker as the subject: “man's” is self-reference here, not a remark about someone else. Mild/intense qualifiers get separate wording, negatives stay negative, and statements about other people do not acquire a first-person subject. These are authored phrase rules, not general language understanding.
 
 Choices are deterministic for the same input and settings, so repeating a message does not reroll swearing. Stronger wording is authored for a small set of phrases; it is not an AI judgement about context. This is a playful text filter, not a context-aware translator or a complete representation of a real dialect. See [slang notes and research](docs/slang-research.md).
 

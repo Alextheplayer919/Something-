@@ -1,5 +1,6 @@
 /** biome-ignore-all lint/complexity/useLiteralKeys: ilike it*/
 import Seed from "./seed.js";
+import { PERSONAL_PHRASES } from "./personal.js";
 import { clamp01, isAt, isDiscordToken, isUri, matchCase, splitProtected } from "./utils.js";
 
 const DEFAULTS = {
@@ -12,6 +13,7 @@ const DEFAULTS = {
 // Whole phrases take priority over dictionary swaps. Optional third array contains
 // stronger alternatives, eligible only with swearing enabled and a per-message cap.
 const PHRASES = [
+	...PERSONAL_PHRASES,
 	[/\bi (?:can['’]?t|cannot) be bothered\b/gi, ["man's not on it"], ["man can't be arsed"]],
 	[/\bi (?:don['’]?t|do not) care\b/gi, ["man couldn't care less"], ["man don't give a shit"]],
 	[/\bwhat the (?:hell|heck)\b/gi, ["what on earth"], ["what the fuck"]],
@@ -21,8 +23,6 @@ const PHRASES = [
 	[/\bstop messing (?:around|about)\b/gi, ["allow it"], ["stop taking the piss"]],
 	[/\bare you (?:joking|kidding)\b/gi, ["you havin' a laugh"], ["you taking the piss"]],
 	[/\bi (?:don['’]?t|do not) know\b/gi, ["dunno", "man dunno"]],
-	[/\bi am hungry\b/gi, ["man's after a munch"]],
-	[/\bi['’]m hungry\b/gi, ["man's after a munch"]],
 	[/\b(?:that['’]?s|that is) (?:unfortunate|unfair)\b/gi, ["that's peak"]],
 	[/\b(?:very|really) good\b/gi, ["proper peng", "proper decent"]],
 	[/\b(?:you['’]?re|you are) lying\b/gi, ["you're chatting breeze"]],
