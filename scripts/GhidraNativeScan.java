@@ -34,6 +34,24 @@ public class GhidraNativeScan extends GhidraScript {
         0x12d0c8L, // native callback reached during registration
         0x12b8d8L  // JNI class/method lookup bootstrap
     };
+    // Ghidra image base is 0x100000. These 29 targets come from the native
+    // registration pointer table (class IDs 0..28) in the ELF relocations.
+    private static final long[] CLASS_TARGETS = {
+        0x1af1e8L, 0x1b96dcL, 0x1bd4f4L, 0x1be578L, 0x1beb98L,
+        0x1bf114L, 0x1bf9f0L, 0x1c01e0L, 0x1c0b70L, 0x1c14c8L,
+        0x1c1e24L, 0x1c277cL, 0x1f1b24L, 0x1f2ad4L, 0x1ec674L,
+        0x26ffb8L, 0x2120ecL, 0x233880L, 0x24af5cL, 0x25a6f0L,
+        0x263da8L, 0x266178L, 0x268100L, 0x2686bcL, 0x26a96cL,
+        0x26d7f4L, 0x278a28L, 0x284e40L, 0x2770bcL
+    };
+    private static final String[] CLASS_NAMES = {
+        "MainActivity", "mcpelife.a", "mcpelife.b", "mcpelife.c", "mcpelife.d",
+        "mcpelife.e", "mcpelife.f", "mcpelife.g", "mcpelife.h", "mcpelife.i",
+        "mcpelife.j", "mcpelife.k", "mcpelife.l$a", "mcpelife.l$b", "mcpelife.l",
+        "mcpelife.y", "unknown-16", "unknown-17", "mcpelife.C0001", "mcpelife.C0000",
+        "mcpelife.C0003", "unknown-21", "unknown-22", "unknown-23", "unknown-24",
+        "mcpelife.C0002", "unknown-26", "unknown-27", "unknown-28"
+    };
 
     @Override
     protected void run() throws Exception {
@@ -52,6 +70,14 @@ public class GhidraNativeScan extends GhidraScript {
         for (long address : REGISTRATION_FUNCTIONS) {
             ghidra.program.model.address.Address entry = toAddr(address);
             if (currentProgram.getFunctionManager().getFunctionAt(entry) == null) {
+                disassemble(entry);
+                createFunction(entry, null);
+            }
+        }
+        for (long address : CLASS_TARGETS) {
+            ghidra.program.model.address.Address entry = toAddr(address);
+            if (currentProgram.getFunctionManager().getFunctionAt(entry) == null &&
+                currentProgram.getFunctionManager().getFunctionContaining(entry) == null) {
                 disassemble(entry);
                 createFunction(entry, null);
             }
@@ -80,13 +106,20 @@ public class GhidraNativeScan extends GhidraScript {
                 for (long address : REGISTRATION_FUNCTIONS) {
                     if (f.getEntryPoint().getOffset() == address) registration = true;
                 }
-                if (!feature && !context && !registration) continue;
+                int classId = -1;
+                for (int i = 0; i < CLASS_TARGETS.length; i++) {
+                    if (f.getBody().contains(toAddr(CLASS_TARGETS[i]))) classId = i;
+                }
+                boolean translatedClass = classId >= 0;
+                if (!feature && !context && !registration && !translatedClass) continue;
                 if (matched >= MAX_MATCHED) continue;
                 matched++;
                 out.write("\n\n/* FUNCTION " + f.getName() + " @ " + f.getEntryPoint() +
                           " bytes=" + f.getBody().getNumAddresses() +
                           " feature=" + feature + " context=" + context +
-                          " registration=" + registration + " */\n");
+                          " registration=" + registration +
+                          (translatedClass ? " class_id=" + classId + " class=" + CLASS_NAMES[classId] : "") +
+                          " */\n");
                 if (code.length() > MAX_CODE_CHARS) code = code.substring(0, MAX_CODE_CHARS) + "\n/* truncated */\n";
                 out.write(code);
             }
