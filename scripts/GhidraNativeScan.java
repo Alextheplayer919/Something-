@@ -35,6 +35,17 @@ public class GhidraNativeScan extends GhidraScript {
     private static final int MAX_NATIVE_CODE_CHARS = 16000;
     private static final int MAX_MATCHED = 120;
     private static final int MAX_CODE_CHARS = 24000;
+    // Small JNI/string/bridge helpers called repeatedly by class 14 (the
+    // Android UI layer) and the other obfuscated client classes. These were
+    // omitted by the normal size/keyword filter; force decompilation so the
+    // string-table bootstrap and reflection/asset bridge can be traced.
+    private static final long[] DEEP_HELPER_TARGETS = {
+        0x12d06cL, // helper immediately after JNI_OnLoad; called as string-table bootstrap
+        0x12cc34L, 0x12c758L, 0x12c508L, 0x12c8d0L,
+        0x12ca10L, 0x12cab0L, 0x12ccc8L, 0x12cd84L,
+        0x12d9d8L, 0x12da78L, 0x12dbbcL, 0x12e8d4L,
+        0x141204L
+    };
     private static final long[] REGISTRATION_FUNCTIONS = {
         0x12cdc8L, // registerNativesForClass pointer installed by JNI_OnLoad
         0x12cddcL, // JNI_OnLoad helper
@@ -199,6 +210,44 @@ public class GhidraNativeScan extends GhidraScript {
                               " unique_functions=" + methodFunctions.size() + " decompiled=" + nativeDecompiled +
                               " failed=" + nativeFailed + "\n");
             }
+
+            File helperFile = new File(outDir, "deep-helpers.txt");
+            int helperDone = 0;
+            int helperFailed = 0;
+            try (BufferedWriter helpers = new BufferedWriter(new FileWriter(helperFile))) {
+                helpers.write("MCPELIFE TARGETED JNI / STRING / UI HELPERS (static Ghidra decompile)\n");
+                helpers.write("Targets are called by mapped MCPELIFE methods; names are address-derived and semantic labels are provisional.\n");
+                for (long address : DEEP_HELPER_TARGETS) {
+                    Address entry = toAddr(address);
+                    Function helper = currentProgram.getFunctionManager().getFunctionAt(entry);
+                    if (helper == null) {
+                        disassemble(entry);
+                        helper = createFunction(entry, null);
+                    }
+                    if (helper == null) helper = currentProgram.getFunctionManager().getFunctionContaining(entry);
+                    if (helper == null) {
+                        helpers.write("\n\n/* UNRESOLVED helper address=" + entry + " */\n");
+                        helperFailed++;
+                        continue;
+                    }
+                    DecompileResults helperResult = decomp.decompileFunction(helper, 15, monitor);
+                    if (!helperResult.decompileCompleted() || helperResult.getDecompiledFunction() == null) {
+                        helpers.write("\n\n/* DECOMPILE FAILED helper=" + helper.getName() + " @ " + helper.getEntryPoint() + " */\n");
+                        helperFailed++;
+                        continue;
+                    }
+                    helperDone++;
+                    helpers.write("\n\n/* FUNCTION " + helper.getName() + " @ " + helper.getEntryPoint() +
+                                  " bytes=" + helper.getBody().getNumAddresses() + " requested=" + entry + " */\n");
+                    String helperCode = helperResult.getDecompiledFunction().getC();
+                    if (helperCode.length() > 60000) helperCode = helperCode.substring(0, 60000) + "\n/* truncated */\n";
+                    helpers.write(helperCode);
+                }
+                helpers.write("\n\nSUMMARY: helper_targets=" + DEEP_HELPER_TARGETS.length +
+                              " decompiled=" + helperDone + " failed=" + helperFailed + "\n");
+            }
+            println("Deep helper decompile: targets=" + DEEP_HELPER_TARGETS.length +
+                    " decompiled=" + helperDone + " failed=" + helperFailed + " output=" + helperFile);
         } finally {
             decomp.dispose();
         }
