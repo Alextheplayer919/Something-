@@ -1,0 +1,8 @@
+cat
+copper_golem
+dolphin
+drowned
+horse
+player
+shulker
+wolf

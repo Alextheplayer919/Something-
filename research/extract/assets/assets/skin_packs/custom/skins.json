@@ -1,0 +1,460 @@
+{
+    "skins": [
+        {
+            "localization_name": "ChadClassic",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadCopper",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "copper_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadYearn",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "Yearn_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadMenace",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "Menace_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadHome",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "Home_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadMCC",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "mcc15_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Chad15Year",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "15year_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadTwitch",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "twitch_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadTikTok",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "tiktok_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadCherry",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "cherry_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadProgressPride",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "progresspride_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadVanilla",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "vanilla_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadPanCape",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "pancape_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Chad2011",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2011_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Chad2012",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2012_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Chad2013",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2013_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Chad2015",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2015_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Chad2016",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2016_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ChadMigrator",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "migration_cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Chad2019",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2019cape.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "PlayerPixel",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "player_pixel.png",
+            "cape": "pixel_cape_custom.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ZombiePixel",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "zombie_pixel.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Zombie",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "zombie.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Drowned",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "drowned.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "ZombieMovie",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "zombie_movie.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "Skeleton",
+            "geometry": "geometry.2ndBirthday.PartyWitherSkeleton",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "skeleton.png",
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorClassic",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorCopper",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "copper_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorYearn",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "Yearn_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorMenace",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "Menace_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorHome",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "Home_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmordMCC",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "mcc15_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmor15Year",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "15year_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorTwitch",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "twitch_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorTikTok",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "tiktok_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorCherry",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "cherry_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorProgressPride",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "progresspride_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorVanilla",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "vanilla_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorPanCape",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "pancape_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmor2011",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2011_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmor2012",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2012_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmor2013",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2013_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmor2015",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2015_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmor2016",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2016_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorMigrator",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "migration_cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmor2019",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "gigachad.png",
+            "cape": "MINECON_2019cape.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorPlayerPixel",
+            "geometry": "geometry.humanoid.custom",
+            "texture": "player_pixel.png",
+            "cape": "pixel_cape_custom.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorZombiePixel",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "zombie_pixel.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorZombie",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "zombie.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorDrowned",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "drowned.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorZombieMovie",
+            "geometry": "geometry.humanoid.custom",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "zombie_movie.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "NoArmorSkeleton",
+            "geometry": "geometry.2ndBirthday.PartyWitherSkeleton",
+            "animations": {
+                "move.arms": "animation.zombie.attack_bare_hand",
+                "holding": "animation.zombie.attack_bare_hand",
+                "attack.positions": "animation.zombie.attack_bare_hand",
+                "attack.rotations": "animation.zombie.attack_bare_hand",
+                "sneaking": "animation.humanoid.base_pose"
+            },
+            "texture": "skeleton.png",
+            "hide_armor": true,
+            "type": "free"
+        },
+        {
+            "localization_name": "Invisible",
+            "geometry": "geometry.ChineseMythology",
+            "texture": "zombie.png",
+            "type": "free"
+        }
+    ],
+  "serialize_name": "Apollon",
+  "localization_name": "Apollon"
+}
