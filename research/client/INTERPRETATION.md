@@ -7,6 +7,8 @@
 - `MainActivity` itself registers as class 0 with the MCPELIFE native loader during class initialization, tying the injected library to the main app launch path.
 - The decompiled surface includes a custom UI layer (dialogs, rounded views, bitmap/font setup), JSON parsing, and an `HttpURLConnection` request/response path. The request method is supplied as the byte string `R0VU` to an overloaded native `decode` method; `R0VU` is Base64 for `GET`, but that specific decoder behavior still needs confirmation from native code. This points to a client UI/config or network path, not yet to any particular gameplay module.
 - The injected library's ELF dependencies are `libc`, `libm`, and `libdl`; it has no direct `DT_NEEDED` dependency on Minecraft's `libminecraftpe.so`. It imports `dl_iterate_phdr`, so it can enumerate loaded images, but this alone does not prove memory patching or hooks.
+- Ghidra recovered the JNI class-registration dispatch table. IDs 1-25 belong to MCPELIFE classes (including Unicode/combining-mark class names); IDs 26-28 are PairIP signature/license runtime classes. The DEX contains 147 `native` methods across MCPELIFE IDs 1-25; each registration wrapper has the matching method count plus one generated helper pointer. A provisional DEX-to-native pointer map is saved at `native/ghidra/native-method-map.tsv`.
+- The targeted native decompile covered the class wrappers and mapped native functions (165 of 172 pointer labels decompiled in the latest pass). The mapped methods expose reflection, files, `MessageDigest`, string/byte conversion, `ApplicationInfo`, JSON, UI, and HTTP plumbing. The code and decompiled pseudocode contain no confirmed Xray/ESP/Aura/etc. labels; this is not proof that no feature exists because names are obfuscated and root assets remain opaque.
 - `assets/MCPELIFE.json` is **not JSON**: its SFNT signature and font name table identify a Lexend variable font. The client references Android's `Typeface.createFromAsset`, so this is likely a UI font resource, not a module list.
 - Twenty-two root-level randomly named assets begin with the same `\0IAP\x02\0\0\0\x08\x06` header and then high-entropy bytes. This looks like a structured/protected asset format, but its payload and purpose are not decoded yet.
 
@@ -16,6 +18,6 @@ The first broad keyword sweep produced many false positives from vanilla localiz
 
 ## Next reverse-engineering steps
 
-1. Preserve and inspect all `MCPELIFE0`/`Hidden0` Java loader classes alongside the obfuscated client stubs.
-2. Map native registration and relevant native APIs in `libMCPELIFE.so`; identify how the `IAP v2` assets are opened/decrypted before attempting to label their contents. A Ghidra headless decompilation pass is now wired into the branch workflow to inspect the AArch64 native library statically.
-3. Only after the loader/data path is understood, map actual feature implementations and decide how to update them. The Android package/library must also be rebuilt and signed to yield an installable APK; changing this source-analysis bundle alone does not update the app.
+1. Use `native/ghidra/native-method-map.tsv` to map native handlers back to DEX signatures; prioritize the obfuscated class IDs 16-25 and decode the overloaded string/short-array helpers.
+2. Identify the consumer and key/transform for the 22 `IAP v2` root assets, then determine whether they are UI images, resource blobs, or feature/config payloads.
+3. Only after the loader/data path is understood, map actual gameplay feature implementations and decide how to update them. The Android package/library must also be rebuilt and signed to yield an installable APK; changing this source-analysis bundle alone does not update the app.

@@ -4,6 +4,8 @@ on:
     branches: [arena/4ad620d6-something]
     paths-ignore:
       - 'research/**'
+      - 'scripts/build_native_method_map.py'
+      - '.github/workflows/apk-probe.yml'
   workflow_dispatch:
 
 permissions:
