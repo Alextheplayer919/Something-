@@ -46,7 +46,11 @@ public class GhidraNativeScan extends GhidraScript {
         0x12d9d8L, 0x12da78L, 0x12dbbcL, 0x12e8d4L,
         0x141204L,
         // Follow the Android-view and dialog callbacks from the user's ClickGUI lead.
-        0x1c4ef8L, 0x1dafc8L, 0x1bfd10L, 0x1c0500L, 0x1bf3b8L
+        0x1c4ef8L, 0x1dafc8L, 0x1bfd10L, 0x1c0500L, 0x1bf3b8L,
+        // PairIP VMRunner path that opens assets/ entries and decrypts bytecode.
+        0x278e84L, 0x27924cL, 0x27ace8L, 0x27d1a4L, 0x27d3e8L,
+        0x27dd24L, 0x27de28L, 0x27e1e0L, 0x27edf4L, 0x2824a4L,
+        0x283738L, 0x28397cL
     };
     private static final long[] REGISTRATION_FUNCTIONS = {
         0x12cdc8L, // registerNativesForClass pointer installed by JNI_OnLoad
