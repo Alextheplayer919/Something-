@@ -4,7 +4,117 @@ This file contains selected pseudocode only; all analysis is static.
 
 
 
-/* FUNCTION FUN_0012cddc @ 0012cddc bytes=548 feature=false context=true */
+/* FUNCTION FUN_0012b8d8 @ 0012b8d8 bytes=1380 feature=false context=false registration=true */
+
+void FUN_0012b8d8(long *param_1)
+
+{
+  char cVar1;
+  undefined8 uVar2;
+  long lVar3;
+  
+  uVar2 = (**(code **)(*param_1 + 0x30))(param_1,&DAT_0011904f);
+  cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar1 == '\0') {
+    DAT_002c3190 = (**(code **)(*param_1 + 0xa8))(param_1,uVar2);
+    (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+    uVar2 = (**(code **)(*param_1 + 0x30))(param_1,"java/lang/String");
+    cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+    lVar3 = *param_1;
+    if (cVar1 != '\0') goto LAB_0012b98c;
+    DAT_002c3198 = (**(code **)(lVar3 + 0x108))(param_1,uVar2,"intern","()Ljava/lang/String;");
+    cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+    if (cVar1 == '\0') {
+      (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+      uVar2 = (**(code **)(*param_1 + 0x30))(param_1,"java/lang/Class");
+      cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+      if (cVar1 == '\0') {
+        DAT_002c31a0 = (**(code **)(*param_1 + 0xa8))(param_1,uVar2);
+        (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+        DAT_002c31a8 = (**(code **)(*param_1 + 0x108))
+                                 (param_1,DAT_002c31a0,"getClassLoader","()Ljava/lang/ClassLoader;")
+        ;
+        cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+        lVar3 = *param_1;
+        if (cVar1 != '\0') goto LAB_0012b98c;
+        uVar2 = (**(code **)(lVar3 + 0x30))(param_1,"java/lang/Object");
+        cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+        if (cVar1 == '\0') {
+          DAT_002c31b0 = (**(code **)(*param_1 + 0xa8))(param_1,uVar2);
+          (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+          DAT_002c31b8 = (**(code **)(*param_1 + 0x108))
+                                   (param_1,DAT_002c31b0,"getClass","()Ljava/lang/Class;");
+          cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+          lVar3 = *param_1;
+          if (cVar1 != '\0') goto LAB_0012b98c;
+          uVar2 = (**(code **)(lVar3 + 0x30))(param_1,"java/lang/ClassLoader");
+          cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+          if (cVar1 == '\0') {
+            DAT_002c31c0 = (**(code **)(*param_1 + 0xa8))(param_1,uVar2);
+            (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+            DAT_002c31c8 = (**(code **)(*param_1 + 0x108))
+                                     (param_1,DAT_002c31c0,"loadClass",
+                                      "(Ljava/lang/String;)Ljava/lang/Class;");
+            cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+            lVar3 = *param_1;
+            if (cVar1 != '\0') goto LAB_0012b98c;
+            uVar2 = (**(code **)(lVar3 + 0x30))(param_1,"java/lang/NoClassDefFoundError");
+            cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+            if (cVar1 == '\0') {
+              DAT_002c31d0 = (**(code **)(*param_1 + 0xa8))(param_1,uVar2);
+              (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+              DAT_002c31d8 = (**(code **)(*param_1 + 0x108))
+                                       (param_1,DAT_002c31d0,"<init>","(Ljava/lang/String;)V");
+              cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+              lVar3 = *param_1;
+              if (cVar1 != '\0') goto LAB_0012b98c;
+              uVar2 = (**(code **)(lVar3 + 0x30))(param_1,"java/lang/Throwable");
+              cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+              if (cVar1 == '\0') {
+                DAT_002c31e0 = (**(code **)(*param_1 + 0xa8))(param_1,uVar2);
+                (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+                DAT_002c31e8 = (**(code **)(*param_1 + 0x108))
+                                         (param_1,DAT_002c31e0,"getMessage","()Ljava/lang/String;");
+                cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+                if (cVar1 == '\0') {
+                  DAT_002c31f0 = (**(code **)(*param_1 + 0x108))
+                                           (param_1,DAT_002c31e0,"initCause",
+                                            "(Ljava/lang/Throwable;)Ljava/lang/Throwable;");
+                  cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+                  lVar3 = *param_1;
+                  if (cVar1 != '\0') goto LAB_0012b98c;
+                  uVar2 = (**(code **)(lVar3 + 0x30))
+                                    (param_1,"java/lang/invoke/MethodHandles$Lookup");
+                  cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+                  if (cVar1 == '\0') {
+                    DAT_002c31f8 = (**(code **)(*param_1 + 0xa8))(param_1,uVar2);
+                    (**(code **)(*param_1 + 0xb8))(param_1,uVar2);
+                    DAT_002c3200 = (**(code **)(*param_1 + 0x108))
+                                             (param_1,DAT_002c31f8,"<init>","(Ljava/lang/Class;)V");
+                    cVar1 = (**(code **)(*param_1 + 0x720))(param_1);
+                    if (cVar1 == '\0') {
+                      return;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  lVar3 = *param_1;
+LAB_0012b98c:
+                    /* WARNING: Could not recover jumptable at 0x0012b9a0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)(lVar3 + 0x88))(param_1);
+  return;
+}
+
+
+
+/* FUNCTION FUN_0012cddc @ 0012cddc bytes=548 feature=false context=true registration=true */
 
 void FUN_0012cddc(long *param_1)
 
@@ -123,7 +233,7 @@ void FUN_0012cddc(long *param_1)
 
 
 
-/* FUNCTION JNI_OnLoad @ 0012d000 bytes=108 feature=false context=true */
+/* FUNCTION JNI_OnLoad @ 0012d000 bytes=108 feature=false context=true registration=false */
 
 undefined8 JNI_OnLoad(long *param_1)
 
@@ -146,7 +256,7 @@ undefined8 JNI_OnLoad(long *param_1)
 
 
 
-/* FUNCTION FUN_002ad06c @ 002ad06c bytes=452 feature=false context=true */
+/* FUNCTION FUN_002ad06c @ 002ad06c bytes=452 feature=false context=true registration=false */
 
 long FUN_002ad06c(ulong param_1,ulong *param_2)
 
@@ -235,4 +345,4 @@ LAB_002ad200:
 
 
 
-SUMMARY: candidate_functions=411 decompiled=411 failed_or_timed_out=0 retained=3
+SUMMARY: candidate_functions=411 decompiled=411 failed_or_timed_out=0 retained=4
