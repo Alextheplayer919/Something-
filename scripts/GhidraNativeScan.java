@@ -28,9 +28,10 @@ public class GhidraNativeScan extends GhidraScript {
     private static final int MAX_MATCHED = 120;
     private static final int MAX_CODE_CHARS = 24000;
     private static final long[] REGISTRATION_FUNCTIONS = {
-        0x12d0c8L, // MCPELIFE0.registerNativesForClass JNI implementation
+        0x12cdc8L, // registerNativesForClass pointer installed by JNI_OnLoad
         0x12cddcL, // JNI_OnLoad helper
         0x12d06cL, // registration table bootstrap
+        0x12d0c8L, // native callback reached during registration
         0x12b8d8L  // JNI class/method lookup bootstrap
     };
 
