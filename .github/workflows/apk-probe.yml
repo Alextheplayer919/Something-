@@ -66,7 +66,7 @@ jobs:
             dest="research/client/jadx/${f#*/sources/}"
             mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
           done
-          grep -rl -E 'MCPELIFE\.json|libMCPELIFE|mcpelife/|MCPELIFE0|Hidden0|special_clinit_' /tmp/jadx-out --include='*.java' 2>/dev/null | head -120 | while read -r f; do
+          grep -rl -E 'MCPELIFE\.json|libMCPELIFE|mcpelife/|MCPELIFE0|Hidden0|special_clinit_' /tmp/jadx-out --include='*.java' 2>/dev/null | awk 'NR <= 120' | while read -r f; do
             dest="research/client/jadx/${f#*/sources/}"
             mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
           done
@@ -105,10 +105,17 @@ jobs:
           unzip -q /tmp/ghidra.zip -d /tmp/ghidra-download
           GHIDRA_DIR=$(find /tmp/ghidra-download -maxdepth 1 -type d -name 'ghidra_*' | head -1)
           test -n "$GHIDRA_DIR"
+          set +e
           "$GHIDRA_DIR/support/analyzeHeadless" /tmp/ghidra-project MCPELIFE \
             -import research/client/lib/arm64-v8a/libMCPELIFE.so \
             -scriptPath scripts \
-            -postScript GhidraNativeScan.java "$GITHUB_WORKSPACE/research/client/native/ghidra"
+            -postScript GhidraNativeScan.java "$GITHUB_WORKSPACE/research/client/native/ghidra" \
+            > /tmp/ghidra-headless.log 2>&1
+          ghidra_status=$?
+          tail -120 /tmp/ghidra-headless.log
+          cp /tmp/ghidra-headless.log research/client/native/ghidra/ghidra-headless.log
+          printf 'Ghidra exit status: %s\n' "$ghidra_status" > research/client/native/ghidra/status.txt
+          exit "$ghidra_status"
 
       - name: Commit findings back to branch
         run: |
