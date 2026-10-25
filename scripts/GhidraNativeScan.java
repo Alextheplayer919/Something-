@@ -46,6 +46,15 @@ public class GhidraNativeScan extends GhidraScript {
         int matched = 0;
         DecompInterface decomp = new DecompInterface();
         decomp.openProgram(currentProgram);
+        // Auto-analysis may leave the JNI callback as a label rather than a
+        // function because it is reached through RegisterNatives' pointer table.
+        for (long address : REGISTRATION_FUNCTIONS) {
+            ghidra.program.model.address.Address entry = toAddr(address);
+            if (currentProgram.getFunctionManager().getFunctionAt(entry) == null) {
+                disassemble(entry);
+                createFunction(entry, null);
+            }
+        }
 
         try (BufferedWriter out = new BufferedWriter(new FileWriter(outFile))) {
             out.write("MCPELIFE NATIVE STATIC DECOMPILE (Ghidra)\n");
