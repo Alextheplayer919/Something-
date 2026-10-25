@@ -256,6 +256,265 @@ undefined8 JNI_OnLoad(long *param_1)
 
 
 
+/* FUNCTION FUN_0012d0c8 @ 0012d0c8 bytes=2320 feature=false context=false registration=true */
+
+void FUN_0012d0c8(long *param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  long lVar1;
+  void *pvVar2;
+  undefined8 *puVar3;
+  char cVar4;
+  undefined4 uVar5;
+  long lVar6;
+  long lVar7;
+  undefined8 uVar8;
+  void *pvVar9;
+  undefined8 uStack_90;
+  undefined8 uStack_88;
+  void *pvStack_80;
+  undefined8 uStack_78;
+  undefined8 *puStack_70;
+  undefined8 uStack_68;
+  undefined4 uStack_60;
+  long lStack_58;
+  
+  lVar1 = tpidr_el0;
+  lStack_58 = *(long *)(lVar1 + 0x28);
+  (**(code **)(*param_1 + 0xb8))();
+  lVar6 = FUN_0012cc34(param_1,param_3);
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_0012d12c;
+  if (lVar6 == 0) {
+    (**(code **)(*param_1 + 0x90))(param_1,DAT_002c32f0);
+    goto LAB_0012d12c;
+  }
+  if ((DAT_002c5440 == 0) ||
+     (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5440,0), cVar4 != '\0')) {
+    std::__ndk1::mutex::lock((mutex *)&DAT_002c3b68);
+    if (((DAT_002c5440 == 0) ||
+        (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5440,0), cVar4 != '\0')) &&
+       (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c32f8), lVar7 != 0)) {
+      DAT_002c5440 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+      (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+    }
+    std::__ndk1::mutex::unlock((mutex *)&DAT_002c3b68);
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    if (cVar4 != '\0') goto LAB_0012d12c;
+  }
+  uVar8 = DAT_002c3300;
+  uStack_78 = 0;
+  pvStack_80 = (void *)0x0;
+  uStack_68 = 0;
+  puStack_70 = (undefined8 *)0x0;
+  uStack_60 = 0x3f800000;
+  uStack_88 = DAT_002c3300;
+  if ((DAT_002c5448 == 0) ||
+     (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0')) {
+    std::__ndk1::mutex::lock((mutex *)&DAT_002c3b90);
+    if (((DAT_002c5448 == 0) ||
+        (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0')) &&
+       (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c3308), lVar7 != 0)) {
+      DAT_002c5448 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+      (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+    }
+    std::__ndk1::mutex::unlock((mutex *)&DAT_002c3b90);
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_80;
+    puVar3 = puStack_70;
+    if (cVar4 == '\0') goto LAB_0012d300;
+  }
+  else {
+LAB_0012d300:
+    if (DAT_002c5938 == 0) {
+      DAT_002c5938 = (**(code **)(*param_1 + 0x388))
+                               (param_1,DAT_002c5448,DAT_002c32f0 + 0x14,DAT_002c32f0 + 0x20);
+      cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+      pvVar2 = pvStack_80;
+      puVar3 = puStack_70;
+      if (cVar4 != '\0') goto joined_r0x0012d8cc;
+    }
+    FUN_0012d9d8(param_1,DAT_002c5448,DAT_002c5938,uVar8);
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_80;
+    puVar3 = puStack_70;
+    if (cVar4 == '\0') {
+      cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+      uVar8 = DAT_002c3310;
+      if (cVar4 == '\0') {
+        uStack_88 = DAT_002c3310;
+        if ((DAT_002c5448 == 0) ||
+           (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0')) {
+          std::__ndk1::mutex::lock((mutex *)&DAT_002c3b90);
+          if (((DAT_002c5448 == 0) ||
+              (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0')) &&
+             (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c3308), lVar7 != 0)) {
+            DAT_002c5448 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+            (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+          }
+          std::__ndk1::mutex::unlock((mutex *)&DAT_002c3b90);
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          if (cVar4 != '\0') goto LAB_0012d4f4;
+        }
+        if (DAT_002c5938 == 0) {
+          DAT_002c5938 = (**(code **)(*param_1 + 0x388))
+                                   (param_1,DAT_002c5448,DAT_002c32f0 + 0x14,DAT_002c32f0 + 0x20);
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          if (cVar4 != '\0') goto LAB_0012d4f4;
+        }
+        FUN_0012d9d8(param_1,DAT_002c5448,DAT_002c5938,uVar8);
+        cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+        lVar7 = *param_1;
+        if (cVar4 != '\0') goto LAB_0012d4f8;
+LAB_0012d688:
+        cVar4 = (**(code **)(lVar7 + 0x720))(param_1);
+        pvVar2 = pvStack_80;
+        puVar3 = puStack_70;
+        if ((cVar4 == '\0') &&
+           (cVar4 = (**(code **)(*param_1 + 0x720))(param_1), pvVar2 = pvStack_80,
+           puVar3 = puStack_70, cVar4 == '\0')) {
+          FUN_0012ccc8(param_1,&pvStack_80);
+          uStack_88 = DAT_002c3330;
+          if ((DAT_002c5448 == 0) ||
+             (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0')) {
+            std::__ndk1::mutex::lock((mutex *)&DAT_002c3b90);
+            if (((DAT_002c5448 == 0) ||
+                (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0')) &&
+               (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c3308), lVar7 != 0)) {
+              DAT_002c5448 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+              (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+            }
+            std::__ndk1::mutex::unlock((mutex *)&DAT_002c3b90);
+            cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+            pvVar2 = pvStack_80;
+            puVar3 = puStack_70;
+            if (cVar4 != '\0') goto joined_r0x0012d8cc;
+          }
+          if (DAT_002c5938 == 0) {
+            DAT_002c5938 = (**(code **)(*param_1 + 0x388))
+                                     (param_1,DAT_002c5448,DAT_002c32f0 + 0x14,DAT_002c32f0 + 0x20);
+            cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+            pvVar2 = pvStack_80;
+            puVar3 = puStack_70;
+            if (cVar4 != '\0') goto joined_r0x0012d8cc;
+          }
+          FUN_0012d9d8(param_1,DAT_002c5448,DAT_002c5938,uStack_88);
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          pvVar2 = pvStack_80;
+          puVar3 = puStack_70;
+          if (cVar4 == '\0') {
+            uStack_88 = DAT_002c3338;
+            if ((DAT_002c5448 == 0) ||
+               (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0')) {
+              std::__ndk1::mutex::lock((mutex *)&DAT_002c3b90);
+              if (((DAT_002c5448 == 0) ||
+                  (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5448,0), cVar4 != '\0'))
+                 && (lVar6 = FUN_0012c758(param_1,lVar6,DAT_002c3308), lVar6 != 0)) {
+                DAT_002c5448 = (**(code **)(*param_1 + 0x710))(param_1,lVar6);
+                (**(code **)(*param_1 + 0xb8))(param_1,lVar6);
+              }
+              std::__ndk1::mutex::unlock((mutex *)&DAT_002c3b90);
+              cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+              pvVar2 = pvStack_80;
+              puVar3 = puStack_70;
+              if (cVar4 != '\0') goto joined_r0x0012d8cc;
+            }
+            if (DAT_002c5938 == 0) {
+              DAT_002c5938 = (**(code **)(*param_1 + 0x388))
+                                       (param_1,DAT_002c5448,DAT_002c32f0 + 0x14,DAT_002c32f0 + 0x20
+                                       );
+              cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+              pvVar2 = pvStack_80;
+              puVar3 = puStack_70;
+              if (cVar4 != '\0') goto joined_r0x0012d8cc;
+            }
+            FUN_0012d9d8(param_1,DAT_002c5448,DAT_002c5938,uStack_88);
+            (**(code **)(*param_1 + 0x720))(param_1);
+            pvVar2 = pvStack_80;
+            puVar3 = puStack_70;
+          }
+        }
+      }
+      else {
+LAB_0012d4f4:
+        lVar7 = *param_1;
+LAB_0012d4f8:
+        uVar8 = (**(code **)(lVar7 + 0x78))(param_1);
+        (**(code **)(*param_1 + 0x88))(param_1);
+        uStack_90 = uVar8;
+        uStack_88 = uVar8;
+        FUN_001b87f8(&pvStack_80,&uStack_90,&uStack_90);
+        cVar4 = (**(code **)(*param_1 + 0x100))(param_1,uStack_88,DAT_002c5440);
+        if (cVar4 == '\0') {
+          (**(code **)(*param_1 + 0x68))(param_1,uStack_88);
+          pvVar2 = pvStack_80;
+          puVar3 = puStack_70;
+        }
+        else {
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          pvVar2 = pvStack_80;
+          puVar3 = puStack_70;
+          if (cVar4 == '\0') {
+            FUN_0012da78(&pvStack_80,&uStack_88);
+            FUN_0012ccc8(param_1,&pvStack_80);
+            FUN_001b8db8(&pvStack_80,&uStack_88,&uStack_88);
+            uVar8 = DAT_002c3320;
+            uStack_88 = DAT_002c3318;
+            if ((DAT_002c5450 == 0) ||
+               (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5450,0), cVar4 != '\0')) {
+              std::__ndk1::mutex::lock((mutex *)&DAT_002c3bb8);
+              if (((DAT_002c5450 == 0) ||
+                  (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c5450,0), cVar4 != '\0'))
+                 && (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c3328), lVar7 != 0)) {
+                DAT_002c5450 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+                (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+              }
+              std::__ndk1::mutex::unlock((mutex *)&DAT_002c3bb8);
+              cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+              pvVar2 = pvStack_80;
+              puVar3 = puStack_70;
+              if (cVar4 != '\0') goto joined_r0x0012d8cc;
+            }
+            if (DAT_002c5940 == 0) {
+              DAT_002c5940 = (**(code **)(*param_1 + 0x388))
+                                       (param_1,DAT_002c5450,DAT_002c32f0 + 0x36,DAT_002c32f0 + 0x38
+                                       );
+              cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+              pvVar2 = pvStack_80;
+              puVar3 = puStack_70;
+              if (cVar4 != '\0') goto joined_r0x0012d8cc;
+            }
+            uVar5 = FUN_0012dbbc(param_1,DAT_002c5450,DAT_002c5940,uStack_88,uVar8);
+            uStack_88 = CONCAT44(uStack_88._4_4_,uVar5);
+            lVar7 = *param_1;
+            goto LAB_0012d688;
+          }
+        }
+      }
+    }
+  }
+joined_r0x0012d8cc:
+  while (puVar3 != (void *)0x0) {
+    pvVar9 = (void *)*puVar3;
+    pvStack_80 = pvVar2;
+    operator_delete(puVar3);
+    pvVar2 = pvStack_80;
+    puVar3 = pvVar9;
+  }
+  pvStack_80 = (void *)0x0;
+  if (pvVar2 != (void *)0x0) {
+    operator_delete(pvVar2);
+  }
+LAB_0012d12c:
+  if (*(long *)(lVar1 + 0x28) != lStack_58) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
 /* FUNCTION FUN_002ad06c @ 002ad06c bytes=452 feature=false context=true registration=false */
 
 long FUN_002ad06c(ulong param_1,ulong *param_2)
@@ -345,4 +604,4 @@ LAB_002ad200:
 
 
 
-SUMMARY: candidate_functions=411 decompiled=411 failed_or_timed_out=0 retained=4
+SUMMARY: candidate_functions=412 decompiled=412 failed_or_timed_out=0 retained=5
