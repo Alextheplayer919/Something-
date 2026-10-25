@@ -5,7 +5,7 @@ INFO  Using log config file: jar:file:/tmp/ghidra-download/ghidra_12.2_PUBLIC/Gh
 INFO  Using log file: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/application.log (LoggingInitialization)  
 INFO  Loading user preferences: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/preferences (Preferences)  
 INFO  Searching for classes... (ClassSearcher)  
-INFO  Class search complete (996 ms) (ClassSearcher)  
+INFO  Class search complete (1116 ms) (ClassSearcher)  
 INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
 INFO  Initializing Random Number Generator... (SecureRandomFactory)  
 INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
@@ -14,7 +14,7 @@ INFO  Loaded 121 trusted CA certificates from the OS trust store. (DefaultTrustM
 INFO  Loaded 121 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
 INFO  Starting cache cleanup: /var/tmp/runner-ghidra/fscache2 (FileCacheMaintenanceDaemon)  
 INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
-INFO  Headless startup complete (2714 ms) (AnalyzeHeadless)  
+INFO  Headless startup complete (5071 ms) (AnalyzeHeadless)  
 INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
 INFO  HEADLESS Script Paths:
     /tmp/ghidra-download/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
@@ -83,61 +83,62 @@ ERROR VarnodeContext: out of address spaces at @00257b80 for: d18-00257b80 (Varn
 INFO  Packed database cache: /var/tmp/runner-ghidra/packed-db-cache (PackedDatabaseCache)  
 INFO  Applied data type archive: generic_clib_64 (ApplyDataArchiveAnalyzer)  
 INFO  -----------------------------------------------------
-    AARCH64 ELF PLT Thunks                     0.114 secs
-    ASCII Strings                              0.574 secs
-    Apply Data Archives                        0.390 secs
-    Basic Constant Reference Analyzer         14.708 secs
-    Call Convention ID                         1.553 secs
-    Call-Fixup Installer                       0.017 secs
-    Create Address Tables                      0.213 secs
-    Create Address Tables - One Time           0.256 secs
-    Create Function                            0.061 secs
-    DWARF                                      0.008 secs
-    Data Reference                             0.487 secs
-    Decompiler Switch Analysis                 3.550 secs
-    Demangler GNU                              0.694 secs
-    Disassemble                                4.732 secs
-    Disassemble Entry Points                   0.190 secs
-    Embedded Media                             0.026 secs
-    External Entry References                  0.003 secs
-    Function ID                                0.018 secs
-    Function Start Search                      0.152 secs
-    Function Start Search After Code           0.162 secs
-    Function Start Search After Data           0.045 secs
-    Function Start Search delayed - One Time   0.005 secs
-    GCC Exception Handlers                     1.099 secs
-    Non-Returning Functions - Discovered       0.621 secs
-    Non-Returning Functions - Known            0.006 secs
-    Reference                                  0.527 secs
-    Shared Return Calls                        0.341 secs
-    Source Language Support                    0.003 secs
-    Stack                                      0.905 secs
-    Subroutine References                      0.204 secs
+    AARCH64 ELF PLT Thunks                     0.137 secs
+    ASCII Strings                              0.552 secs
+    Apply Data Archives                        0.671 secs
+    Basic Constant Reference Analyzer         20.421 secs
+    Call Convention ID                         1.695 secs
+    Call-Fixup Installer                       0.026 secs
+    Create Address Tables                      0.282 secs
+    Create Address Tables - One Time           0.189 secs
+    Create Function                            0.070 secs
+    DWARF                                      0.009 secs
+    Data Reference                             0.498 secs
+    Decompiler Switch Analysis                 4.143 secs
+    Demangler GNU                              1.086 secs
+    Disassemble                                6.203 secs
+    Disassemble Entry Points                   0.255 secs
+    Embedded Media                             0.040 secs
+    External Entry References                  0.004 secs
+    Function ID                                0.021 secs
+    Function Start Search                      0.198 secs
+    Function Start Search After Code           0.171 secs
+    Function Start Search After Data           0.079 secs
+    Function Start Search delayed - One Time   0.008 secs
+    GCC Exception Handlers                     1.535 secs
+    Non-Returning Functions - Discovered       0.777 secs
+    Non-Returning Functions - Known            0.007 secs
+    Reference                                  0.709 secs
+    Shared Return Calls                        0.504 secs
+    Source Language Support                    0.004 secs
+    Stack                                      1.529 secs
+    Subroutine References                      0.265 secs
     Subroutine References - One Time           0.000 secs
-    Variadic Function Signature Override       2.333 secs
+    Variadic Function Signature Override       2.442 secs
 -----------------------------------------------------
-     Total Time   33 secs
+     Total Time   44 secs
 -----------------------------------------------------
  (AutoAnalysisManager)  
 INFO  REPORT: Analysis succeeded for file: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
 INFO  REPORT: Execute script: GhidraNativeScan.java '/home/runner/work/Something-/Something-/research/client/native/ghidra'  (HeadlessAnalyzer)  
 INFO  SCRIPT: /home/runner/work/Something-/Something-/scripts/GhidraNativeScan.java (HeadlessAnalyzer)  
+INFO  GhidraNativeScan.java> Deep helper decompile: targets=14 decompiled=14 failed=0 output=/home/runner/work/Something-/Something-/research/client/native/ghidra/deep-helpers.txt (GhidraScript)  
 INFO  GhidraNativeScan.java> Ghidra static scan: candidates=441 decompiled=440 timeouts=1 retained=33 output=/home/runner/work/Something-/Something-/research/client/native/ghidra/targeted-decompile.txt (GhidraScript)  
 INFO  ANALYZING changes made by post scripts: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
 ERROR VarnodeContext: out of address spaces at @00257b80 for: d18-00257b80 (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @001fd43c for: x8-001fd43c (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @001ccc30 for: x9-001ccc30 (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @00206684 for: d29-00206684 (VarnodeContext)  
-ERROR VarnodeContext: out of address spaces at @001e48e4 for: d24-001e48e4 (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @001b568c for: d21-001b568c (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @001e48e4 for: d24-001e48e4 (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @00222200 for: x9-00222200 (VarnodeContext)  
 INFO  -----------------------------------------------------
-    Call-Fixup Installer                       0.001 secs
+    Call-Fixup Installer                       0.002 secs
     Function Start Search                      0.000 secs
-    Shared Return Calls                        0.066 secs
-    Stack                                      5.549 secs
+    Shared Return Calls                        0.076 secs
+    Stack                                      7.630 secs
 -----------------------------------------------------
-     Total Time   5 secs
+     Total Time   7 secs
 -----------------------------------------------------
  (AutoAnalysisManager)  
 INFO  REPORT: Post-analysis succeeded for file: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
