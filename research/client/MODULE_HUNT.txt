@@ -1,0 +1,1442 @@
+HIDDEN MODULE HUNT
+============================================================
+entries with any hit: 1037
+
+RANKED FILES (score = 2*distinct cheat terms + plumbing terms)
+============================================================
+  score=39   cheat=14  plumbing=11  size=280217792 lib/arm64-v8a/libminecraftpe.so  views=plain
+  score=37   cheat=17  plumbing=3   size=4223408   assets/assets/icu/demo.dat  views=plain
+  score=22   cheat=7   plumbing=8   size=723056    assets/assets/resource_packs/vanilla/texts/en_GB.lang  views=plain
+  score=22   cheat=7   plumbing=8   size=722596    assets/assets/resource_packs/vanilla/texts/en_US.lang  views=plain
+  score=17   cheat=4   plumbing=9   size=3687428   classes6.dex  views=plain
+  score=17   cheat=3   plumbing=11  size=3669944   classes5.dex  views=plain
+  score=16   cheat=5   plumbing=6   size=824714    assets/assets/resource_packs/vanilla/texts/fr_CA.lang  views=plain
+  score=16   cheat=5   plumbing=6   size=823794    assets/assets/resource_packs/vanilla/texts/fr_FR.lang  views=plain
+  score=16   cheat=5   plumbing=6   size=758931    assets/assets/resource_packs/vanilla/texts/nb_NO.lang  views=plain
+  score=15   cheat=5   plumbing=5   size=5104866   META-INF/TESTKEY.SF  views=plain
+  score=15   cheat=2   plumbing=11  size=3642576   classes3.dex  views=plain
+  score=15   cheat=2   plumbing=11  size=3633572   classes.dex  views=plain
+  score=14   cheat=5   plumbing=4   size=5104739   META-INF/MANIFEST.MF  views=plain
+  score=14   cheat=4   plumbing=6   size=800237    assets/assets/resource_packs/vanilla/texts/es_ES.lang  views=plain
+  score=14   cheat=4   plumbing=6   size=798458    assets/assets/resource_packs/vanilla/texts/it_IT.lang  views=plain
+  score=14   cheat=4   plumbing=6   size=785617    assets/assets/resource_packs/vanilla/texts/pt_BR.lang  views=plain
+  score=14   cheat=4   plumbing=6   size=752308    assets/assets/resource_packs/vanilla/texts/da_DK.lang  views=plain
+  score=14   cheat=3   plumbing=8   size=800181    assets/assets/resource_packs/vanilla/texts/de_DE.lang  views=plain
+  score=14   cheat=3   plumbing=8   size=752134    assets/assets/resource_packs/vanilla/texts/id_ID.lang  views=plain
+  score=13   cheat=2   plumbing=9   size=3689196   classes2.dex  views=plain
+  score=12   cheat=3   plumbing=6   size=2230224   lib/arm64-v8a/libconscrypt_jni.so  views=plain,xor20,xor50,xor70,xor86
+  score=12   cheat=3   plumbing=6   size=1200796   assets/assets/resource_packs/vanilla/texts/el_GR.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=1138781   assets/assets/resource_packs/vanilla/texts/bg_BG.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=1105325   assets/assets/resource_packs/vanilla/texts/ru_RU.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=1088830   assets/assets/resource_packs/vanilla/texts/uk_UA.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=918151    assets/assets/resource_packs/vanilla/texts/ja_JP.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=830067    assets/assets/resource_packs/vanilla/texts/ko_KR.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=825164    assets/assets/resource_packs/vanilla/texts/hu_HU.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=806283    assets/assets/resource_packs/vanilla/texts/cs_CZ.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=803830    assets/assets/resource_packs/vanilla/texts/sk_SK.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=803124    assets/assets/resource_packs/vanilla/texts/pl_PL.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=799325    assets/assets/resource_packs/vanilla/texts/es_MX.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=794645    assets/assets/resource_packs/vanilla/texts/pt_PT.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=790689    assets/assets/resource_packs/vanilla/texts/tr_TR.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=778523    assets/assets/resource_packs/vanilla/texts/nl_NL.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=775388    assets/assets/resource_packs/vanilla/texts/fi_FI.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=753446    assets/assets/resource_packs/vanilla/texts/sv_SE.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=709421    assets/assets/resource_packs/vanilla/texts/zh_TW.lang  views=plain
+  score=12   cheat=3   plumbing=6   size=704081    assets/assets/resource_packs/vanilla/texts/zh_CN.lang  views=plain
+  score=12   cheat=1   plumbing=10  size=3722576   classes4.dex  views=plain
+  score=11   cheat=4   plumbing=3   size=525424    lib/arm64-v8a/libpairipcore.so  views=plain,rot13,xor20,xor40,xor4c,xor4f
+  score=11   cheat=3   plumbing=5   size=344039    assets/assets/resource_packs/oreui/texts/en_GB.lang  views=plain
+  score=11   cheat=3   plumbing=5   size=342652    assets/assets/resource_packs/oreui/texts/en_US.lang  views=plain
+  score=11   cheat=2   plumbing=7   size=1957101   assets/assets/gui/dist/hbui/index-a570b1174d51113842f0.js  views=plain
+  score=10   cheat=2   plumbing=6   size=1817240   lib/arm64-v8a/libMCPELIFE.so  views=plain,xor12,xor20,xor32,xor46,xor4c
+  score=9    cheat=4   plumbing=1   size=176220    assets/MCPELIFE.json  views=xor1a,xor3a,xor4b,xor51,xor53,xor55
+  score=9    cheat=4   plumbing=1   size=158752    assets/assets/resource_packs/vanilla_1.15/sounds/sound_definitions.json  views=plain
+  score=9    cheat=4   plumbing=1   size=157443    assets/assets/resource_packs/vanilla_1.14/sounds/sound_definitions.json  views=plain
+  score=9    cheat=4   plumbing=1   size=143135    assets/assets/resource_packs/vanilla/sounds/sound_definitions.json  views=plain
+  score=9    cheat=4   plumbing=1   size=97627     assets/assets/resource_packs/vanilla_1.15/__brarchive/sounds.brarchive  views=plain
+  score=9    cheat=4   plumbing=1   size=96981     assets/assets/resource_packs/vanilla_1.14/__brarchive/sounds.brarchive  views=plain
+  score=9    cheat=4   plumbing=1   size=96654     assets/assets/resource_packs/vanilla/__brarchive/sounds.brarchive  views=plain
+  score=9    cheat=3   plumbing=3   size=1027408   lib/arm64-v8a/libc++_shared.so  views=xor20,xor4f,xor50,xor59,xor5c,xor6f
+  score=9    cheat=1   plumbing=7   size=6621376   lib/arm64-v8a/libmaesdk.so  views=plain
+  score=8    cheat=4   plumbing=0   size=736495    assets/assets/resource_packs/vanilla/contents.json  views=plain
+  score=8    cheat=3   plumbing=2   size=1337440   lib/arm64-v8a/libMediaDecoders_Android.so  views=plain,xor0e,xor20,xor2e,xor4c,xor4e
+  score=8    cheat=2   plumbing=4   size=643819    assets/assets/gui/dist/hbui/gameplay-0b23f1f2e7bd8cdac282.js  views=plain
+  score=7    cheat=3   plumbing=1   size=521292    assets/assets/behavior_packs/vanilla_1.16.100/__brarchive/entities.brarchive  views=plain
+  score=7    cheat=3   plumbing=1   size=485745    assets/assets/behavior_packs/vanilla_1.20.80/__brarchive/entities.brarchive  views=plain
+  score=7    cheat=3   plumbing=1   size=467829    assets/assets/behavior_packs/vanilla_1.16/__brarchive/entities.brarchive  views=plain
+  score=7    cheat=3   plumbing=1   size=421899    assets/assets/behavior_packs/vanilla/__brarchive/entities.brarchive  views=plain
+  score=6    cheat=3   plumbing=0   size=485416    assets/assets/behavior_packs/vanilla_1.17.0/__brarchive/entities.brarchive  views=plain
+  score=6    cheat=3   plumbing=0   size=132019    assets/TXpwGkDiaDUpYCLA  views=xor0b,xor11,xor2b,xor31,xor49,xor50
+  score=6    cheat=3   plumbing=0   size=122092    assets/fontawesome-webfont.ttf  views=xor03,xor04,xor17,xor20,xor23,xor24
+  score=6    cheat=3   plumbing=0   size=100579    assets/YljaaOZCkbmRthFk  views=xor14,xor34,xor84,xor9d,xora4,xorbd
+  score=6    cheat=3   plumbing=0   size=93652     assets/NxMw0INQj2nyXK1o  views=xor16,xor18,xor36,xor45,xor50,xor52
+  score=6    cheat=3   plumbing=0   size=93551     assets/xJ0UqVZaAlboeLNV  views=xor04,xor24,xor27,xor50,xor70,xor9b
+  score=6    cheat=3   plumbing=0   size=89555     assets/z7kBENsJ5XlpBFyq  views=xor03,xor23,xor45,xor50,xor65,xor70
+  score=6    cheat=3   plumbing=0   size=72719     assets/assets/resource_packs/vanilla/sounds.json  views=plain
+  score=6    cheat=2   plumbing=2   size=1159088   lib/arm64-v8a/libfmod.so  views=plain
+  score=5    cheat=2   plumbing=1   size=296892    assets/assets/behavior_packs/vanilla_1.15/__brarchive/entities.brarchive  views=plain
+  score=5    cheat=2   plumbing=1   size=197900    assets/assets/behavior_packs/vanilla_1.19.20/__brarchive/entities.brarchive  views=plain
+  score=5    cheat=2   plumbing=1   size=178674    assets/assets/resource_packs/vanilla/__brarchive/animations.brarchive  views=plain
+  score=5    cheat=2   plumbing=1   size=111045    assets/assets/resource_packs/vanilla_1.21.40/sounds/sound_definitions.json  views=plain
+  score=5    cheat=2   plumbing=1   size=108798    assets/assets/resource_packs/vanilla_1.16.200/sounds/sound_definitions.json  views=plain
+  score=5    cheat=2   plumbing=1   size=69059     assets/assets/resource_packs/vanilla_1.21.40/__brarchive/sounds.brarchive  views=plain
+  score=5    cheat=2   plumbing=1   size=67748     assets/assets/resource_packs/vanilla_1.16.200/__brarchive/sounds.brarchive  views=plain
+  score=5    cheat=1   plumbing=3   size=358227    assets/assets/resource_packs/oreui/texts/nb_NO.lang  views=plain
+  score=5    cheat=1   plumbing=3   size=236086    assets/assets/resource_packs/vanilla/ui/ui_common.json  views=plain
+  score=5    cheat=1   plumbing=3   size=48843     assets/assets/resource_packs/vanilla/ui/trade_2_screen.json  views=plain
+  score=4    cheat=2   plumbing=0   size=5689478   assets/assets/resource_packs/vanilla_music/sounds/music/game/pokopoko.ogg  views=plain
+  score=4    cheat=2   plumbing=0   size=5138974   assets/assets/resource_packs/vanilla_music/sounds/music/menu/menu4.ogg  views=plain
+  score=4    cheat=2   plumbing=0   size=3300392   assets/assets/resource_packs/vanilla_1.21.90/textures/ui/panoramahdr_0.hdr  views=plain
+  score=4    cheat=2   plumbing=0   size=2579520   assets/assets/resource_packs/vanilla_music/sounds/music/game/records/blocks.ogg  views=plain
+  score=4    cheat=2   plumbing=0   size=2103528   assets/assets/resource_packs/vanilla_music/sounds/music/game/records/ward.ogg  views=plain
+  score=4    cheat=2   plumbing=0   size=1921344   assets/assets/resource_packs/vanilla_music/sounds/music/game/records/wait.ogg  views=plain
+  score=4    cheat=2   plumbing=0   size=1599955   assets/assets/resource_packs/vanilla_music/sounds/music/game/records/5.ogg  views=plain
+  score=4    cheat=2   plumbing=0   size=1399911   assets/assets/resource_packs/vanilla_music/sounds/music/game/records/cat.ogg  views=plain
+  score=4    cheat=2   plumbing=0   size=409037    assets/assets/behavior_packs/vanilla_1.21.0/__brarchive/entities.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=369032    assets/assets/behavior_packs/vanilla_1.21.90/__brarchive/entities.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=256047    assets/assets/resource_packs/vanilla/__brarchive/entity.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=220239    assets/CxD4DPEvs9gjQVzp  views=xor12,xor18,xor38,xor46,xor4a,xor50
+  score=4    cheat=2   plumbing=0   size=178620    assets/assets/behavior_packs/vanilla/contents.json  views=plain
+  score=4    cheat=2   plumbing=0   size=163543    assets/assets/resource_packs/vanilla_1.21.70/__brarchive/entity.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=152179    assets/assets/behavior_packs/vanilla_1.21.60/__brarchive/entities.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=107096    assets/j0Sp7NRDkWEB4KDZ  views=xor47,xor4f,xor50,xor67,xor6f,xor70
+  score=4    cheat=2   plumbing=0   size=105235    assets/ezIUQAOJOPTvvpXH  views=xor04,xor09,xor24,xor29,xor50,xor5a
+  score=4    cheat=2   plumbing=0   size=100144    assets/7re1Kn8iXoomzD6U  views=xor1a,xor3a,xor89,xora9,xorc5,xordd
+  score=4    cheat=2   plumbing=0   size=97644     assets/5J4RtkZCDhRn1TLM  views=xor50,xor5a,xor70,xor73,xor7a,xor87
+  score=4    cheat=2   plumbing=0   size=97182     assets/PnANkEBar0zu82Qs  views=xor50,xor5d,xor70,xor7d,xorc3,xordc
+  score=4    cheat=2   plumbing=0   size=97016     assets/8fPUPDZJnw3aZal1  views=xor50,xor70,xordf,xorfd,xorff
+  score=4    cheat=2   plumbing=0   size=96345     assets/uF9R1yiBAFgQrSne  views=xor1b,xor3b,xor4e,xor50,xor6e,xor70
+  score=4    cheat=2   plumbing=0   size=92888     assets/fpBWaFTvWVoLPouo  views=xor50,xor70,xor8f,xoraf,xorb2,xord1
+  score=4    cheat=2   plumbing=0   size=91589     assets/HJLPcUgZnH2Au76A  views=xor17,xor37,xor50,xor70,xor87,xor95
+  score=4    cheat=2   plumbing=0   size=91519     assets/wQkIMTmo1BjnM7XP  views=xor4c,xor50,xor63,xor6c,xor70,xor95
+  score=4    cheat=2   plumbing=0   size=90026     assets/PtRyVf5WCOdUTYhY  views=rot13,xor15,xor18,xor35,xor38,xor4d
+  score=4    cheat=2   plumbing=0   size=59142     assets/assets/resource_packs/vanilla/__brarchive/animation_controllers.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=25279     assets/assets/store/realms_eula_fr_FR.txt  views=plain
+  score=4    cheat=2   plumbing=0   size=13198     assets/assets/resource_packs/vanilla_1.19.10/__brarchive/entity.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=744       assets/assets/behavior_packs/experimental_jigsaw_structures/__brarchive/worldgen/structures.brarchive  views=plain
+  score=4    cheat=2   plumbing=0   size=690       assets/assets/behavior_packs/experimental_jigsaw_structures/worldgen/structures/trail_ruins.json  views=plain
+  score=4    cheat=1   plumbing=2   size=179660    assets/assets/resource_packs/vanilla/__brarchive/particles.brarchive  views=plain
+  score=4    cheat=1   plumbing=2   size=118285    assets/assets/resource_packs/vanilla/ui/hud_screen.json  views=plain
+  score=4    cheat=0   plumbing=4   size=3106598   assets/assets/resource_packs/vanilla/__brarchive/ui.brarchive  views=plain
+  score=4    cheat=0   plumbing=4   size=445535    assets/assets/resource_packs/vanilla/__brarchive/ui/settings_sections.brarchive  views=plain
+  score=4    cheat=0   plumbing=4   size=356452    assets/assets/resource_packs/vanilla/ui/store_common.json  views=plain
+  score=4    cheat=0   plumbing=4   size=123963    assets/assets/resource_packs/vanilla/ui/settings_sections/world_section.json  views=plain
+  score=3    cheat=1   plumbing=1   size=5431900   assets/assets/gui/dist/hbui/fonts/NotoSansMerged-Regular-5df70ade1ecaa8cdc5e2.ttf  views=plain
+  score=3    cheat=1   plumbing=1   size=3643930   assets/assets/renderer/materials/ActorPatternPrepass.material.bin  views=plain
+  score=3    cheat=1   plumbing=1   size=3514992   assets/assets/renderer/materials/ActorBannerForwardPBR.material.bin  views=plain
+  score=3    cheat=1   plumbing=1   size=1555549   assets/assets/renderer/materials/ActorPatternGlintPrepass.material.bin  views=plain
+  score=3    cheat=1   plumbing=1   size=569221    assets/assets/renderer/materials/ActorBannerPrepass.material.bin  views=plain
+  score=3    cheat=1   plumbing=1   size=471004    assets/assets/gui/dist/hbui/fonts/NotoSans-BoldItalic-30174723424bca176f74.ttf  views=plain
+  score=3    cheat=1   plumbing=1   size=165769    assets/assets/behavior_packs/vanilla_1.21.40/__brarchive/entities.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=85198     assets/assets/behavior_packs/vanilla_1.20.0/__brarchive/entities.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=71701     assets/assets/resource_packs/vanilla/__brarchive/render_controllers.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=70816     assets/assets/resource_packs/vanilla_1.16/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=68837     assets/assets/resource_packs/vanilla_1.17.0/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=53766     assets/assets/resource_packs/vanilla_1.20.0/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=48847     assets/assets/resource_packs/vanilla_1.19.0/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=45762     assets/assets/resource_packs/vanilla_1.17.20/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=45296     assets/assets/resource_packs/vanilla_1.21.0/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=45215     assets/assets/resource_packs/vanilla_1.16/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=43982     assets/assets/resource_packs/vanilla_1.17.0/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=34642     assets/assets/resource_packs/vanilla_1.20.0/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=33351     assets/assets/resource_packs/vanilla_1.19.0/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=30091     assets/assets/resource_packs/vanilla_1.17.20/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=27307     assets/assets/resource_packs/vanilla_1.21.0/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=21408     assets/assets/resource_packs/vanilla_1.21.90/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=15290     assets/assets/resource_packs/vanilla_1.21.70/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=13362     assets/assets/resource_packs/vanilla_1.21.90/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=11679     assets/assets/resource_packs/vanilla_1.21.110/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=11232     assets/assets/resource_packs/vanilla_1.21.50/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=10612     assets/assets/resource_packs/vanilla_1.19.60/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=10121     assets/assets/resource_packs/vanilla_1.21.70/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=8803      assets/assets/resource_packs/vanilla_1.21.110/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=8719      assets/assets/resource_packs/vanilla_1.21.50/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=6801      assets/assets/resource_packs/vanilla_1.19.60/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=5266      assets/assets/resource_packs/vanilla_1.20.80/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=4495      assets/assets/resource_packs/vanilla_1.17.10/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=4331      assets/assets/resource_packs/vanilla_1.21.60/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=3707      assets/assets/resource_packs/vanilla_1.20.80/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=3461      assets/assets/resource_packs/vanilla_1.21.60/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=3247      assets/assets/resource_packs/vanilla_1.20.40/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=2813      assets/assets/resource_packs/vanilla_1.17.10/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=2554      assets/assets/shaders/glsl/rain_snow.vertex  views=plain
+  score=3    cheat=1   plumbing=1   size=2489      assets/assets/resource_packs/vanilla_1.20.40/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=1   plumbing=1   size=2276      assets/assets/resource_packs/vanilla_1.21.10/sounds/sound_definitions.json  views=plain
+  score=3    cheat=1   plumbing=1   size=1678      assets/assets/resource_packs/vanilla_1.21.10/__brarchive/sounds.brarchive  views=plain
+  score=3    cheat=0   plumbing=3   size=503468    assets/assets/resource_packs/oreui/texts/el_GR.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=482474    assets/assets/resource_packs/oreui/texts/bg_BG.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=476613    assets/assets/resource_packs/oreui/texts/ru_RU.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=474139    assets/assets/resource_packs/oreui/texts/uk_UA.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=416404    assets/assets/resource_packs/oreui/texts/ja_JP.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=405530    assets/assets/resource_packs/vanilla/ui/settings_sections/general_section.json  views=plain
+  score=3    cheat=0   plumbing=3   size=386795    assets/assets/resource_packs/oreui/texts/hu_HU.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=381862    assets/assets/resource_packs/oreui/texts/fr_CA.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=381670    assets/assets/resource_packs/oreui/texts/ko_KR.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=381415    assets/assets/resource_packs/oreui/texts/fr_FR.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=376766    assets/assets/resource_packs/oreui/texts/sk_SK.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=375872    assets/assets/resource_packs/oreui/texts/cs_CZ.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=375714    assets/assets/resource_packs/oreui/texts/de_DE.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=372792    assets/assets/resource_packs/oreui/texts/pl_PL.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=372434    assets/assets/resource_packs/oreui/texts/es_MX.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=371829    assets/assets/resource_packs/oreui/texts/es_ES.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=371002    assets/assets/resource_packs/oreui/texts/tr_TR.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=368805    assets/assets/resource_packs/oreui/texts/it_IT.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=367969    assets/assets/resource_packs/oreui/texts/pt_BR.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=367570    assets/assets/resource_packs/oreui/texts/pt_PT.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=365846    assets/assets/resource_packs/oreui/texts/nl_NL.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=360667    assets/assets/resource_packs/oreui/texts/fi_FI.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=359329    assets/assets/resource_packs/oreui/texts/sv_SE.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=357591    assets/assets/resource_packs/oreui/texts/da_DK.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=354351    assets/assets/resource_packs/oreui/texts/id_ID.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=343056    assets/assets/resource_packs/oreui/texts/zh_CN.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=341711    assets/assets/resource_packs/oreui/texts/zh_TW.lang  views=plain
+  score=3    cheat=0   plumbing=3   size=256996    assets/assets/resource_packs/vanilla/ui/play_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=216864    assets/assets/resource_packs/vanilla/ui/pdp_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=126389    assets/assets/resource_packs/vanilla/ui/resource_packs_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=97538     assets/assets/resource_packs/vanilla/ui/realms_settings_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=96411     assets/assets/resource_packs/vanilla/ui/storage_management.json  views=plain
+  score=3    cheat=0   plumbing=3   size=77101     assets/assets/resource_packs/vanilla/ui/settings_sections/settings_common.json  views=plain
+  score=3    cheat=0   plumbing=3   size=59123     assets/assets/resource_packs/vanilla/ui/structure_editor_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=52767     assets/assets/resource_packs/vanilla/ui/settings_sections/controls_section.json  views=plain
+  score=3    cheat=0   plumbing=3   size=48305     assets/assets/resource_packs/vanilla/ui/ui_template_toggles.json  views=plain
+  score=3    cheat=0   plumbing=3   size=48269     assets/assets/resource_packs/vanilla/ui/npc_interact_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=46794     assets/assets/resource_packs/vanilla/ui/sidebar_navigation.json  views=plain
+  score=3    cheat=0   plumbing=3   size=27436     assets/assets/resource_packs/vanilla/ui/chat_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=25577     assets/assets/resource_packs/vanilla/ui/beacon_screen_pocket.json  views=plain
+  score=3    cheat=0   plumbing=3   size=19112     assets/assets/resource_packs/vanilla/ui/beacon_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=18875     assets/assets/resource_packs/vanilla/ui/horse_screen_pocket.json  views=plain
+  score=3    cheat=0   plumbing=3   size=15536     assets/assets/resource_packs/vanilla/ui/realms_invite_link_settings_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=11054     assets/assets/resource_packs/vanilla/ui/cloud_upload_screen.json  views=plain
+  score=3    cheat=0   plumbing=3   size=10411     assets/assets/resource_packs/vanilla/ui/jigsaw_editor_screen.json  views=plain
+  score=2    cheat=1   plumbing=0   size=8179729   assets/assets/resource_packs/vanilla_music/sounds/music/menu/menu1.ogg  views=plain
+  score=2    cheat=1   plumbing=0   size=7718269   assets/assets/renderer/materials/ActorForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=7656388   assets/assets/resource_packs/vanilla_music/sounds/music/game/eld_unknown.ogg  views=plain
+  score=2    cheat=1   plumbing=0   size=6576677   assets/assets/resource_packs/vanilla_music/sounds/music/game/endless.ogg  views=plain
+  score=2    cheat=1   plumbing=0   size=5439488   assets/assets/resource_packs/vanilla/textures/ui/promo_axolotl.png  views=plain
+  score=2    cheat=1   plumbing=0   size=5171206   assets/assets/renderer/materials/ActorMultiTextureForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=3392512   assets/assets/icu/full.dat  views=plain
+  score=2    cheat=1   plumbing=0   size=2640272   assets/assets/icu/partial.dat  views=plain
+  score=2    cheat=1   plumbing=0   size=2607805   assets/assets/renderer/materials/ActorGlintForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=2220307   assets/assets/renderer/materials/ActorTintForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=2211844   assets/assets/renderer/materials/MeshFallbackMovingBlockPrepass.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=2209619   assets/assets/resource_packs/vanilla_1.21.90/textures/ui/panoramahdr_5.hdr  views=plain
+  score=2    cheat=1   plumbing=0   size=1879096   assets/assets/resource_packs/vanilla_1.21.110/textures/ui/panoramahdr_2.hdr  views=plain
+  score=2    cheat=1   plumbing=0   size=1736684   assets/assets/resource_packs/vanilla/textures/ui/realms_poster_art_with_logo.png  views=plain
+  score=2    cheat=1   plumbing=0   size=1622872   assets/assets/renderer/materials/GlowInkSignForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=1298045   assets/assets/resource_packs/vanilla_music/sounds/music/game/records/far.ogg  views=plain
+  score=2    cheat=1   plumbing=0   size=1241847   assets/assets/resource_packs/vanilla/textures/ui/realms_header_art.png  views=plain
+  score=2    cheat=1   plumbing=0   size=1049739   assets/assets/renderer/materials/ActorPrepass.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=1009339   assets/assets/behavior_packs/vanilla_1.21.90/worldgen/metadata/jigsawstructure_metadata_registry.dat  views=plain
+  score=2    cheat=1   plumbing=0   size=1009339   assets/assets/behavior_packs/experimental_jigsaw_structures/worldgen/metadata/jigsawstructure_metadata_registry.dat  views=plain
+  score=2    cheat=1   plumbing=0   size=962612    assets/assets/resource_packs/beta/textures/ui/panorama_1.png  views=plain
+  score=2    cheat=1   plumbing=0   size=887309    assets/assets/renderer/materials/ItemInHandForwardPBRTextured.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=808982    assets/assets/renderer/materials/ItemInHandForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=798204    assets/assets/renderer/materials/ItemInHandForwardPBRGlint.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=768152    assets/assets/resource_packs/vanilla_1.21.90/contents.json  views=plain
+  score=2    cheat=1   plumbing=0   size=717852    assets/assets/renderer/materials/ActorMultiTexturePrepass.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=628515    assets/assets/gui/dist/hbui/assets/TerrainBlockAtlas_32_32-cd49bcbc39d650180a76.png  views=plain
+  score=2    cheat=1   plumbing=0   size=583756    assets/assets/gui/dist/hbui/assets/gif_test-83efe850267ad06efd0a.gif  views=plain
+  score=2    cheat=1   plumbing=0   size=579136    assets/assets/resource_packs/vanilla/sounds/mob/wither/spawn.fsb  views=plain
+  score=2    cheat=1   plumbing=0   size=494863    assets/assets/renderer/materials/RenderChunkForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=494480    assets/assets/renderer/materials/MeshFallbackMovingBlockForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=410174    assets/assets/renderer/materials/RenderChunkPrepass.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=373166    assets/assets/renderer/materials/ActorGlintPrepass.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=366471    assets/assets/resource_packs/vanilla/textures/ui/rating_screen.png  views=plain
+  score=2    cheat=1   plumbing=0   size=365837    assets/assets/renderer/materials/WeatherForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=337703    assets/assets/resource_packs/vanilla/textures/ui/csb_welcome_3x6.png  views=plain
+  score=2    cheat=1   plumbing=0   size=310865    assets/assets/renderer/materials/MeshFallbackPrepass.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=267910    assets/assets/renderer/materials/ActorTintPrepass.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=253711    assets/assets/behavior_packs/vanilla_1.20.50/__brarchive/entities.brarchive  views=plain
+  score=2    cheat=1   plumbing=0   size=237536    assets/assets/resource_packs/vanilla/sounds/mob/pig/boost4long.fsb  views=plain
+  score=2    cheat=1   plumbing=0   size=202718    assets/assets/gui/dist/hbui/index-3d41e4d30c1911d302f0.css  views=plain
+  score=2    cheat=1   plumbing=0   size=201095    assets/assets/renderer/materials/PopulateVolume.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=191254    assets/assets/renderer/materials/WaterForwardPBR.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=190532    assets/assets/renderer/materials/DeferredTiledMixedRes.material.bin  views=plain
+  score=2    cheat=1   plumbing=0   size=186905    assets/assets/behavior_packs/vanilla_1.18.10/__brarchive/entities.brarchive  views=plain
+  score=2    cheat=1   plumbing=0   size=185490    assets/assets/resource_packs/vanilla/__brarchive/textures.brarchive  views=plain
+
+CLIENT-ISH FILE ENTROPY (0-8; ~8 = encrypted/compressed)
+============================================================
+  7.905  97644     assets/5J4RtkZCDhRn1TLM
+  7.906  100144    assets/7re1Kn8iXoomzD6U
+  7.905  97016     assets/8fPUPDZJnw3aZal1
+  7.962  220239    assets/CxD4DPEvs9gjQVzp
+  7.906  91589     assets/HJLPcUgZnH2Au76A
+  6.298  176220    assets/MCPELIFE.json
+  7.905  97474     assets/NK3mkfH5kthJfjfd
+  7.905  93652     assets/NxMw0INQj2nyXK1o
+  7.906  97182     assets/PnANkEBar0zu82Qs
+  7.905  90026     assets/PtRyVf5WCOdUTYhY
+  7.917  167837    assets/Q3pKvcZrY6szwyUD
+  7.903  132019    assets/TXpwGkDiaDUpYCLA
+  7.904  94291     assets/VXsQW7dkw5k78ebE
+  7.858  100579    assets/YljaaOZCkbmRthFk
+  7.906  105235    assets/ezIUQAOJOPTvvpXH
+  6.704  122092    assets/fontawesome-webfont.ttf
+  7.907  92888     assets/fpBWaFTvWVoLPouo
+  7.914  107096    assets/j0Sp7NRDkWEB4KDZ
+  7.898  66008     assets/q5sI962J1c8SFgrU
+  7.905  96345     assets/uF9R1yiBAFgQrSne
+  7.906  91519     assets/wQkIMTmo1BjnM7XP
+  7.904  93551     assets/xJ0UqVZaAlboeLNV
+  7.914  107600    assets/yv2koNGoPc5T4kcK
+  7.903  89555     assets/z7kBENsJ5XlpBFyq
+  5.961  3633572   classes.dex
+  5.961  3689196   classes2.dex
+  6.002  3642576   classes3.dex
+  5.946  3722576   classes4.dex
+  6.021  3669944   classes5.dex
+  6.051  3687428   classes6.dex
+  5.205  1817240   lib/arm64-v8a/libMCPELIFE.so
+  5.422  1337440   lib/arm64-v8a/libMediaDecoders_Android.so
+  5.214  1027408   lib/arm64-v8a/libc++_shared.so
+  3.804  2230224   lib/arm64-v8a/libconscrypt_jni.so
+  4.823  1159088   lib/arm64-v8a/libfmod.so
+  3.52   6621376   lib/arm64-v8a/libmaesdk.so
+  3.765  280217792 lib/arm64-v8a/libminecraftpe.so
+  6.033  525424    lib/arm64-v8a/libpairipcore.so
+
+DETAILS (top 120 by score)
+============================================================
+
+-- lib/arm64-v8a/libminecraftpe.so (280217792 bytes, score 39)
+   cheat: blink, criticals, esp, flight, fly, glide, hitbox, noclip, phase, reach, spider, step, tower, velocity
+   plumbing: category, decrypt, enabled, hook, module, offset, packet, preset, setting, signature, toggle
+   [plain] blink,criticals,esp,flight,fly,glide,hitbox,noclip,phase,reach,spider,step,tower,velocity | category,decrypt,enabled,hook,module,offset,packet,preset,setting,signature,toggle
+        connected_wall minecraft:bastion/treasure/walls trail_ruins/tower/tower_3 trail_ruins/tower/one_room_5 trail_ruins/tower/plat
+
+-- assets/assets/icu/demo.dat (4223408 bytes, score 37)
+   cheat: antiknockback, auto clicker, autoclicker, autototem, derp, esp, fly, fullbright, glide, hitbox, killaura, no slowdown, noclip, nohurtcam, noslowdown, step, xray
+   plumbing: enabled, offset, preset
+   [plain] antiknockback,auto clicker,autoclicker,autototem,derp,esp,fly,fullbright,glide,hitbox,killaura,no slowdown,noclip,nohurtcam,noslowdown,step,xray | enabled,offset,preset
+         Text Only Circle Only Text + Circle Panic Always Sprinting No SlowDown Fast Fall OFF Drowning Step Ladder Fly Noclip No Water No W
+
+-- assets/assets/resource_packs/vanilla/texts/en_GB.lang (723056 bytes, score 22)
+   cheat: flight, fly, glide, reach, spider, step, tower
+   plumbing: category, enabled, hook, offset, packet, preset, setting, toggle
+   [plain] flight,fly,glide,reach,spider,step,tower | category,enabled,hook,offset,packet,preset,setting,toggle
+        omes.desc=Discover all biomes achievement.flyPig=When Pigs Fly achievement.flyPig.desc=Fly a pig off a cliff achievement
+
+-- assets/assets/resource_packs/vanilla/texts/en_US.lang (722596 bytes, score 22)
+   cheat: flight, fly, glide, reach, spider, step, tower
+   plumbing: category, enabled, hook, offset, packet, preset, setting, toggle
+   [plain] flight,fly,glide,reach,spider,step,tower | category,enabled,hook,offset,packet,preset,setting,toggle
+        omes.desc=Discover all biomes achievement.flyPig=When Pigs Fly achievement.flyPig.desc=Fly a pig off a cliff achievement
+
+-- classes5.dex (3669944 bytes, score 17)
+   cheat: phase, reach, step
+   plumbing: category, decrypt, enabled, inject, mcpelife, module, offset, packet, setting, signature, toggle
+   [plain] phase,reach,step | category,decrypt,enabled,inject,mcpelife,module,offset,packet,setting,signature,toggle
+        $splashScreenViewProvider $startIndex $started $state $step $streamId$inlined $subscriptionCount $subscriptionGroupI
+
+-- classes6.dex (3687428 bytes, score 17)
+   cheat: flight, phase, reach, step
+   plumbing: category, decrypt, enabled, inject, mcpelife, module, offset, setting, signature
+   [plain] flight,phase,reach,step | category,decrypt,enabled,inject,mcpelife,module,offset,setting,signature
+        ually   but no location header   but received callback for step   by   byte array  byteCount=  bytes  bytes, only read
+
+-- assets/assets/resource_packs/vanilla/texts/fr_CA.lang (824714 bytes, score 16)
+   cheat: aura, esp, flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] aura,esp,flight,spider,step | category,enabled,offset,preset,setting,toggle
+        c.running=La commande est dÃ©jÃ  en cours commands.generic.step.failed=Ãchec de l'Ã©tape de commande commands.generic.syn
+
+-- assets/assets/resource_packs/vanilla/texts/fr_FR.lang (823794 bytes, score 16)
+   cheat: aura, esp, flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] aura,esp,flight,spider,step | category,enabled,offset,preset,setting,toggle
+        c.running=La commande est dÃ©jÃ  en cours commands.generic.step.failed=Ãchec de l'Ã©tape de commande commands.generic.syn
+
+-- assets/assets/resource_packs/vanilla/texts/nb_NO.lang (758931 bytes, score 16)
+   cheat: blink, flight, fly, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] blink,flight,fly,spider,step | category,enabled,offset,preset,setting,toggle
+        chievement.flyPig=NÃ¥r griser flyr achievement.flyPig.desc=Fly en gris utfor en klippe achievement.fullBeacon=Lyssignalet
+
+-- classes.dex (3633572 bytes, score 15)
+   cheat: flight, step
+   plumbing: category, decrypt, enabled, inject, mcpelife, module, offset, preset, setting, signature, toggle
+   [plain] flight,step | category,decrypt,enabled,inject,mcpelife,module,offset,preset,setting,signature,toggle
+           and listener   and result   and session state:    and step   and uri: '  and value:   are allowed  arguments. Got:
+
+-- classes3.dex (3642576 bytes, score 15)
+   cheat: reach, step
+   plumbing: category, decrypt, enabled, inject, mcpelife, module, offset, packet, setting, signature, toggle
+   [plain] reach,step | category,decrypt,enabled,inject,mcpelife,module,offset,packet,setting,signature,toggle
+         threads 2097150  size=  smallestDisplacement=  state.  step   tag= . that does not belong to this FragmentManager!  t
+
+-- META-INF/TESTKEY.SF (5104866 bytes, score 15)
+   cheat: fly, scaffold, spider, step, tower
+   plumbing: hook, mcpelife, preset, setting, signature
+   [plain] fly,scaffold,spider,step,tower | hook,mcpelife,preset,setting,signature
+        ructures/__br  archive/worldgen/template_pools/trail_ruins/tower.brarchive SHA-256-Digest: glpTF655K6oCMbxr+5UlgxW6tkRtuVwV
+
+-- assets/assets/resource_packs/vanilla/texts/da_DK.lang (752308 bytes, score 14)
+   cheat: flight, glide, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,glide,spider,step | category,enabled,offset,preset,setting,toggle
+        eneric.running=Kommandoen kÃ¸rer allerede commands.generic.step.failed=Kommandotrinet lykkedes ikke commands.generic.synta
+
+-- assets/assets/resource_packs/vanilla/texts/de_DE.lang (800181 bytes, score 14)
+   cheat: flight, spider, step
+   plumbing: category, enabled, module, offset, packet, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,module,offset,packet,preset,setting,toggle
+        generic.running=Der Befehl lÃ¤uft bereits commands.generic.step.failed=Befehlsschritt fehlgeschlagen commands.generic.synt
+
+-- assets/assets/resource_packs/vanilla/texts/es_ES.lang (800237 bytes, score 14)
+   cheat: esp, flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] esp,flight,spider,step | category,enabled,offset,preset,setting,toggle
+        eneric.running=El comando ya estÃ¡ activo commands.generic.step.failed=Ha fallado un paso de un comando commands.generic.s
+
+-- assets/assets/resource_packs/vanilla/texts/id_ID.lang (752134 bytes, score 14)
+   cheat: flight, spider, step
+   plumbing: category, enabled, keybind, offset, packet, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,keybind,offset,packet,preset,setting,toggle
+        generic.running=Perintah sudah dijalankan commands.generic.step.failed=Langkah perintah gagal commands.generic.syntax=Kesa
+
+-- assets/assets/resource_packs/vanilla/texts/it_IT.lang (798458 bytes, score 14)
+   cheat: aura, flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] aura,flight,spider,step | category,enabled,offset,preset,setting,toggle
+        ri di danno in un singolo colpo achievement.overpowered=Un'aura potentissima achievement.overpowered.desc=Crea una mela di
+
+-- assets/assets/resource_packs/vanilla/texts/pt_BR.lang (785617 bytes, score 14)
+   cheat: esp, flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] esp,flight,spider,step | category,enabled,offset,preset,setting,toggle
+        nning=O comando jÃ¡ estÃ¡ sendo executado commands.generic.step.failed=Falha no passo de comando commands.generic.syntax=E
+
+-- META-INF/MANIFEST.MF (5104739 bytes, score 14)
+   cheat: fly, scaffold, spider, step, tower
+   plumbing: hook, mcpelife, preset, setting
+   [plain] fly,scaffold,spider,step,tower | hook,mcpelife,preset,setting
+        ructures/__br  archive/worldgen/template_pools/trail_ruins/tower.brarchive SHA-256-Digest: AQ/br8ecjLnGavGTL6lI4+QpC88Ll1Lb
+
+-- classes2.dex (3689196 bytes, score 13)
+   cheat: fly, step
+   plumbing: category, decrypt, enabled, inject, mcpelife, module, offset, setting, signature
+   [plain] fly,step | category,decrypt,enabled,inject,mcpelife,module,offset,setting,signature
+        e|fish|fishing|fit|fitness|flights|florist|flowers|flsmidth|fly|foo|football|forex|forsale|forum|foundation|frl|frogans|fun
+
+-- assets/assets/resource_packs/vanilla/texts/bg_BG.lang (1138781 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        Ð´Ð°ÑÐ° Ð²ÐµÑÐµ ÑÐµ Ð¸Ð·Ð¿ÑÐ»Ð½ÑÐ²Ð° commands.generic.step.failed=ÐÐµÑÑÐ¿ÐµÑÐ½Ð° ÑÑÑÐ¿ÐºÐ° Ð¾Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð°
+
+-- assets/assets/resource_packs/vanilla/texts/cs_CZ.lang (806283 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        eneric.running=PÅÃ­kaz je jiÅ¾ spuÅ¡tÄn commands.generic.step.failed=Krok pÅÃ­kazu se nezdaÅil commands.generic.syntax
+
+-- assets/assets/resource_packs/vanilla/texts/el_GR.lang (1200796 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+         ÎµÎ½ÏÎ¿Î»Î® ÎµÎºÏÎµÎ»ÎµÎ¯ÏÎ±Î¹ Î®Î´Î· commands.generic.step.failed=Î¤Î¿ Î²Î®Î¼Î± ÎµÎ½ÏÎ¿Î»Î®Ï Î±ÏÎ­ÏÏÏÎµ command
+
+-- assets/assets/resource_packs/vanilla/texts/es_MX.lang (799325 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        running=El comando ya estÃ¡ en ejecuciÃ³n commands.generic.step.failed=No se pudo realizar el paso del comando commands.ge
+
+-- assets/assets/resource_packs/vanilla/texts/fi_FI.lang (775388 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        generic.running=Komento on jo kÃ¤ynnissÃ¤ commands.generic.step.failed=Komentovaihe epÃ¤onnistui commands.generic.syntax=S
+
+-- assets/assets/resource_packs/vanilla/texts/hu_HU.lang (825164 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        mmands.generic.running=A parancs mÃ¡r fut commands.generic.step.failed=A parancs lÃ©pÃ©se nem sikerÃ¼lt commands.generic.s
+
+-- assets/assets/resource_packs/vanilla/texts/ja_JP.lang (918151 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        ning=ã³ãã³ãã¯æ¢ã«å®è¡ä¸­ã§ã commands.generic.step.failed=ã³ãã³ã ã¹ãããå¤±æ commands.generic.sy
+
+-- assets/assets/resource_packs/vanilla/texts/ko_KR.lang (830067 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        ing=ëªë ¹ì´ ì´ë¯¸ ì¤í ì¤ìëë¤. commands.generic.step.failed=ëªë ¹ ë¨ê³ ì¤í¨ commands.generic.syntax=êµ¬ë¬¸
+
+-- assets/assets/resource_packs/vanilla/texts/nl_NL.lang (778523 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        .running=Het commando wordt al uitgevoerd commands.generic.step.failed=Commandostap is mislukt commands.generic.syntax=Syn
+
+-- assets/assets/resource_packs/vanilla/texts/pl_PL.lang (803124 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        generic.async.initiated='%1$s' polecenie rozpoczÄte (async step %2$d) commands.generic.boolean.invalid='%1$s' nie jest pra
+
+-- assets/assets/resource_packs/vanilla/texts/pt_PT.lang (794645 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        ning=Este comando jÃ¡ estÃ¡ em execuÃ§Ã£o commands.generic.step.failed=NÃ£o foi possÃ­vel executar o comando commands.gene
+
+-- assets/assets/resource_packs/vanilla/texts/ru_RU.lang (1105325 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        ¾Ð¼Ð°Ð½Ð´Ð° ÑÐ¶Ðµ Ð²ÑÐ¿Ð¾Ð»Ð½ÑÐµÑÑÑ commands.generic.step.failed=Ð¨Ð°Ð³ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ Ð½Ðµ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ½ command
+
+-- assets/assets/resource_packs/vanilla/texts/sk_SK.lang (803830 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        .generic.running=PrÃ­kaz uÅ¾ je spustenÃ½ commands.generic.step.failed=Krok prÃ­kazu zlyhal commands.generic.syntax=Chyba 
+
+-- assets/assets/resource_packs/vanilla/texts/sv_SE.lang (753446 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        nds.generic.running=Kommandot kÃ¶rs redan commands.generic.step.failed=Kommandosteget misslyckades commands.generic.syntax
+
+-- assets/assets/resource_packs/vanilla/texts/tr_TR.lang (790689 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        ommands.generic.running=Komut zaten etkin commands.generic.step.failed=Komut adÄ±mÄ± baÅarÄ±sÄ±z commands.generic.syntax=
+
+-- assets/assets/resource_packs/vanilla/texts/uk_UA.lang (1088830 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        ¾Ð¼Ð°Ð½Ð´Ð° Ð²Ð¶Ðµ Ð²Ð¸ÐºÐ¾Ð½ÑÑÑÑÑÑ commands.generic.step.failed=ÐÐ¾Ð¼Ð¸Ð»ÐºÐ° ÐºÑÐ¾ÐºÑ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð¸ commands.g
+
+-- assets/assets/resource_packs/vanilla/texts/zh_CN.lang (704081 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        mmands.generic.running=å½ä»¤å·²å¨è¿è¡ commands.generic.step.failed=å½ä»¤æ­¥éª¤å¤±è´¥ commands.generic.syntax=è¯­æ³é
+
+-- assets/assets/resource_packs/vanilla/texts/zh_TW.lang (709421 bytes, score 12)
+   cheat: flight, spider, step
+   plumbing: category, enabled, offset, preset, setting, toggle
+   [plain] flight,spider,step | category,enabled,offset,preset,setting,toggle
+        nds.generic.running=æ­¤æä»¤å·²å·è¡ä¸­ commands.generic.step.failed=æä»¤æ­¥é©å¤±æ commands.generic.syntax=èªæ³é
+
+-- classes4.dex (3722576 bytes, score 12)
+   cheat: step
+   plumbing: category, decrypt, enabled, inject, mcpelife, module, offset, setting, signature, toggle
+   [plain] step | category,decrypt,enabled,inject,mcpelife,module,offset,setting,signature,toggle
+        oser() 8Cannot call finishToFuture() after deriving another step "Cannot call finishToFuture() twice CCannot call finishToVa
+
+-- lib/arm64-v8a/libconscrypt_jni.so (2230224 bytes, score 12)
+   cheat: esp, flight, fly
+   plumbing: category, decrypt, enabled, offset, setting, signature
+   [plain]  | decrypt,offset,setting,signature
+   [xor20] flight | category,decrypt,enabled,signature
+        SESSIONTICKET sslPROVIDEQUICDATA sslQUICMAXHANDSHAKEFLIGHTLEN sslQUICREADLEVEL sslQUICWRITELEVEL sslREAD sslR
+   [xor50] esp | 
+        ÐPÐË¯ÇXPq@Á°SCúµ¯Ç¥SOúGQPdñXPXP qÌlÁ8tÁÐPÐ³SEúÞ¯ÇESPä°SEú'¯ÇðSPä¤SPú|¯Ç¦SPú°SDú¯Ç±SPú°SFú~¯Ç¦SPú0SPäGUPdñXP
+   [xor70] esp | 
+        ðpð"ë¤ç±xp Q¸`áscÚ¿çsoÚgqpDÑxp ²xpQìLá2Táðpð"seÚþ¤çespÄseÚ¡çÐspÄspÚ\¿çspÚsdÚ1¦çspÚsfÚ^ çspÚspÄgupDÑxp
+   [xor86] fly | 
+        §öîvÀÆ¿p²Gd§ºÄNÔ*_yg§Nf,flyr,²Gd§ºÄ~Ôe,_y2f,dy²s¬
+
+-- assets/assets/gui/dist/hbui/index-a570b1174d51113842f0.js (1957101 bytes, score 11)
+   cheat: step, x-ray
+   plumbing: category, enabled, inject, module, offset, preset, toggle
+   [plain] step,x-ray | category,enabled,inject,module,offset,preset,toggle
+        ibuteUpdate)("data-testid",t["data-testid"],c):void 0,"data-x-ray":void 0!==t["data-x-ray"]?(0,l.setupAttributeUpdate)("data-
+
+-- assets/assets/resource_packs/oreui/texts/en_GB.lang (344039 bytes, score 11)
+   cheat: fly, reach, step
+   plumbing: category, enabled, preset, setting, toggle
+   [plain] fly,reach,step | category,enabled,preset,setting,toggle
+        ription=Realm subscription %s hbui.ChooseRealmRoute.screen=Step %s Screen hbui.ChooseRealmRoute.select=Select hbui.Choose
+
+-- assets/assets/resource_packs/oreui/texts/en_US.lang (342652 bytes, score 11)
+   cheat: fly, reach, step
+   plumbing: category, enabled, preset, setting, toggle
+   [plain] fly,reach,step | category,enabled,preset,setting,toggle
+        ription=Realm subscription %s hbui.ChooseRealmRoute.screen=Step %s Screen hbui.ChooseRealmRoute.select=Select hbui.Choose
+
+-- lib/arm64-v8a/libpairipcore.so (525424 bytes, score 11)
+   cheat: esp, fly, phase, xray
+   plumbing: category, module, offset
+   [plain]  | module,offset
+   [rot13] esp | 
+        9` 9ès@9q 9èw@9u 9èa@9y 9èe@9c 9èi@9k 9g 9àªýþàEsP  ä bø ªèª ÕÉÓC   ­ =ðø*	@W!@9+vx8w W x(8
+   [xor20] phase | category,module,offset
+         	 OUTLLVMPROJECTLIBCXXABISRCDEMANGLEuTILITYH UNWINDPHASE MALFORMED ULEB EXPRESSION UNSUPPORTED RESTORE LOCATION 
+   [xor40] fly | 
+        Bé´Cé½@Ñ´CAê³C@ê²¿× B@ôHH y_a@1¡D@5fyßB@±6by?bLyèFßZ(fLy CSê¡¿× C@¹ @@ô4@@ôh@ÀÈB@y¡C@Ñ CSê@@Ô5fLy6bLyx@@Ta¿¿°aÔiÑ
+   [xor4c] fly | 
+        MÅÖsML½¸KÓVeFLø¦CµSML=¤ËµZMÆÖsMT§y}ÔÖóL½îELä6S»µ¤OmuÔFLyLLX»OMæqÅ³Û³NL§­ÎÌÖsLZ§¸³»Cµ¤JL³ND¦NLWMYÆ¤GµE57´e¼³ù
+   [xor4f] fly | 
+        1¶½NO{fLU¥LPådFU&ê\TdOÏFfÄÃ2HÔb&åw%2Ü4HO>$JO^ÃNB°°fLYeFUê\TGæ÷ÇNGPNX¤GLÚUgLGFFUzî\T¦LAeIO[§ô¶»0Jö¯UÞYæ
+   [xor59] fly | 
+        fHY(õXYf\Y(y]YfPY(9YYfTY(øRY0] y01¡ªR ¤"ñæzZZ»ZXófLY(yZY¸ZYóf@Y(yXYfDY(¸PY9] ºZQóªR ¤"ñæzZáXYM9] ºZQóìXY
+   [xor60] fly | 
+        7bÉ/cÉ#`ñcaÊc`Ê¢÷b`Ôhh YA`d`4F,Yÿb`B,YBlYÈfÿzFlYcsÊ¦÷c```Ô``ÔH`à2èb`Yc`ñcsÊ7``ôFlYBlYX``tAAôIñ
+   [xor6c] fly | 
+        måöSmlkóvEflØc/smlë.zmæöSmtY]ôöÓ2lÎel8Äs?_.oMUôflY;llxomÆQåûnlîìöSlz¯8c(jl½nd-nl8wmyæg(eEÙ
+   [xor6f] fly | 
+        #´no[Flu%lpÅDf¼uÊ|tDoï=f.FäãhôBÅW/ühojo~ãnb¥.;Fly%Ef¼u&Ê|tg&Æ×çng¥pnxglúuGlg%ff¼uZÎ|tlaEi.o{Ô-jÖ¬uþyÆ/
+   [xor79] fly | 
+        FhyÕxy-F|yY}y-Fpyyy-FtyØry-}9Yr9»ÑÆZz¬¹z&¯zxÓFlyYzy-zyÓF`yYxy-Fdypy-}9zqÓr9»ÑÆZz¬Áxym}9zqÓÌxy
+   [xor7f] esp | 
+        n^ns6Çõ~UuÚkdv6ÇrpÆb6ÇqpÆ>ns6ÇI~uU6n¶}s5NnUv«espÆe6ÇrpÆc6qpÆd6Ç6Úkd&nnupÆn6tpÆl6,}Ë u?Ð
+
+-- lib/arm64-v8a/libMCPELIFE.so (1817240 bytes, score 10)
+   cheat: esp, fly
+   plumbing: category, decrypt, enabled, hook, mcpelife, signature
+   [plain]  | category,decrypt,enabled,mcpelife,signature
+   [xor12] esp | 
+        dW}bw`sf}`/}bw`sf}`=/p}}~{|fw`|uwfQ~saaxsds=~s|u=Fz`}esp~wpsvMewsyMbf`../}bw`sf}`L2`waf`{qfvwq{s~$&q}|v{f{}|M
+   [xor20]  | category,mcpelife
+   [xor32] esp | 
+        2Dw2]BW@SF]@2]BW@SF]@2P]]^2[\FW@\2UWFq^SAA2XSDS^S\UfZ@]ESP^W2PSVmEWSYmBF@22]BW@SF]@l2@WAF@[QF2VWQ[_S^2Q]\V[F[]\m
+   [xor46] esp | 
+        NGFò§Y¿§DFòÄ¬¿¥]¿¦EUìô«¹Ñ_FFR.D¿ÏJFo?¿ç¿NÃ¿¦EUìd·S×esP×FGyÆ¬B¿.D¿¦EUìN×¿FGyYZF4'%¹¯¹¹QÎJFN?¿EFÆT¦EUìGßE×D³J
+   [xor4c] fly | 
+        MLX0ß¶cLõVILL}N`L·OOfL=©SLõ«GLµÎFL¥oMÝ7SxMþ¤oMu¶FLyLLXäLÝX¡0Þ¬OXæ7IJØÄNþ»OLæùÏqåäOQ´øL¬O[æ­OZæ®OYæ:IJØ³&yt
+   [xor4f]  | hook
+   [xor50] esp | 
+        ±SFúX©PQoð[PÀPðEÁæ$UÄ8R©°SCúXÁ©PQoOLP"1½¯æ[PàÎ©xQPäeSPä2s©Î©´[©°SCú±SEú)¯ÇIPPD8R©Ù[P y)©1s©XÕ©°SCúr]Ás¹]
+   [xor59] fly | 
+        YYYYUDyÊ]Ç_ÄQYYYYYEYYY]YYgLY!YYYYUDyÊ[Í]Ç_ÄQYYY}YYY}YY}fLYZYYYUDÊ[Í]Ì_ÏQÎUÇWÄIYYYYYuYYYYYLYÅCYYY9UD9Ê[Í]Ì_ÏQÎSÁ
+   [xor66] esp | 
+        ngfÒy&dfÒä"}&euÌÔñffrd&ïjf¶O'Ç,$nã&euÌDs÷ESp÷fgY°æbd&euÌn÷%fgY°yzf2qîjf¶n'efæteuÌgÿe÷dj
+   [xor6f]  | hook
+   [xor70] esp | 
+        sfÚx-0pqO¦Ð{pàpÐeáÆuär0scÚxá3pqO¦olp$Æ{pÀ¸î6XqpÄEspÄS3³î6{0scÚseÚ3	çippdr0ù{pY	1S3xõ0scÚR½}áS}
+
+-- assets/MCPELIFE.json (176220 bytes, score 9)
+   cheat: esp, fly, phase, wtap
+   plumbing: hook
+   [xor1a] esp | 
+        ii*+ots*+()4ii*+}~un{yytn4ii*+ots+_(+4ii*+|E||E|Es|E|Esp|E|Ev|Espots*)#.ots*)[#ots*)XY`hu4`hu`hu4~tuwut4
+   [xor3a] esp | 
+        II 6OTS 	II 5]^UN[YY_TNII 6OTSII 9\e\?\e\eS<\e\eSP?\e\eV>\eSP=OTS 	=OTS 	{=OTS 	xy3@_HU@_HU3@_HU^TUW2UT_
+   [xor4b] fly | 
+        EI½««½KNÊHE±¦Ên´¶¶¶¶¶·°°°·µµ¶··´Kº¶BVayyyaWC¶ºÈfly ©CLMMLLLMMLCBAABBBAABCPp+++pPC½õûûûõ½K[ÊHk\£¤ÊMµµµ´KJJÉ
+   [xor51]  | hook
+   [xor53] phase | 
+        ÐÓPHVSeÒÒSÐÓPSKSXRSSSSXSSSXSQSÓP® S°ÒÒS¢ÐÓP ´SÒÒS±ÐÓPHaSeÒÒSÐÓPSKSTRSSSSTSSSTSQSÓQ¢S°ÒÖÓQ¤SÒÖÓQSeÒÖÓPSKSTR
+   [xor55] fly | 
+        spnJwjxPVQApLrsp÷`4Ý îÖx&. bLyJZwGAzw{cz5gKcqnÿ«FLY}	f>ll8É6>rXNAKJYT{~qGOYOpAlz~dUUWUgª£WWUuUnUUtzW{V
+   [xor5d] esp | 
+        6l55]]\]n]]_Y_]]]nzjc^hi{{~[[Zzc_noKKHIS^ZZz|H |LxHDr|@esPL<dfiWKrCÂI\¬OrolK}pEctigql dJmnja|ðC5]\]I¢«\³_á]u]]
+   [xor6b] fly | 
+        ei¹¢¢¢¹knêhe±êNk¢¢»µbvAYYYAwc´»¢èFLYclmmlllmmlcbaabbbaabcpP??Ppc¾ÕÛÛÛÕ¾k{êhK|êmkjjé
+   [xor71]  | hook
+   [xor73] phase | 
+        ðóphvsEòòs5ðópsksx3r³ssssx3s³s§¥sxsqsópsòòsðóps£òòsðóphAsEòòs5ðópskst3r³sssst3s³s§¥stsqsóqsòöóqs£òöóq8sEòöópskst3r³
+   [xor75] fly | 
+        SPN!=jWJXpvqaPlR5SP×@ý' Îö0X!31*BlYjzWgaZ7W['CZ%GkCQNß¹fly]2)F>LLé09Rxna6kjyt[^6QgoyoPaL,Z^DuuwuGw°w³uUuNuuTZw[v
+   [xor7d] esp | 
+        L}}|}N}}y»}_}}NZJC~HI[[^_{{zZCNOkkhis~zzZ\h \«lX_hdR\`ESp.l8DF!Iwk_Rcâi|%/oROLk]Pe_CTIG.QL*DjMNJA\Ðc}|}i|Á}U}}
+
+-- assets/assets/resource_packs/vanilla/__brarchive/sounds.brarchive (96654 bytes, score 9)
+   cheat: fly, scaffold, spider, step
+   plumbing: category
+   [plain] fly,scaffold,spider,step | category
+        "sounds/block/lantern/place6","pitch":1.1}]},"block.lantern.step":{"category":"block","sounds":[{"name":"sounds/block/lanter
+
+-- assets/assets/resource_packs/vanilla/sounds/sound_definitions.json (143135 bytes, score 9)
+   cheat: fly, scaffold, spider, step
+   plumbing: category
+   [plain] fly,scaffold,spider,step | category
+               "pitch": 1.1       }     ]   },   "block.lantern.step": {     "category": "block",     "sounds": [       {   
+
+-- assets/assets/resource_packs/vanilla_1.14/__brarchive/sounds.brarchive (96981 bytes, score 9)
+   cheat: fly, scaffold, spider, step
+   plumbing: category
+   [plain] fly,scaffold,spider,step | category
+        "sounds/block/lantern/place6","pitch":1.1}]},"block.lantern.step":{"category":"block","sounds":[{"name":"sounds/block/lanter
+
+-- assets/assets/resource_packs/vanilla_1.14/sounds/sound_definitions.json (157443 bytes, score 9)
+   cheat: fly, scaffold, spider, step
+   plumbing: category
+   [plain] fly,scaffold,spider,step | category
+        pitch": 1.1         }       ]     },     "block.lantern.step": {       "category": "block",       "sounds": [        
+
+-- assets/assets/resource_packs/vanilla_1.15/__brarchive/sounds.brarchive (97627 bytes, score 9)
+   cheat: fly, scaffold, spider, step
+   plumbing: category
+   [plain] fly,scaffold,spider,step | category
+        "sounds/block/lantern/place6","pitch":1.1}]},"block.lantern.step":{"category":"block","sounds":[{"name":"sounds/block/lanter
+
+-- assets/assets/resource_packs/vanilla_1.15/sounds/sound_definitions.json (158752 bytes, score 9)
+   cheat: fly, scaffold, spider, step
+   plumbing: category
+   [plain] fly,scaffold,spider,step | category
+        pitch": 1.1         }       ]     },     "block.lantern.step": {       "category": "block",       "sounds": [        
+
+-- lib/arm64-v8a/libc++_shared.so (1027408 bytes, score 9)
+   cheat: esp, fly, phase
+   plumbing: category, hook, offset
+   [xor20] phase | category,offset
+        CAST  UNSIGNED INT OPERATOR DELETE OPERATOR UNWINDPHASE UNSUPPORTED ARM REGISTER LIBUNWIND MALFORMED dwcfaDEF
+   [xor4f]  | hook
+   [xor50] esp | 
+        5PPCSP5PPTDSP5PPhDSP¤5PP<DSP\6PP,DSPt6PPDSP6PPxESP46PPÐESPÔ6PP$FSPü6PPØFSP6PPÈFSP6PPüFSP¤6PPìFSP\7PPFSPt7PPFSPl7PP
+   [xor59] fly | 
+        ZfzZ¤"âð RY ¤ZYÈ¡[ð¯Zð­]ð¬Z[ó­ZXóªZYóÏ_Y®ZJóªZNóÑ[NFLY¨0JYF Y¨TCY._ÒFøV¨XYQ¤¹ZJó8[QÒº[QÒ»ZNó½ZOó¼ZLóbXYÍzYY
+   [xor5c] fly | 
+        \\\\_X\\\\\\Q\\\\\dÕS\\\\\_X\\\\\\`R\\\\\ÕS\\\\\_X\\\\\\fLY\\\\\ÕS\\\\\_X\\\\\\0S\\\\\<ÕS\\\\\_X\\\\\\ìÕS\\\\\4ÕS\\\\
+   [xor6f]  | hook
+   [xor70] esp | 
+        pp¸csp´pptdsp¬ppHdspppdsp|ppdspTpp´dsp4ppXespppðespôppfspÜppøfsp´ppèfsp¬ppÜfspppÌfsp|pp´fspTpp¼fspLpp
+   [xor79] fly | 
+        ¹z&¯FZz¬ÂÐryzyè&{Ð.zÐ6}Ðz{ÓzxÓzyÓïy¨zjÓznÓñ{n²flyjy-f ytcy-1òfØv:xy-q;ªzjÓ{qò{qòznÓzoÓzlÓBxyíZyy
+   [xor7c] fly | 
+        ||||x||||||¼¦q|||||Dõs|||||x||||||@2r|||||4õs|||||x||||||Fly|||||,õs|||||x||||||,s|||||õs|||||x||||||Ìõs|||||õs||||
+   [xor9c] esp | 
+        eBP¼Î¯tßÝ¥T«tÜ¥«tÜ%Ô©·|¯ÜeOPtÜ¥Ôcª|»ÜeSPtÜ%ô¨©íýÈôÜe]Ü¥ª((%±Rt6|¶e
+   [xorbc] esp | 
+        Ebp½(¼<î¼¼¨Tÿýt¼¼T_ü´½¼T¿üô½¼¼¼¨\üEop½(T_üôC»\üEsp½(T¿üÔ¸¼£¼ÍÝ½¼èÔ¾üE´}ü´½´¿¼#¾¼r½(T¿¼\¿£4º¼E¤¼¼¨´²
+
+-- lib/arm64-v8a/libmaesdk.so (6621376 bytes, score 9)
+   cheat: step
+   plumbing: category, enabled, module, offset, packet, setting, signature
+   [plain] step | category,enabled,module,offset,packet,setting,signature
+        r in generated column "%s" RIGHT PART OF ORDER BY RECURSIVE STEP SEARCH DELETE FROM %Q.sqlite_master WHERE name=%Q AND type=
+
+-- assets/assets/gui/dist/hbui/gameplay-0b23f1f2e7bd8cdac282.js (643819 bytes, score 8)
+   cheat: step, x-ray
+   plumbing: enabled, inject, offset, toggle
+   [plain] step,x-ray | enabled,inject,offset,toggle
+        ibuteUpdate)("data-testid",t["data-testid"],u):void 0,"data-x-ray":void 0!==t["data-x-ray"]?(0,o.setupAttributeUpdate)("data-
+
+-- assets/assets/resource_packs/vanilla/contents.json (736495 bytes, score 8)
+   cheat: fly, scaffold, spider, step
+   plumbing: 
+   [plain] fly,scaffold,spider,step | 
+        on"         },         {             "path": "animations/spider.animation.json"         },         {             "path":
+
+-- lib/arm64-v8a/libMediaDecoders_Android.so (1337440 bytes, score 8)
+   cheat: derp, esp, fly
+   plumbing: offset, packet
+   [plain]  | packet
+   [xor0e] esp | 
+        ý	LöÎQØöQ²§øY§úA§óu§N· N÷ý¤ø¤sssOsLDspesp&ZdBßD//ßóÍ.N³ON#-N³,o/
+   [xor20]  | offset,packet
+   [xor2e] esp | 
+        Ý)lÖî-qøÖqØy/Úa,ÓU-&.n'*n×Ý-,Ø-.$S/=%S,=;So½6Sl½dSP½ESP½"-;¥.$¥z.$¥D/'¥b&"¥'_.ÿ¹,%¥d.¿¥.ÿÓí.¿'no'n/n.¦0O&
+   [xor4c] fly | 
+        ,°³¬OYær¿³Û-Jµ³³[DMF§OµD±ßDYÓÖY½1¬OYæ[±lMs$êåG@[ÇFLYÇeMD§lNL`±ß%MEÇÀ½1!mLÝ¢OGæCÉ´ÀmL½MLµ¢OAæámLÝ-³³$Nµ,bL
+   [xor4e] esp | 
+        tzPjdzPNwwPefP÷tuPûduP{NóuvPevP´aó3McurPÜepPwNóusPesP´}ó½tgPºdgPwxPsNóuqPeqP´mó§ícddPÞg~P"f`PufP´Qó@flP
+   [xor4f] fly | 
+        ôNO{'HO¿GÞ¶¼4 æºæ¸æNN¶¶,æ´$æoIOÿOAÞ³H	·oOPNO{§LPåFLYÄeNGÄBö¤M¶F%&g÷G^OÞÐMG¤n°°MGÄG~OÞMOO[}OÞ'IO¶¼4 æº
+   [xor59] fly | 
+        ¯_ð­^ð¤"Qð£ªXë¯Z[ó­ZXóªZYó#Ì«B_ÙÌY®ZJóÑ[NP¤Êp$CÂªZNófLY¨PtYFdN¨ôvYP$Âd¤s3ÎFXS²îBÂSYe¤Ñ^EÒQ´%![QÒ [QÒ¹ZJ
+   [xor5e] fly | 
+        ^^^^g_^|^T^ýV^^^^^b^^^^^^^Ý^^|^T^¦+V^^^^^î^^^^^^^f^^L^T^FlY^^^^^N^^^^^^^ÆÍ_^L^T^:«T^^^^^\^^^^^^G_^|^T^~sV^^^^^*\^^^^^
+   [xor6c] fly | 
+        8oyÆRûj,³{dmf%o,d.ÿdyóöy¿oyÆ{.¿LmSºÊ,Åg`{çflyçEmdLnl8@/ÿmeçà¿MlýogÆcé,àMl£mloaÆÁMlý8n,Bl
+   [xor6f] fly | 
+        Ôno[hogþ(*Æ<+Æ4,Ænn/-Æ.ÆOioßo£aþh)Oop¹µno[lpÅflyäEngä%b/Öm/%f¯5G×g~oþðmgN;§mgäg^oþmoo{§]oþio*Æ<+
+   [xor79] fly | 
+        .Ð6~ÐqÐxËz{ÓzxÓzyÓ,ìbù+ì»y¨zjÓñ{n²p=êPcâznÓFlypTy-fDnÔVy-p£âD?ªSî+fxsÎ6bâ2sy-E>ªñ~eòqª{qò{qòzj
+
+-- assets/assets/behavior_packs/vanilla/__brarchive/entities.brarchive (421899 bytes, score 7)
+   cheat: fly, glide, spider
+   plumbing: offset
+   [plain] fly,glide,spider | offset
+                                                           8 k   spider.json                                                       
+
+-- assets/assets/behavior_packs/vanilla_1.16.100/__brarchive/entities.brarchive (521292 bytes, score 7)
+   cheat: fly, glide, spider
+   plumbing: offset
+   [plain] fly,glide,spider | offset
+                                                           É Ð   spider.json                                                       
+
+-- assets/assets/behavior_packs/vanilla_1.16/__brarchive/entities.brarchive (467829 bytes, score 7)
+   cheat: fly, glide, spider
+   plumbing: offset
+   [plain] fly,glide,spider | offset
+                                                           $ Y   spider.json                                                       
+
+-- assets/assets/behavior_packs/vanilla_1.20.80/__brarchive/entities.brarchive (485745 bytes, score 7)
+   cheat: fly, glide, spider
+   plumbing: offset
+   [plain] fly,glide,spider | offset
+                                                           î n  spider.json                                                       
+
+-- assets/NxMw0INQj2nyXK1o (93652 bytes, score 6)
+   cheat: derp, esp, fly
+   plumbing: 
+   [xor16] fly | 
+        úÇÁ[&= ®h&N9WOØ¢æ©5×º[ÍÙMq¬Î¼§öêâú@w¾FlYí¦5kÃG¤û-$¦[òZ^µ{§0ï»¹x%òôðãË~~ýùùP*j¹ê÷%¯§Rß
+   [xor18] fly | 
+        Û²6RI%ÌØEZ]¨èPsALöQç2üGVÆÿw ­ÁÍÁì8¼ ÷íùZ?â½ÑuYÁfLy CS'E³³÷sÁâbfSaìKpõ£o%>4È4.ãð 0éêcná*æ%×oZEi
+   [xor36] fly | 
+        ¤®Úçá¿{"66666666Hnwoø½ ·Æ>6÷¨{íùmQî»¹3ÖÊÂ!Ú?`WfLyÍ°KãgÛ1>{Ò¬z~ 46[Ï6¬XÒ-ÔÐÃë5^^/ÝÙÙp ¥JÊ+×r9ÿ
+   [xor45] fly | 
+        (Ì0Xx´¯$O8ïDEZyÝÐ;¼ø«Â,]Jn§ ·²&M:´,M2AFEÌvßÇFLyÃ+Ä²CÊB½¼BÜwM£ÒØ/Ê%ähOSÃåæ GEZ&÷ÊzàÊ*fIPEEEÖYË³ò;?b<Ä¹
+   [xor50] derp,esp | 
+        CE[[i­á¢.¡Ð¼ñTP©÷çÌ}ZH[ÿå,Ûë)ðH>5Þ)]~Ô&eSPÍBúÜÒÛÐQPP¿`í3ÿ¼çæÞ.úÃmqÊ÷|]sÎ8Ô­|÷T»iãÌ QP
+   [xor52] fly | 
+        qðgª2SRí=ô¼ ÉÕÉWI9´}ifÚa#ÞJmEß|D7óXÜä Âé ÷úËi"§\-'Fly´ûÊªh¥XéÀPRHéøÐÑ%ù.&bU`Z'Ñ¶°gX%6T6ÅáÏsü)4%óå®ª·Büåþ/
+   [xor65] fly | 
+        5ìx.¾X7oÏ¦9dez¨Yýð¶¤Ø(â}jN¼m¤5m:«afe´ìVÿçflYãäcêb¬büWmò5øê¨ÄHosãÅÆ gez×êZÀê" Fipeeeöyë1ÒBä(
+   [xor70] derp,esp | 
+        ce0{¿{I¹¹1Á2ð«5Ñtp¥+×Çì]4-zh"(¨;©{ß·Å6ûË¶	Ðh©þ	}^ôEsp¤»íbÚüòûð¦qpp@½<Íß1Ç±½ÆþÚã-MQê×\}3S_§3î¢ô0\©×tIÃ2ì qp
+   [xor72] fly | 
+        QÐG;srÍ,ª·Ô±éõ;éwi]IFúA/þj/Meÿ\dÓxüÄ*âÉ' ×ÚëI|"fLYÛêHxÉà¥prhÉ0ØðñÙB¡u=@z!±ñGxtåÁïSÜ	ÓÅ©bÜ°ÅÞ
+   [xor78] fly | 
+         ÒRo} æqsô{xÚ¨ú8è_µnÈOùÈ/ò3Ì(µÌNáq'ç½|0&*ÿ¬nz éfLy£W`Ú ×1¡`9khSö`$À{¿{x§yx%A¬&X÷5ÛçÅÆ¼~ÃØÍðÞI&'Ë:ä(æüµ
+   [xor98] esp | 
+        iE"òd8t°áo°tr²PÙ=s?lá|3|"b»îxs| V ZDîUó6Ú2ESPù tô(rý@{ÆN:=ROmó5ªW7ýZÂÒwóÕiÀ2§'xÿ«½ÄØ
+   [xorb8] esp | 
+        IeºÒD¸¡ºT´Á8O>TRp¼¸1ùSLÁ\\B®ÎX'S\; ¡v*­zdÎ=uÓ9ú+esp¬ÙT¼¸ÔµRÝ`[ænr+oM´Ó¿5°­+0wº¸Ý¨zâòWÓõIà/_­X5ßäø_ 
+
+-- assets/TXpwGkDiaDUpYCLA (132019 bytes, score 6)
+   cheat: esp, fly, xray
+   plumbing: 
+   [xor0b] esp | 
+        2FäëtT'¹5ªýÒÇSS?íY½)PZªnªU¸÷pmLõìvÐ->|bÂHo¦ #esPæ@F27ÿüÆâFäÌíù>\©ítÀÎÚ¿,WÂ[mv Ê·ìS-Ç(±èå%½GÔÏ
+   [xor11] fly | 
+        91JXÎÌÅÙ¾IËõU|f	ÒÉÈñQke~ßò§4e¿0BÊ8fÐ·äËiÏ©flyªzýx«@³\±u%LþøÚ ë¤t¬ZlÜôÄö_Tû æad¿¡bÓàF¨qR?ëiö
+   [xor2b] esp | 
+        (+fÄËTtªÝò4çssÍyº	¦pz¾Nu³¹¾/×PMlÕÌVð(+;\BâhO 1ESpÆ`f37ßÜæÂf1¶ÄìÍÙ|ÍTàîú_(+wâ'{»M-V êÌs¦ç+#È¡Å«gôï
+   [xor31] fly | 
+        31ºjxîì®åùiëÕu«6\F)ò&éèÑqKE^>ÿÒ¢½E21bê8Fð'Äë51I¸ïºFLYZÝX`|±4'UlÞØú*¨ËT44zLüÔäÖ©51t¾Û°*<ÆAD¶BóÀfQrËIÖ&
+   [xor49] esp,xray | 
+        û[AnlÕNw{Aó6s¿'Y~éÎ-õn¢®1Íúô*æcÇS7ËEãÂH«Ì!f±9ÄHI~XRAyÖÿñ½úã©åT²TAI`ø0?EÚa²5ø«Ãìeæ_A·lÀ·eIsU¶8BiºÛ»4
+   [xor50] esp | 
+        ¥>1ãÌ HØTÇ¡FÉµSß]]¯á2HiÑÁÍ¨iKï·S§vÈ:roGqÖ!PÿÛ#ESPåÿÆZ²ÐQ@ßË"nÍëÝ}Å±ujüº>XPâÍñ¸r4P%¹Ìn¬g»äW7bX·
+   [xor54] esp | 
+        ¢) {;ÉVT\cò»Ú÷è]­[¶äíSf\#½(g±å3M§WTnuWßY6;b·esP³!Òr<ûMÅãïáªOÚf7Ê6»£D5`LâDeâà®¿WTuÜ]úîãP
+   [xor69] esp,xray | 
+        Û°{¦aNLª²õnW[a®ÓS%y^:ÉîÕN0¦íÚ%Ô ÆCçsëeÃâhìFähi¡^xraY&ößÑÚ«Ã¦-±Åttai@Ø6eú­A3Ø&ãÌEÆ«aLà=,EiSubI£;û
+   [xor70] esp | 
+        Ã2ì høtç.fésÿ}}¡Á%»8hIñá¯í.I¶»kÏ°sVµèROgQö¤pßû¢esp®Åß³æz¤ðq`¬ÿë.NíËý]åUJ«6ÜxpÂíÑR":;§p1#ìNªGÄwBx¬
+   [xor74] esp | 
+        ¯?¬	¹*[évt|C»Òú×È}8{Ä&Ís3F|2_©G¯Å¬mwtNU¢wÿy7/BESp¼òR&Û(­°0´måÃ:Ï0Áo¨,úFêd @lÂd¬©EÂ¯À;wt4Uü»}ÚÎ¿ªÃp
+   [xorc1] fly | 
+        v.ÛZ.º?Çõy·ùÕÅ][Ü«~çRÕSSé)çKbáý²×ùuÀähëügZúo±Flyóü6¥Ù0nà¥©D@ÿ]ñ<pÃÉ)iì;ïô6fNCZ <ôGUiµÇ>N=>ª
+   [xore1] fly | 
+        VûzçÕYÙ2õ²å}{1ü^¥ÇrõssÉ	°Ç-k%B0ÁÝ÷Ù7UàÄHË7$ÜGzºÚ¢O-ºfLYÓ'µÜºùNÀd`ß}#Ñ¯P¼ãé"	IÌ¥¨­Ï´Ôº®¤Fncz%=Ôg-uIçn
+
+-- assets/YljaaOZCkbmRthFk (100579 bytes, score 6)
+   cheat: esp, fly, xray
+   plumbing: 
+   [xor14] xray | 
+        Â¹"öí}ö yØ~ònÙ²§³;lRsëÃâ¼/õÌÍ' Ö¹Lî»äL÷xrayÇtN&µ¨dÉq¾òÅûteî<EÞ)fÊ;7ù¬åg0kÿþ .&Ê|P~
+   [xor34] xray | 
+        (âÖÍ]Ö Yø^Ò©Nù®L74rS½Ë²%ãÂ"8,Õ³ìí¾0»! ö!64lÎ%Äl×$XRAYçTn¶3±<¦DéQÒå·Û¤T'E3Îeþ	¥Fê64ÙÅ9³¡G?°KßÞ3<®ê\p^°
+   [xor84] fly | 
+        töÉcå4cÞ*£ì}^ÆÊo¼j­ãëPPÚ[²YåncÁÙ£tbú®{FfLy»$c ü¶k Óåkû&»¶ëwç¿]1¯Þ¼õµJá#xÞ|*ã 3È
+   [xor9d] esp | 
+        DEç½µy·5/Æ%¼Ðëæ<®Oçnú¹ 9VÚ{½eýPjÊ7©Hõ¥SëP8ÞË¼éESp©ÇÁ]£â½*zåþºAY¦[ýË¸ÚY¶|u= Óæß²	©ÓpÚ¼Âõpy=\K*UÙ
+   [xora4] fly | 
+        ;!TÖéCÅCþ Ì]<~§¤æêO£JÃ5Ëpµ¦£¯p2ú{£yÅº¦NCáùTBÚ¿[f7§¤',FlYC¢*£ÜK?£ óÅKÛ£¬ËWÇ¦¤}µ¨¸½!51þÕ¥¤.jÁX¦þ\¯ Ã$¥"è
+   [xorbd] esp | 
+        ½de&ÇY»æðËÆ§o$¡ÇNÚ*vúª[EÝpJ%ê¿½+hÕsËp¾½þë4ÉesPçá}Â¾= +!ZÅÞa%y{Ýëúy\-U¹½*óÆÿª)?%óPúºâÕ(PY|k< uù
+   [xorf1] esp | 
+        Ãù.¬8 ÐûëøÒ½9øÛýwJå¼!óñt`4Ô.¨¼õÖ,y-¯	¬<^¡ÀìæUeSpÁÐNà{,) "qW¹V"¾tùxÌñP(]­ûôò´efõñ}Ô.ZdYññññññ
+   [xorfa] fly | 
+        úÒ¸1»²ÉôI¸fªømæÏ³¢Î]>ÚCÏ¬ñ¬'[Jûú.=òI¸fªhIkíCHÂ{á flY¼ÜJ%®Ú'ñ.éùúÔÖ/måÙÝÌV´d®LÓâHÂ|;ê28Y¼èX±ÄÝúúú°
+   [xorfd] esp | 
+        Ð·jJ»'ËZ@iúNrWQ5ßæµ¦ðÛ¦e¶¸?ÛOMüK1R§5ü«í[Å­'m´÷àesPG_%°Cºc®Í#ãÕ É-Õ{Dù¹æã/F]Å¸bCN²ù´»èuM=vAÒ¶Â®
+
+-- assets/assets/behavior_packs/vanilla_1.17.0/__brarchive/entities.brarchive (485416 bytes, score 6)
+   cheat: fly, glide, spider
+   plumbing: 
+   [plain] fly,glide,spider | 
+                                                           -A ý   spider.json                                                       
+
+-- assets/assets/resource_packs/vanilla/sounds.json (72719 bytes, score 6)
+   cheat: fly, spider, step
+   plumbing: 
+   [plain] fly,spider,step | 
+        .hurt",           "death": "mob.chicken.hurt",           "step": {             "sound": "mob.chicken.step",             
+
+-- assets/fontawesome-webfont.ttf (122092 bytes, score 6)
+   cheat: esp, fly, step
+   plumbing: 
+   [xor03] fly | 
+        )ýC%+$hÍ ýËýçÍy	 	\kR¾Ó¾RDA$+%Ã)flyÍ+üèÛr" !$%674!$ !$%67=4501%74
+   [xor04] esp | 
+        "102767%6d$$'E8,L, C] ùÄ6JH0O1' eSPÂºl"0""0¢O1úä? º{´9% ­mlr§y";+&,	'E $1O
+   [xor17] esp | 
+        <6<51"#!%6#1456864)$%Jé¡HpCEsp±sé FA(Bé ^=Pp(¼Çë6È%^uu^]vvëÊêß~`R$	$êÀç
+   [xor20] step | 
+        PICTURE&PENCIL*MAPMARKER&ADJUST$TINT$EDIT%SHARE%CHECK$MOVE-STEPBACKWARD-FASTBACKWARD(BACKWARD$PLAY%PAUSE$STOP'FORWARD,FAS
+   [xor23] fly | 
+        22	Ýc9=¡H"0°¿"?í ?ÝëÝÇíY²§):+©*!)|Kr©ó©rda©=9"ã	22<¢FLYí#"#Ü6%È&û#R##7,"% ""$%=%67$-& "'=&4"
+   [xor24] esp | 
+        :'323:"2!De9&'!&l*<%7621,c}: :Ùäjh%o+06: Espâ%LoÚÄ[ª%%' M³¼L%R2Y)e&<*?1<3.%o¤&¤<
+   [xor49] esp | 
+        "[H@`PJHkURTKH@XNCOMBNXHH]QX]HH_@AnHDLCG_CR_f~KcRiL@BLJ@E] @eSPCHHYPcXokhR_DKKOOBNDJU_\c_JHWTD[^AKHOA\iMKOMLMmgLaM]á@YJ
+   [xor52] esp | 
+        |TudeLVasgfda`ES@FUSTqptoSsp\PUTU\TySptoSfdiS`lPedelTasgfda`ESPÈnDLaa~²\@@\²¨WT[¬[\_Ar8jf`fhIiDLaa~SR@\^^Sm[[¬[\_A
+   [xor5f] fly | 
+        IHLIMHA^HIHA^HIJKYJ}y|}[Xk`^maZjkq^xzY]JKA\lIJKX}y|}Y|Y]õ~fLy£]HolyS²^GjW\~ÍvP	BKPLÕPY^`¡¡µx[Ü^HWJVRZa^¡aE:Cdy\^
+   [xor72] esp | 
+        \tUDElvASGFDA@es`fustQPTOsSP|putu|tYsPTOsFDIs@LpEDELtASGFDA@espèN?dlAA9^|``|wt{²{|aRJ(F>@0FHiI?dlAA9^sr`|~~sM{{²{|a
+   [xor7f] fly | 
+        ihlimha~hiha~hijkyj]Y\]{xK@~MAzJKQ~XZy}jka|Lijkx]Y\]y\y}ªÕ^°FlY(µ}h=OLYs~g4Jw|²^íVp)bkplõpy~@?3X{ü~hwjvrzA-~AecDY3|~
+   [xord3] esp | 
+        33ÝÁÁÝ33ÝÁÁÓÒÓÓ,ÓÔÓÕÓÓÏÓÓÓÅÇÔÒÄÔÕ×ôÒðæÒõÁìÒÄÒåáÅÇÔÒÄÒåÕeö-¼Esp-èj-EfÒ¹¯üpsEÒCõ¹ö-£9ÒBõ×³¹õ-£Espü¯-EfÒ¹jÒpsEÒBö¸ö-¼9ÒCö
+
+-- assets/xJ0UqVZaAlboeLNV (93551 bytes, score 6)
+   cheat: esp, fly, step
+   plumbing: 
+   [xor04] esp | 
+        ýÊfS±& EÜ¶ÐcÚ_&ËJ|È_øË;°åõn8éj6o¹ð%eSp>¨âÚù9þ ÞS)ìnifhn\ïqpÏæH¹g«8¦{<þÎÝÇ§Y©}oéëé_;Õ)è
+   [xor24] esp | 
+        Ý_êF«s4¶!­ $eü¹ªðCú¾ëj\9è±¡=7¥>Ø%¸¬ëÅÕNÉ#J,&$O6ÐEsP8Â½úÙÞ¬ 3þ¸s	ÌNIFHN%$|ÏQ?Pï¨ÆhG§[Þîýçy]>O=ÉËÉõ	È
+   [xor27] fly | 
+        w¦v ßäêÐ*µ`é;26Ä?%'Ð©ð0 Ì­iô&¤ÃÃ. #'[Ýi¾Ú?+¦l/ ²A§fly÷î8°&Ì#gVª$'ûÄYóÀµ2 °L»Í(3Æ)«Òîñ½¥>Å,Fìæ#íO^&J
+   [xor50] esp | 
+        Eªd+ãÌ QP(×ñ+Zº_PMbmA¡½zÈD¯%î2·_ÙwÿvûHèª=eSP×Yµ¦Ó5Ñ ÷XÆ[)×r²ñ°âWçM·XívSP<¿#Á«QZNu+'A¬\¬*
+   [xor70] esp | 
+        ¬«e®0D Ã2ì qp9÷Ñ´z#pm9B#>Ma2>ZèdÎ»ùWßV,Ûh¬6£ÈEsp÷y$º,1óñ5´° ×©xæ{ 	÷¦RºÑÂwÇm xÍVspáº²qznU_a_| 
+   [xor9b] step | 
+        yT!XxÑ®öl0j¡(ÙËÌÎÊ¢XG}Ý}ÃaJÞ-	>¬& céúõ££StEpC"Ëjå(É±b×mCþÓb&½õójèMCiÍ{¥¦¯p:s($÷ÎªÕ¶
+   [xorbb] step | 
+        Yt&©3+»-xXñ¸º»ÖLJ¹5ù'ë;ì¼îêxg7]ý]ãAjþ)>¤£6CÉ$ÚÕsTeP¿»cµëJ88°ÅéB÷M½cÞó_Bµ0ÕÓJÈmº£-¶cIí['P¸»S(×î5õ±9
+   [xordd] esp | 
+        °nA@&Sµl¬Vký4<_ÑvQ¸ÕsIÇw+ûA*åòüºÀâ`¾rÜÝÆüñqcXµESpÈ¢ ÈÙÝ¿*2< 2D¼Þ¾¡QHB>ç[]í¸ï¶|i8ö¶ÖÃÙÝ£ÄT®,~y`Éþ
+   [xorfd] esp | 
+        N¿a­®`sLvKÝ¦2£ñ<VqõSiçW#Ûa ÅÒÜàÂ+±@RüýæÜÑ¿Q·Cx#&esPè èùý d­?þ4qhbÇ{}´Í»Ï¯5\ºI§ªÖöã3ùý³ät^Y@éÞ=
+
+-- assets/z7kBENsJ5XlpBFyq (89555 bytes, score 6)
+   cheat: esp, fly, step
+   plumbing: 
+   [xor03] fly | 
+        tåUê OääYN%'q~\´¬9_-³ºñÞS²ÜsL7ÆÉ©{«äx	Úm1Ù§KÁï¦FLY'ç *°ASÐÛ\Ì= !ÙÑ}×|{î~SX7!×ïSá%Â(-$¤²4òÄ²ªQ z6ÝüO¾`¬
+   [xor23] fly | 
+        "#TÅu Ê¸ #´o%ÄÄyn­Q^|0%Ñþs¢üSlæé¹[¼ÄX)úMùkáÏfly®Ç  a¿sðû|ì ©"#ùñ]4÷\[Î^sx÷Ïs²ÁâÒäq½*ZýÜo@
+   [xor45] esp | 
+        v×¼;þ[ê¢DEN#¬	ø&êm3lÄÍjÍÇÑ¢"¹ö4½Ðk>Ké·$Èb8½Áõê¸eSPi`EQÚá1,%½Ç²[VÄS¨GEäivMÿsÍÌÞREEEEEEE÷Ãtû[ÖÆUÝ¿
+   [xor50] esp | 
+        \Ö`·±Wî²lçùB¥Ûï$2¨÷Vi}÷£/<ITP¨îV¨èûC$üû÷³ÆOsESPÚ7¿Ä·wþM	nå`!3Üg¢µ²í Êéûy®ÓëêÿídÁ.hÅ~ÿ»ÄÜ.á¦Î¦Ù»Ç
+   [xor65] esp | 
+        ½V÷Þ{Êden¥)ØÊMLäí¬Jíçñ¬ÖðKk¿É²ª¹;$èBáÕÊ+6³Esp#I@¿eqúÁç¨{"väs=¯geÄIVmßS¸íìþreeeeeee×=®ªãTÛ¦{ö»æuµ>ý
+   [xor70] esp | 
+        | ö@ °£©wÎLÇÙ±bû¢Ï×vI"]×_4itp7¬Î9v<ÈÛcÜÛ×æoS>²espúä9®WÞm»)N7Å@±üG9Í êÉÛ YóËÊßÍD>·áHå^ßäüÁî£°ùç
+   [xor93] step | 
+        HQ´ã3tÇdµÜ$  /g#I{ôÈÆ\poHÛÌ7]=C^£~£òv(l3b'Ü¦STep~÷pâ ÑÃôÅe2Y«2*v¿VØeYÑ¬4£©¦»;»Áq¬0t!÷ ÑÃ#®qé
+   [xorb3] step | 
+        hq.ÃTçDü®  'Gi[¡Ôèæ|¶PµOh2ûì}®#c~:^"=ÒVL²³Bü£¶stEP^×ªPÂ ñ/ã_Ô¨"åEy¶ V¡v¢_øEy3ñ_²³áQªT>× ñ/ãQÉ
+
+-- lib/arm64-v8a/libfmod.so (1159088 bytes, score 6)
+   cheat: phase, surround
+   plumbing: enabled, module
+   [plain] phase,surround | enabled,module
+        gnal to full gain in ms.  0.0 to 20000.0. Default = 5000.0. Surround pan height blend ChannelControl::setVolume ChannelControl::
+
+-- assets/assets/behavior_packs/vanilla_1.15/__brarchive/entities.brarchive (296892 bytes, score 5)
+   cheat: glide, spider
+   plumbing: offset
+   [plain] glide,spider | offset
+                                                           äj Y   spider.json                                                       
+
+-- assets/assets/behavior_packs/vanilla_1.19.20/__brarchive/entities.brarchive (197900 bytes, score 5)
+   cheat: fly, glide
+   plumbing: offset
+   [plain] fly,glide | offset
+        ump.static":{},"minecraft:can_fly":{},"minecraft:navigation.fly":{"can_path_over_water":true,"can_path_from_air":true},"min
+
+-- assets/assets/resource_packs/oreui/texts/nb_NO.lang (358227 bytes, score 5)
+   cheat: fly
+   plumbing: category, preset, toggle
+   [plain] fly | category,preset,toggle
+        ativeDescription=Skap, bygg og utforsk uten grenser. Du kan fly, ha uendelige materialer og kan ikke bli skadet av monstre.
+
+-- assets/assets/resource_packs/vanilla/__brarchive/animations.brarchive (178674 bytes, score 5)
+   cheat: glide, spider
+   plumbing: offset
+   [plain] glide,spider | offset
+                                                           Ì h  spider.animation.json                                             
+
+-- assets/assets/resource_packs/vanilla/ui/trade_2_screen.json (48843 bytes, score 5)
+   cheat: fly
+   plumbing: enabled, offset, toggle
+   [plain] fly | enabled,offset,toggle
+        control so that                 // we can enable it on the fly only for items with custom names               }         
+
+-- assets/assets/resource_packs/vanilla/ui/ui_common.json (236086 bytes, score 5)
+   cheat: fly
+   plumbing: enabled, offset, toggle
+   [plain] fly | enabled,offset,toggle
+        er for this control so that     // we can enable it on the fly only for items with custom names   },    "selected_item_
+
+-- assets/assets/resource_packs/vanilla_1.16.200/__brarchive/sounds.brarchive (67748 bytes, score 5)
+   cheat: scaffold, step
+   plumbing: category
+   [plain] scaffold,step | category
+        .8}],"subtitle":"subtitles.mob.piglin.retreat"},"mob.piglin.step":{"category":"hostile","sounds":[{"load_on_low_memory":true
+
+-- assets/assets/resource_packs/vanilla_1.16.200/sounds/sound_definitions.json (108798 bytes, score 5)
+   cheat: scaffold, step
+   plumbing: category
+   [plain] scaffold,step | category
+        e": "subtitles.mob.piglin.retreat"     },     "mob.piglin.step": {       "category": "hostile",       "sounds": [      
+
+-- assets/assets/resource_packs/vanilla_1.21.40/__brarchive/sounds.brarchive (69059 bytes, score 5)
+   cheat: scaffold, step
+   plumbing: category
+   [plain] scaffold,step | category
+        .8}],"subtitle":"subtitles.mob.piglin.retreat"},"mob.piglin.step":{"category":"hostile","sounds":[{"load_on_low_memory":true
+
+-- assets/assets/resource_packs/vanilla_1.21.40/sounds/sound_definitions.json (111045 bytes, score 5)
+   cheat: scaffold, step
+   plumbing: category
+   [plain] scaffold,step | category
+        e": "subtitles.mob.piglin.retreat"     },     "mob.piglin.step": {       "category": "hostile",       "sounds": [      
+
+-- assets/5J4RtkZCDhRn1TLM (97644 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor50] esp | 
+        trñ®ÄØvRïÁäø{ëãÌ H'\v(ä9~OÞÜò`QP$­ZÏøÌIÅMQÀ@@¡}ÜESP¶M¹LäHÎ³ÎÐ±b~Vy¨/9­¤ÇRºh ïÊ»è ÖáWÚbXRPmQ
+   [xor5a] esp | 
+        Bì1óé!YZG@ópí´Ô9M^ZZñç§ô*4 qXô{Ô.%8G-]Ùwxü³ÝÖ7nÐ oPesp`jøj¹²eÇKS$@¢^ZÊ­çUÕ÷¯8Ú»PÜÊóÞYF5Ùt¸ÂGñ½I|zU
+   [xor70] esp | 
+        TRÑ äøVrÏ=áÄØ[Ë>$Ã2ì h |«VÄ^o.þüÒ@qpzïØì²i¹«-åmqà``]üesp>mlÄ³:hî¨îð¾4B2^vY¿;¤ª;¬çr³H * Ïê6È?öÁ¹wúBxrp©Mq
+   [xor73] fly | 
+        WÓº¶;ó¤Gþ¢åPh#æQjdÍÇjJà<ÖUpsè´ªÁÝéê3#¢íÆ'Z·£ûfLYëû'?Q"N&«ñh'bEö80ôãû ZÑÛ÷»°´Í@.&<¢k@ÌÕrsG=9ßuj¸?
+   [xor7a] esp | 
+        bÌ£ÓÉ1yzºg`ÓPÍôm~zzÑ¹ÇÔ *QxÔ[ô¥g¡}ùWXÜýö?<Nð*Op´ESP@²¢JØJ4Eçks.`~zêÇuõ×³¿«úpü§ê8ÓþyfùTâ»gÑi´\¶/·"Zu§
+   [xor87] esp | 
+        ×÷ÏVf«|ÄÀ_q¦üñ±ÁÝ~AwN}¢aùb`ò *Rë"@8´aáÂ­7?¯³ESpC)¸íJ>buS¹P_õÝ '"æ ï+qWKO:ó4ô´ÓpÔds]ïµ
+   [xora7] esp | 
+        +÷×ïvF\ä©àQÜÑá4ý/³^aWn](AÙB@Ò¬¤§ rË`/?$£§AÁâ_-esP¥£¬'c	+Íj9BUspÕý*¿#Æ Ï!(!Q¥§?w#koÓÔóPôD.?0.S} Ï¯2
+   [xord9] esp | 
+        ÕâÐ·çSv°=lûar0|kv_R!I. ëf**ý>¨ÛÙ}@¹Ôu°Ó[ñD¶r[Ø*Ç:åÛÙeSpGW,A/t|Í!C.o¥g½LÉu	 I|ÞNf³&ìÁjEQY~ØÙ¹gg2Ë¹
+   [xordd] fly | 
+        ÛÈ6qÞÝ´õFqòR/>úÜÿE eð]=Ô¿/³iÙÝ;ìÊßØ5ëÁÑ&ä]¯¬h(flYÉT¿`0òÅu@·»?spËSðÖ³OCÞÝVCpÙ~kÌ_ØD\ÚìïÕßÝ{yÎ¥Þ(Ïä1
+   [xorf9] esp | 
+        õÂðÇsV0LÛAR\KV¡r±i4*ËF  Ýûù]`ôUóµ={ÑdR{ø! çÅ­ûùEsP:gwa#?T\2í²c4OGl+¼éU<) i\þnF³ÌáJ»e©qy^ªøù«G<G'-ë»
+   [xorfd] fly | 
+        ûèQþýÕfQÒr¶¤Úüße ¶EÐ}ôI?ùý©-´.¶Ìêÿø¯Ëáñ=Ä}8&H³FLy$ét@Òå;U$`7³SPësÐöo/cþývc-Pù^K2ì4ød|úÌÏõÿý[&¯YîþïÄ
+
+-- assets/7re1Kn8iXoomzD6U (100144 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor1a] fly | 
+        ò÷Ógtãßñ®(£´BÕ<ÇZ>g´'S)åTÌ²5g[ÓJìWôo×Õ¥Ôÿ"FLYÒÃjÈIdíS¤ÿçuä0ÒÕòMð§Wç«mÇ½K»2¤/Áe_D'?¥åÍi¨>²
+   [xor3a] fly | 
+        :±0Ò×óGTÃÿºÑ=¨20¹8bõçzG¿´s	Å¹tì79:G®{ójÌwÔO÷õ¶ôßfly"ò5ãJèi3DÍs6ßÇUÄº¼ºòõÒm+Ðw/;ÇMçká³E®dÅ>:í=I<
+   [xor89] esp | 
+        ââX³0ÃÔ½ãÜ§ÛîsÊVGNbý ØwÀG%öx2òb÷(Ñdyö;6NB3å£ÙESp½1Q»yéÉæ ²|qøD~¼u Û ó¦Í:Ïib,4F«-Iª
+   [xora9] esp | 
+        Â=ÂxãôÃü7ûÎSêvg?nBÝº=©­©ø?Wàg,£ÖX½ÒB×ñDYÖ±n±b¥ÅùesP&q¯=".YÉéÆ¥ \·QØd^8U¥±û«©Óí¡±ï®IB²:³®4f¡©­&¨i±
+   [xorc5] fly | 
+        ¾ZWSvä(­W.âÅÅÅÅÅÅÅÅÅÅÅâ·î÷îê >U°Ñü2Ox¦j&±Z|¬¤ÄÅ2·lfLy«iVmZ¿QÓ#º×¡ó'	þ©e%V}3æZÃ&#UÞ)kÆÄÅÕ;¼vYÍÂòe×æ#±árz_
+   [xordd] fly | 
+        °HßÝão)ÚyïÕûÚiS|Z/äg5C9~·ÈfO]Ì,Æul_éÿ	1YôÃflY¬Ò4{ÐYð]É9§Ã;Ä¡T´ª¢D ül¼ý2òªµÛ¤)¤-Y?¯û\°ùB¶¾ÑÙÝÂs-½
+   [xore5] fly | 
+        z5wsVÄwÂåååååååååååÂ-Î$×ÎÊ u"ñÜµo©XJ.z\¹äåµL'FlYIvMzqó÷Ó)ÞEv]Æzã!´uþ	Kæäåõ­V§yµíâÒE÷Æ´¨ÁR7 Z
+   [xorfd] fly | 
+        hÿýÃO&	úYÏõÛúI¾s\4zÄ4Gc^§¶;#èFo§}ìæUL« &Éß)/ yÔ³"-+ãFLy$'¥ò[ð7yÐ}éãä³td ÜLÝ©Ò5û5	yÛ|Ùbñ6ùýâS
+
+-- assets/8fPUPDZJnw3aZal1 (97016 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor50] esp | 
+        cß­9Ç·3o$h1 ºäWmbX0cG(xUá.Î{ä®WõoDv½·Õvweè`ESP¡Ù¯µqgná ñQPJ´×ý²b¿µ.+Ú9ÙÑD+|¯çQÖí3ÿ§TÁt¼7yµí3ÿQP
+   [xor70] esp | 
+        Cÿ®(ç1¥O¼HÄwMBx«Cg°Xu¸Á±&·®î&[ÄwÕOdV±» °õVWEÈ@esp'£ùQ´GNÁ Ñ«qpj÷ÝB&ú¢ùñd6\Çqö<Íß(táT¡Y<Íßqp
+   [xordf] esp | 
+        IW@ÛË¼°¯¯êtêo±<ØKí×Cf\ UÝßQ5YFG¡CyZÐr¥Ø¾í×ESp³âPcÝßñ^-4ß±ØÈ;*¾¬Ïüí¥úÓõ­ÕD:¢½¹J(+Ûßng[cüu yÆBkõ
+   [xorfd] fly | 
+        i½úÏõ8´¢ÿý¶ò|]q÷¨þýuDÃ¨C´v<X`ÁTëWÛnóÝÓWr®ã2vFLy$§ª=&ðl´~éi£J¶ü.þý=«Lx»Ú^Y<dÎ8N7ÖN],îl·ìwáDáméjôBV
+   [xorff] esp | 
+        i#w`ûë +ÊT¥Ê/OøkÍ÷c_¯¨F| uýÿ¢q«ªªyfgc?!Yz§ð5R$,øÍ÷esPÂpC ýÿÑª~4ÿøè ï,ÜÍÚóÕõd£¥jûÿN³G{C<ÜU Y<µæ¸bKÕ
+
+-- assets/CxD4DPEvs9gjQVzp (220239 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor12] fly | 
+        BIg: míµÇ½Ú´þ÷­I²+*;JetÐïïaa!Å$ÛêÅ:gÚfLYRD²ÖÑ]¡PB¼Yzròä9Olñ?KÄµ·q95a¤Vä¬!Ønð×Jö*ÔCU
+   [xor18] fly | 
+        5);0iû»YnÔÌü}$¥p)Ro\Ïîÿp?*EÛb&~íÿXAÒ¦âÌQ×àFLy|]ïz0ÑÝYG°Ü»ó¢SrË?À6GA|LàªµÚ L¦Ú;8×æÒíà%ñE!ò¦
+   [xor38] fly | 
+        ¼	I7Û´y=NôìÜ]P	rªO|ïÎßP$;8 eû´B¬^¡Íßx¢5$aò»;Âì.q<÷ÀflY\}Ï¤Zª%ñ-ýygü¡ÓsRëàg£a\lÀ®ú9 ªlú$÷$ÆòÍÀ33ÑeÒ¤;
+   [xor46] fly | 
+        u8)÷´©ÓÆIÀA	mQ¸4öä$Ç%ÑPíWg°xHÍ>VA¬ªgUÓ?eÁ#vpùáFLy\wÆêEE.BF|`9Ut­Ì\ø5|ÆS3mcùpqíCµGFAÑ#yNn:áÞz¹WÞÖ
+   [xor4a] esp | 
+        &.5ÄÜ!ÚÉëNJÐöÀÒ<OÒ"¢«ÕÊU?éGbUïB~¿ÓhW{ï¾pÏ­kåØ2Ê°esP?È2Q¼ã:°{õ·YEî÷cv­ô¢-½úÞ¿¸¶¯F4Éñ7Ò×¬£8v,ÞJhNJ=]ÅÁP¯B
+   [xor50] esp | 
+        sPÕ¦x,oö²ëI¿L-ß-ónuÖ2îUïãÅ£A¬£â®ËËÜ!ÕF}eÕä´ïUtk³?¨»ESPW¹b½· v´BJþwÃ?]F¹ F\'­yWØ/î:îbø¥úçJ&¯mCÿuY|zPJ~
+   [xor54] esp,fly | 
+        ¡yC>^¦~dêB[àcê÷ó%â(0;ìª@ûUi¥=TN9A³û­{z7T;b·esP³!ÒrWTÌöveLNZÏ+&<§µÖSxßV­ÉTöilÆ°Ö<Å©­W´<°4
+   [xor59] fly | 
+        iä;#W"ý»ç8 øÑ¯âôSñìê@ÔüËÿÞXn îsVY7ÕdÁHÙÄhD§8·®flY½WÞÓuîÎ]Y Að¬$î,PDeß;¨L¾>Õ~oøoZY yÐÿÊøL´X!B¾î>Ieh
+   [xor66] fly | 
+        ¶Uª	×¤ªóæiàa1)MqÖÄ¼ç>ñ;?pÍw¼GXhíva"²¹GuóEá®VPÙÁflY|Wæ4Êe¥e­bf\,@uTìµ|Ø\æ¸s;MCÙP¸+QÍ¼3cgfañYn¯¸NÁþZwþö
+   [xor70] esp | 
+        SpõXOÖËi®lÿÓ´NU»öÎuÏÃåaÂëëüõ­f]EµõÄÏ:7uTK²;esp wB¿­¸>Vbj&ÞWã}¶f*f|/YwøÎÎBØ/ÚÇ$j¡McßUy\Z®$pj^
+   [xor74] esp,fly | 
+        »Yc§~,´½^DÊb¬{ªÀCÊ×ÓÂÌ`«Û$uI1tnaÛ»¦[Z-¯«t./BESp¼òRwt¯ìÖV3½¾El=nz25ï¡¡ösXÿvé¸_tÖILæ öå(w¹_¬»
+   [xor79] esp | 
+         -=ªÃdåHZ#l^Q<n 2ô{¢ÓAÈ¥¾1ªA§h<ßÔ¨¡äyÛÇßÓr1ð£SÍéeSpJ*FÎ-l1ÍM9Ó_1pr¨ZÁ1MPZäs;+,åYôÊØª)¾ý5ÄÖ4~\x
+
+-- assets/HJLPcUgZnH2Au76A (91589 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor17] fly | 
+        IdøèbÌC@¨]ûv¾È wcÂÞíê]%¡rÿÔü¹µ½¿²@KíÝpI+ FlYÝUObÎÓX*ÑY´ôÎzpmwÿpÄx¸*4îdeA¾¥ªäGµÃõ/E~uüÙalÿ
+   [xor37] fly | 
+        9¶iDØÈ¿Bì²c`1-}ÛVè ?W¬Câ0þÍÊ0}?RßôÜ¦`kÍý³57<1Pi¬¸fLyýuoµ·Bî37óx³­ ³ñyÔîZPMWß°'PäX! ÎDE¢a£Äg4,=ãÕe^UÜùALß
+   [xor50] esp | 
+        y:²Ñå"¨=§Jö_¬rIîµ×¥òTXçQuÎ±»c?<JRæûÛü·j(wËÙ C"ESP¢¤QÆ´	?¤W07ÀSPnÓ¦CHZÁ®= ¸òx)cú!á¦¡ïJúñOr((­ãá.
+   [xor70] esp | 
+        W?(E½Wsp¢é|µºÖØ j¶®&îÝ`:»¶éÜYhâÏ§h/r©0Fv£Esp2u"â(üîÁ)på¯È¡~|áË(»nzÊiºò2²C¾ çñµ+¡9ÿ<Íß	#RJÐ3ßQB
+   [xor87] fly | 
+        6¿$Rq°«Îê´±§)£hÊÞÔB[hP~ÄTXÎÉnÇ3Á$ûó¨±ËG~^àúTË:ä(§?fLYèâ¤2#FÎ6]öüw·µ^­2hf}üm¢¿sêÂÈUFÞÆRj Î#xªåz ©¤
+   [xor95] esp | 
+        ÜÔÅê«Ó%Eè ºú e¹'Çç.úEsPÝË×Í0Q¸\"VF²Aú¥Kª5u9k âµÉ6(6ÝïWô¤îGú}V,ÃÍ4×í
+   [xor99] esp | 
+        ÂaúTn`MZ´Ï;	"í øH|pÐØ/ú^fK5{,v¤¼Vw«=dÃ{ÎrÇEspQcËaîTn/ÛM9M®@Ûï1fgXø¼w¶#r½Õ*OV=àu#?j[ÿët«:(¨
+   [xor9d] fly | 
+        i -#CÊ¢ö=²wwy_Jõ(ÆàðBÕOïYzûJºv©$ÑNe¾üP pW À#FlYÜÉD¿= eãþ¾9ÃÑÖ#, |xÚÊ|+Z"Âú/@âèD¨+äDn¸ï:øSÏça¶
+   [xora7] fly | 
+        "¥ rQîÊ	Hêþôb{«Hp^ätxîéNçáÛÓëg^¡¢%~ÀÚtëÄ¦§9FlyÈ1Â½fî}ÖÜW¿­~3HF]ÜMSÊâèu-fþ¾æ"rJ ¤§î¹=X$Å7Z '0
+   [xorb5] esp | 
+        µüôå·µµµ½³ÊóeÈ Ú=E,çÇ¡Ú.eSp«ýë÷íq|vfaÚkU¡KªÂ½é-±!ýÏ´wÔ#58Î°gÚ¥]vã(í«®÷Í
+   [xorb9] esp | 
+        âAÚtN2@mz³ï»¹)<Í Øh\PðøÚ~±¹F&k±[1V5¨vW/D_¥3ã½[¥îRçeSP.qCëAÎtN­ûmm`3;ûÏ»¹FG<x ØWRõ ov;ÀU»J?{>ßËT¾1±
+   [xorbd] fly | 
+        I¿½cêÖ9»WWYj.Õ»æ¾½£ÀÐbõoÏyZÛjVñ;nE<Üp P±w$ à1¯»fLy¡ü¥¿éd EÃÞãñö¬ \¾½X»úê\zâÚ4?`ÂÈd¥Äd¾NÏØs³¾½ïÇA
+
+-- assets/PnANkEBar0zu82Qs (97182 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor50] esp | 
+        èÈ2.ê ýrOô^SP2X0Ü¦å(<QÆÈ°35fPi·FBwíÀÊs)U©j:ûþÃwñøãÙESP!ÜZ×¤*Ì(Ã	ÌlQP:ºÌ¹õNaºÁ²¼©çQÖí3ÿôcøÙDY¾%¶TPÆ£Q°.¸ )A
+   [xor5d] esp | 
+        û:aæèð ?,c¹zÏ¡ÜbÌ¡dDìpÖýÿûÜÀ@Þ qÉÎÔ¸@¢xöÁà¼ªj-Y]­ÍesP>/àÒûü)ÛY]ð7¸XG7Û8cß¹ýè1ë½G¢¢¢¢]]]]u!ÄÌÓñxzvJd%U
+   [xor70] esp | 
+        ÈèÊÝRoªÔ±~sp³xü/½:ÅqæèFpI¨fbWÍàêS	u+JÛÞãWÑ2ØÃùespüz÷ 'ìã),ìLqpì©ÕnAáÇqö<ÍßÔ<CØùdytpæq	a%+-
+   [xor7d] esp | 
+        ÛA³ÆÈÐ C­ZïªüBìDdÌP¥¬öÝß«Ûüà`þ*Q8éîô`®®XÖáÀ-Jy}íESp´«7ÀòÛÜ­©	ûy}+³Ð¡xgûCÿÝÈËg}}}}.Uäìó(°ÑXZ8VjDu
+   [xorc3] esp | 
+        ñuÀgv(oÌp_b¨6BÁýÙµ(I=ÂÃ6Ú3ÑSYd]¢­u3xPÌJQ~ l`eSpÅCÂÃb^È4dsuFFÂÃ¹¸écC|r[s?Ò÷#qm~ lêõÎ#2.ñ[éÛÓèW×BëyÄ¹ñ
+   [xordc] fly | 
+        ¸BB5ÚÖ·J=a«Éó	[Ò ®ÖVÌ)øV	Î§zvÓ)EMÔÜôBÃjZ±áÍ]$ðFLYíÐº;øûßÜóBaºA¶Sïvßg&à¸K¡U#~\þ$ëèJjØÜ»f§AI²4=
+   [xore3] esp | 
+        ÑUàGV>®OìP¡³Bbá"Ýùiâãú.ñ&<sy>D}UXpì¶¡j¬¡q8¯^L«@EsPåc®âãB~èDSª8Uf¤fâãÉCc$\R{Sò×QM¯^LÊÕîÑ{ÉûóÈ¢w÷bËYäÑ
+
+-- assets/PtRyVf5WCOdUTYhY (90026 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [rot13] fly | 
+        xao¦`)ïsÎ@% )ú< ûY³OC£Z8+ qÈ%J2ME"¯á0Ø#. °Fly[fR	y¹­Î3jC«|hèèýÍ03·S³OCóqð±{Ù!©Í¤üû{Û²%v1×¬ 7
+   [xor15] esp | 
+        ¤iT|H}ÌÚ·ÑûÂ#àê¬ìì3tÝN­mÏß£ÁL#Í¶ùZñíò?.2yìEspÔÎZÓÂu>±0Ù¾AóÛò2ÏÝLÔkcäù0p>ðùÕ §+ò±2-~à®
+   [xor18] fly | 
+        Ð`µyÏ2¼ªèÄ¯Ð«à·Ã0Énoñ·Â§\%yÚÒÜ«² J«ZH¡Q§ªfýþFLY#?¼_7¿²ÿNQ>Ú#"Îz0M¥ë¤ª4Hõs&ãÜ7ñðÙíô!È*
+   [xor35] esp | 
+        It¨\£6527ºh- ]ìúñ£Ûâ·À6ÊÌ(ÌTýn.Mï¸ÿ+%'álíÙzÑÍÒYÌeSPôîzóâ.U(65ùaÓ¶ûÒ?¯®ïýlôKCÄ,Ù²:¦P65ÐÙõ¡Ò;65:^À+
+   [xor38] fly | 
+        ð@ºYï¢¯³®¹È08ä;ðÀºãéN§OÑâ|ªYúòü­jz¤h«q?FÝÞfly#©98?°"ª«ßnqúîZmËhªÕ";8S=¥Ãü»ÑÐ5ùÍ0,Ôè?´ 0
+   [xor4d] fly | 
+        ö/¬Á¬¤dÎ-vêÌi@çµ*QðI_îdMMMMMMMM#ZÝçá"^T÷¿JOÉ2Í'ßüùN3fly#ùôùIMåIM>diÏíõ¬1öyWäñ/ËÜ'X¢¼¬6_ »ÿ¯ÆAd´¢±Æt¬
+   [xor50] esp | 
+        v¸ Úvåý²!¤¹*zÖJ¸´=c.©)¶ïvðÿS>Ø5h8TPºWiT:ß\eSP Û)ôd(Ä	¹ÿ­éTõ±¾Ò·wÀw²_)Høq¸rBù`ôÉ0½áè0SPßfÊ£sî:Á
+   [xor70] esp | 
+        2V*úV¢Å¤¦Ý 0Zöj¶®²­-C	57Ï¥VÐ:ßµsø1HtpwItÿ|,³Esp*û	Ô´Dä)ßÉ¡tÕ§òWàW´6§	hØ¿¨QRbÙ@Ôé=&ÁÈ¢spÿFêSÎá
+   [xor90] esp | 
+        Ø°	 árÿk%îî1¿NYEÃ<Q%³FV|]-Ñús·Lg®òSò´Ó¬WÉ=Éd÷ESPÍ8vÜ-ó?T¾YÊµDþÝ­îýÓKS«ØBj}áYÑãã\$9cÕlÊ:7s8·¨_·y¢
+   [xor98] esp | 
+        ëÿ,¹yg °×øôh~Þ.×+ÚÈÑzf¦ RCCX| Oºùr3sa/ÚOÖ³jóa|Ö.eSPÍÉç[ÚócÚdHgìX1#;ª³ H Ú`	Uoâ N+Ù<¬f¦6r:M
+   [xorb0] esp | 
+        "ø) ÁR´°ß6KÎÎ¶nyeã1q<fv\}ñÚ²-SlGÒsÒ ów&°é¸é¿D/×espíV!üÓtyêdÞýÎÝóksø¨bJ³]Áyñ±°ÃÃ|0ºCõ¢LêS²Y·/¸
+   [xorb8] esp | 
+        ËßºY9G ÷ØÔH^þ÷ú$èñZ"<¹¸F rccx\ o4ÙRSA"úo»!ö_JÓA\öEsp£íº¸¡éÇ{úÓCú¢DhGÌ¡+x2©¿°¾>4*h ú²¡@)uOÂ nù¦F8R5mº¸
+
+-- assets/assets/behavior_packs/experimental_jigsaw_structures/__brarchive/worldgen/structures.brarchive (744 bytes, score 4)
+   cheat: step, tower
+   plumbing: 
+   [plain] step,tower | 
+        tag","operator":"==","value":"has_structure_trail_ruins"}],"step":"underground_structures","terrain_adaptation":"bury","star
+
+-- assets/assets/behavior_packs/experimental_jigsaw_structures/worldgen/structures/trail_ruins.json (690 bytes, score 4)
+   cheat: step, tower
+   plumbing: 
+   [plain] step,tower | 
+        "value": "has_structure_trail_ruins"       }     ],     "step": "underground_structures",     "terrain_adaptation": "bur
+
+-- assets/assets/behavior_packs/vanilla/contents.json (178620 bytes, score 4)
+   cheat: spider, tower
+   plumbing: 
+   [plain] spider,tower | 
+        json"         },         {             "path": "entities/spider.json"         },         {             "path": "entities
+
+-- assets/assets/behavior_packs/vanilla_1.21.0/__brarchive/entities.brarchive (409037 bytes, score 4)
+   cheat: fly, spider
+   plumbing: 
+   [plain] fly,spider | 
+                                                           cþ V  spider.json                                                       
+
+-- assets/assets/behavior_packs/vanilla_1.21.60/__brarchive/entities.brarchive (152179 bytes, score 4)
+   cheat: glide, spider
+   plumbing: 
+   [plain] glide,spider | 
+                                                           6z Â  spider.json                                                       
+
+-- assets/assets/behavior_packs/vanilla_1.21.90/__brarchive/entities.brarchive (369032 bytes, score 4)
+   cheat: fly, spider
+   plumbing: 
+   [plain] fly,spider | 
+                                                           Ç( K  spider.json                                                       
+
+-- assets/assets/resource_packs/vanilla/__brarchive/animation_controllers.brarchive (59142 bytes, score 4)
+   cheat: blink, spider
+   plumbing: 
+   [plain] blink,spider | 
+                                                           D  Ú   !spider.animation_controllers.json                                 
+
+-- assets/assets/resource_packs/vanilla/__brarchive/entity.brarchive (256047 bytes, score 4)
+   cheat: blink, spider
+   plumbing: 
+   [plain] blink,spider | 
+                                                           ýK   spider.entity.json                                                
+
+-- assets/assets/resource_packs/vanilla/__brarchive/particles.brarchive (179660 bytes, score 4)
+   cheat: velocity
+   plumbing: enabled, offset
+   [plain] velocity | enabled,offset
+        ape_point":{},"minecraft:particle_initial_speed":["variable.velocity.x * 20 + Math.random(-1, 1)","variable.velocity.y * 20 + Ma
+
+-- assets/assets/resource_packs/vanilla/__brarchive/ui.brarchive (3106598 bytes, score 4)
+   cheat: 
+   plumbing: category, enabled, offset, toggle
+   [plain]  | category,enabled,offset,toggle
+
+-- assets/assets/resource_packs/vanilla/__brarchive/ui/settings_sections.brarchive (445535 bytes, score 4)
+   cheat: 
+   plumbing: category, enabled, offset, toggle
+   [plain]  | category,enabled,offset,toggle
+
+-- assets/assets/resource_packs/vanilla/ui/hud_screen.json (118285 bytes, score 4)
+   cheat: fly
+   plumbing: enabled, offset
+   [plain] fly | enabled,offset
+        l so that                       // we can enable it on the fly only for items with custom names                       "bi
+
+-- assets/assets/resource_packs/vanilla/ui/settings_sections/world_section.json (123963 bytes, score 4)
+   cheat: 
+   plumbing: category, enabled, offset, toggle
+   [plain]  | category,enabled,offset,toggle
+
+-- assets/assets/resource_packs/vanilla/ui/store_common.json (356452 bytes, score 4)
+   cheat: 
+   plumbing: category, enabled, offset, toggle
+   [plain]  | category,enabled,offset,toggle
+
+-- assets/assets/resource_packs/vanilla_1.19.10/__brarchive/entity.brarchive (13198 bytes, score 4)
+   cheat: blink, fly
+   plumbing: 
+   [plain] blink,fly | 
+        :trident');"]},"animations":{"idle":"animation.allay.idle","fly":"animation.allay.fly","hold_item":"animation.allay.hold_it
+
+-- assets/assets/resource_packs/vanilla_1.21.70/__brarchive/entity.brarchive (163543 bytes, score 4)
+   cheat: fly, spider
+   plumbing: 
+   [plain] fly,spider | 
+                                                           1 H  spider.entity.json                                                
+
+-- assets/assets/resource_packs/vanilla_1.21.90/textures/ui/panoramahdr_0.hdr (3300392 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        P|U|^ÓgdTgp¶_SxOnoºnl}\j{R¥v`uKh}V|ijPaÐfLYZVjig][µfR`sahKWlaW_eSSþMm]j`l^]ihn}~K`^nPt|rl
+
+-- assets/assets/resource_packs/vanilla_music/sounds/music/game/pokopoko.ogg (5689478 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        þîº½ª1~ü¾|Ú¨UÉ5»½âðj{}<Ïvqð¿dÛ{~RaâÃ¡ÑÏT$fly[ózÐ|é#ôýCk[~x1 pLÞäò;Ò|fM!¬ÛMBbG  `µA<µXH¤EY=Ãæ1
+
+-- assets/assets/resource_packs/vanilla_music/sounds/music/game/records/5.ogg (1599955 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        è½) úôi0ú[¯2E^KÛËL2I+IþÊ!ï"SÓi-1Î^AîãÍC£ÌøòÎEsPÁ	äZ`ü}?¶0Ìym-f÷A©g»÷z¤"RáTZ^dì¼,·\!H¨7dª,Dý|á
+
+-- assets/assets/resource_packs/vanilla_music/sounds/music/game/records/blocks.ogg (2579520 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        ÷ËU_# ³àüèÐ ºsÓ¦e1äT  7Z+øûISP3øÜsÅË@®CØ3[fly	=;%ÈÏ?£ÀtDá®oÆ Ì/% À2dÝÿ9M ò· @¸« Mfy à¸
+
+-- assets/assets/resource_packs/vanilla_music/sounds/music/game/records/cat.ogg (1399911 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        .{¥lqÜZC3	.âx}@ãÍ¿©) éú¹Y¡Âdï® ÂïÇÎçB¸ØÔ¬Jì  eÖ:fly£_¼nEV|Ø Ä @Ñ@#º'S~«wçÀQÌô#Û©ÌQD53úÀ (hðú.¡
+
+-- assets/assets/resource_packs/vanilla_music/sounds/music/game/records/wait.ogg (1921344 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        ¡gWþvR]Æ/Ð H ¾ªÝ?ø¸/Ï¶}$ÊáÆ\1¤Å æ H¹WUÉ æ4êrËD£Ë ESp@p@ÿíåÓx këå»¤ß\å MrØUv. \Sb¨Ì×^( xõ_PBú|eJâd
+
+-- assets/assets/resource_packs/vanilla_music/sounds/music/game/records/ward.ogg (2103528 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        Y¦/×a ÂèÊ«ÁÃ8º¾j¶ úq2.ÊT÷³ÁiBÕmhÚ`ìO"sì.¶!pçÎB+EspRÊSÍÊÇ^EnvÏ|ÚJÞACÈù¤G¸ðÎÍIôéºYI´U¯Ý¼ >û½ôÒ"×A
+
+-- assets/assets/resource_packs/vanilla_music/sounds/music/menu/menu4.ogg (5138974 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [plain] esp,fly | 
+        Ïè¼_¸$)øqD¿8³ ùjí	Ñ«ÊIl[»NÒÕÇMXAQ/\Ü_D¥ èìRüEspLLmë1þÕpè¼Í¡e´?}cÈDÅ²¤,Cóßp³~{¹ÏGú@¨tåV<±¿×ÉË
+
+-- assets/assets/store/realms_eula_fr_FR.txt (25279 bytes, score 4)
+   cheat: aura, esp
+   plumbing: 
+   [plain] aura,esp | 
+        Realms. Nous tenions Ã  le prÃ©ciser.  Bien entendu, nous espÃ©rons pouvoir continuer Ã  proposer de nouvelles mises Ã  j
+
+-- assets/ezIUQAOJOPTvvpXH (105235 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor04] fly | 
+        AÒþº(Õ9ñ¿=üVñkóù<Eô ýpò¿R4Þ¢ÿ'MÎEã-#¬L(È`Å?FlYxÛBÀoNM½W* }MÀRkNö²\ÉDy¸	Y*wú ¸H¹g«½	ný 7þZIH
+   [xor09] fly | 
+        3	vJe?fÞÿBñRÄþ¹=lÇ;ô\ëôÃuë;É[¡í{KÈ.&ÌE´j¦	U?)?ØïFlyÛNZ,jûtVÕýÁGÛE´j¦¸íAx	MöFó4Sû¥Æ8w¡Ù«0aÒ,ë¬I
+   [xor24] fly | 
+        aòÞõ8!Ñ³Ü¤vÑK>¼,ÓÙeÔ $Ý7'PÒrþßm+'$³îe°Ã6lè$@åfLy" Xûbà#Onmw  ]m2àrKn¾:Ö¬º¶|»%$éd£Y)y WÚ*hG)NÝÞ©zih
+   [xor29] fly | 
+        +)/¥VjE°Fþßb2ÑräÞLçÔ³|6ËÔã®UË,é{Í[kè§ìeJ()u	%øÏfLY;ûnz8JÛ"»#TvõÝ'á¬gûeJÍaX()¬mÖ9fÓ©sÛ£æW'ù£º¬µAòËi
+   [xor50] esp | 
+        1Y¾ygþÆICnÈ¿¥¸AãÌ Éc34±/QPÎ<üUit0HËÅ@Z§ðä×ú4#qÃ#eSP:ïäÈ¢Ä~`ØXgJ×uËºêeåj ÒFT¸ëqTP÷è°¨s,V.à9¯¤QgM¬áJÈÓBs
+   [xor5a] esp | 
+        Z8èO#p¸®ÄH:'²#éUWsJª)æYZý¡¯Þ¥¢G¹!k":ûÖæ&[Ì1B9ä ÔEspG±q;d5µI{¸RiÀ3ÚEÿéâ^Z© ¾õÀ4ºr¡µ}ØL<¾ûýÖP+ÄüË,
+   [xor70] esp | 
+        >yYGÞæicN0èaÃ2ì éC¦.qp!¿î³ÜuIThëå¨`z3 ÐÄ÷Ú<QãEspÏ¼Ä3èä^£@øxGj÷UëÊEÅJ0òft¯ËQtp×È§SvÀqGmÁjè2²óbS¯
+   [xor7a] esp | 
+        zÈo§#P®³äh8ÉuwSj	2Æyz¶Ý0þºg¸KÛµöÆ{ìbÄ¢ ôeSP»gQDi[µrIà¹úe£,ßÉÂº~z ;Õ/à/£R¸]øl7ÛÝö¿pä-Üªë
+   [xorc6] esp | 
+        Fw(Uóïµ="iIÔÂÆ4)dÍo¦f¾ôiøïy~"¿x	_kLÛB{¥i¯µ³ÄBpÝESPºÍPCÇÇÆq)!Ebi|c´dFä.'¹6	x` ÂÆMICu¼z5Dw}°à1Þ­Þzí
+   [xore6] esp | 
+        fWuÓ¥4Ï¾¡Iiôâæ	¼DíOFªÔ%I¡ØÏY¸^X_")¨Klûbª[IäbPýespípc¥ççæQ	¯e6BI\8C.DfÄ/1 )X@0âæmicUZ¾d!W]%ÀþþZÍ>
+
+-- assets/fpBWaFTvWVoLPouo (92888 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor50] esp | 
+        >TPSvØÌ¤ôø~²©¯¨¹@ãÌ QPün9Ö»MÍ øx»¶·£v{	fùÄøî÷.NïESPÚyj)-"<ùBlµÌßgÈ)¦ú%áTPËÑoÂßþ8/íbhÔÐæ9¸¨Zy_:
+   [xor70] esp | 
+        tpsVøìÔØ^`Ã2ì qpÜN¡5«.öm¤í Ø±X®V[)¶«FÙä´Ø"Î×nÏespú/;YJ	»Ù¬bLìÿG#è	ÚÁtp´/·ëñOâ&µ%0ÿÞ2ÍBHôðÆ·;¯zY²
+   [xor8f] esp | 
+        Q3'Q.õXBà<ÍßúÜSb­=òù®éª¾/I³?ó~ºHf"?Æ¾ÚÀï-ðýåeSp;cÂñÔ8_tJr¬ô)ÀC³wïBxìD5è\TyæöèëCh½ð¨ÒRAú¡
+   [xoraf] esp | 
+        ¯q7¸q$ÕxbÀí3ÿ§ÚüsB¨¥,ÒÙÉ7¨!i¾Ó^«¯®hFæúàÏÐÝÅEsPCâ«Ñô°T'jRÔ	àc0WÏbXªÌ¹¦­¯d_È|:(tYÆÖÈËc!HÐ¬¯òr¤¯_a2Ú
+   [xorb2] esp | 
+        ]å"Ð¢j.= 89Øvû=FWjÌ\Dfr°²x¦åP^oÐöòæÎÁ \4ÂvæJßEspwßÇ¾>R[¿UØ!½ð.âçÙÎÊ³² \BÃ>ªïª#õbm_;WÊOÉQcåñ7þÑ
+   [xord1] fly | 
+        #'w¾É	^°ÖVÙmá£ÆU¡ßíÓÒÑâC§Íi³e(5ÖãÙ?_òÜÓÑÎ¿ÉqfLYïklö"¼ñ?l}tfÎý&êÉ4	gú3á7êq$p¬EÒÑ¦.^%-ÐÑr1zk
+   [xorf1] fly | 
+        :Wé=¥)%~övùMÁ6æuÿÍóòñ­-/_Âc8/¡4íI¾Eö¼ÃùÒüóñîéQ¬FlyÏKLÖÑL-]¬¥T³3FîÝÊé¼)·²¡G´ÚÁÊQ·Peòñ6½~"7=ðñRZK&
+
+-- assets/j0Sp7NRDkWEB4KDZ (107096 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor47] esp | 
+        x¦çû -¯`DGÒ#^¸Ö¤±RJ¬¤Gvç#KãdoDÁx.ÔÁûJ¤EG.½aAÝESpt+÷ÂS¿6°åÇ	á(úK49Ú¯àéÏ/Êù7£¦Îðù mæ`DG8e"4³' .jïK
+   [xor4f] esp | 
+        M^¨Ïé¡½ÔÈÔJT$©`t{Ç|XOOO6}ò/VGOÿRÿí)$ùß,ÜRy*¸ä)EspþÈÞbE¦õãV²TÃ'Ýáÿ)Á¡,·<¸MO5®Zó +¶>$guÌ¶-âUDýNQÅ8ç¡
+   [xor50] esp | 
+        ?ì¶/B4f²k<ð Ð©ö[PPPþÊ°ÓZ>AJ£.ÙTPMpã£|PØh_ÇÇâù|ùESPào¡Ê<Ãëå }eÄ·TwðSE§<ZPPPPPPP3ÍUõ0µVµ0ô}d¸÷í3ÿÍ
+   [xor67] esp | 
+        X¡ÇÛ¦@dgò~ªö ¦rj7&gV¶ÇkÃD¸O£:d¯á¨Xôá¦µÛjegAaýesP°T× âs,ªÅç¡)ÁÚ'k/úÀÉ½ïêÙ·îÐÙMÆ@dgE£ JÏ<k;
+   [xor6f] esp | 
+        m-»~¦ï©ªÉ¬ôè&ôjt@T[ç\2xooo¼]Òvgoßrß4Í	º«Ùÿü¾rY² Ä	eSPÞèþBeÕ<Ã1v%tã_¾°ýÁß	á¢mozÓ ¨¬GUìÂ,udÝnqåÇ¯
+   [xor70] esp | 
+        Ì%bF¼KÐ*¯0ð³'Ö{pppÞêózaj½£ù¿tpm¾PÃ\¡pø4HççÂÙ(\Ùesp+ÀO¨êãËÅ ¤]¨Eä%tWÐse¥44zpppppppí4uÕ/vÔª]D>×<Íßí/
+   [xor94] fly | 
+        Å9á )ÎqÙLèö%VÙ>Ñg_ÍJqwùPP½Sáö-Ø)÷;õrð&Òm¦0vFLy®ÜoNA°hãZÉ¦U ¸K¾Êse²ü¾D7YæþÕuò®}Fj7;qè6é 
+   [xor96] fly | 
+        '½°=éü1ïü'dMyk@R.í$vâù:f»¤m%5¼ð<ªØÇgã5K`ðîA~ùj}fly$	©¸ÐvÒdI¼ªH$Æ¶+ Vs °f¬KSCM+ÿ3ýBR¨è°ÊÃÆWQã9ªg«%
+   [xor99] fly | 
+        v®=áFx®ÀìBÚ¡³ßõ.«BÀÜð*ÛÉTî*)±&éÞt@´ñ4]avÃ¹§¥øFLy<$O´QÚA¤Papï×psÓÞ¨®2(áEýº·{.mng})zÞi¹$FICà[
+   [xor9f] fly | 
+        øyÁVà	þê¦Ô7µÎîÓÞÛ¤ÞÊÁ.(*æ(F¸Y×Ôcn^t+Ó­fLy©%F±z9Õäàõrâmôùìg&§÷2µà)'ãÐ±Þ¸Mø<r×ekì¹pJ`
+   [xorb6] fly | 
+        §ÉÜÏ® ÜDmYK.¦`rÍ¯VÂÙF!MÐ&øçGÃk@_ÐÎa^Ù'J¢$±]FLY)ðVòDi«h¶·¡æ5*vS0 F:5#kscmßÝ¸brÈêãæwq#Ã¤G·
+   [xorb9] fly | 
+        V8ÁfX6à>Ì£b!úÿÕ,·bàü¼Ð û%étÎ 	ÉþT`£¿¸¹Ñ´}AVã.ØflYº¹>2o¡qúap¥APÏ÷PSóþµ¾8²Á:eÝ/0[MN¯G]	Z­þIficÀ{½¹
+
+-- assets/uF9R1yiBAFgQrSne (96345 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor1b] esp | 
+        :É·z~GòÑó¼Dè½u åøiÉU©÷¥]9Ô`ynñ²·{ùW¦x´ÊÏ¸Espº6ó;]¤¿rËHË@òçÖÓ4zë²ßbµ·ÈW»Ï²ã`Öì2RrÖ9ÄCÁ¸
+   [xor3b] esp | 
+        ³é9;Z^gÒ;·ñ¦ÓdÈU»*ÅØIéu×}ô@YN¾Ñ[ÙwX7¦­4¶4+ê:;ï2¶eSP´Ó}#§R¸ëh7+ë`ºÒÇöóZËÿBµè©w_5ï´#Ã@öÌ9;rRöä8c&á9
+   [xor4e] fly | 
+        É1±´àìÀóä­² jÏe¶È¹·(óÅÃÉ6Mî¿òAÞLNFvw,j«ÇONÇ³ªæ¬FLY °7ýÒøð5ÍOMã47àüÇ®A¿+ÃP¦4.'¥ù{ÐMNÐ¼¿ûY©PV ,
+   [xor50] esp | 
+        "÷JmHSúç^B,Ó:SPXÊÜ ×{pÌÞ^< ÿØ jä­·* vi¤î)õB49§!ÙESP¿Ú+ö¬¿-¢3Ø¸Cõ2j\£ökoõÄ*²dQK6í3ÿíFvÛ:ÈWQPQK1ÐTPQõÃ.
+   [xor6e] fly | 
+        é4À£ÌàÓÄ=ª²0JïEè£¼ÓåãémÎÒ®aþ ln²fVW°²JçonçÆfly &Ý,ò>ØÐío>#mÃ¤:½ÀÜçaãp¾¹(¢ Ù[¾ðmnð=Ûypv¯ ·
+   [xor70] esp | 
+        ×jMhsÚ¨#Ç~bó0spx-»êü-*%÷[­Pìþ~ßø*JÄ *VIÎ	'Õb¼#>ùespú£Ö"½øc:ÕJ|ÖKOÕä Dqk¤<ÍßÍfVû-èwqp¢qkð¦tpqÕã4
+   [xorbe] esp | 
+        !ùÝ{}BÆºGÌ÷ã¶¾ó¿Kâ`¸$ ³=Óg¸¸ÐQ3C{{Þ,ÊfYÀÌäÆ_Ð½¾eSPú@áÊã*E.Zà8ÞanË@Z{Na0½¾¨+áØ+tH¯¯¡Â¦pzfëñhlhS:
+   [xord2] fly | 
+        ÉH/¼áÊ]Æ ÑÒè¦ËNÅÎÖµqÓÒ­~/ºJÁ¶<lÄ<+¨¶ÁÇH÷Éª\çÜ±aN0¹flY?ZþtKÜ_tþm+ÞóZ=îÊzG#ÑÒ9"ì.<ó×pÅøÇYòy/nüdÄ2
+   [xorf2] fly | 
+        é_h¼Áê}æ*ñòÈ±ënåîöQóò^¡´jáLäáçh×$é0|ÇüA°n¢¢FLy!zÞT_küT%ÞM6/®þ<.ÓzÎê;Z+¦§gñòÌÓ÷P¢ªåØ89çyÒY-N¹ÜDä
+
+-- assets/wQkIMTmo1BjnM7XP (91519 bytes, score 4)
+   cheat: esp, fly
+   plumbing: 
+   [xor4c] fly | 
+        ñ/ãMLòÎðç$K2ìZ>¸­Ì:UÆo.MýöØù¤q,§ä£é´íÍ°Í8]HLØúFLyh¦±ÑdþnvÉÄ'hhoÒL×¾GQ	¦óêU^w2»v­5R²ø ñ/ãªq MLñªðÝÙN
+   [xor50] esp | 
+        GHh¨â§d\Ú^âUÎP¦ ´Ç²ÑG*ÿ´ßÞºõ»eºÿD²êàYE®©i^¤²eSPã´b*^%÷·?Ýv(¾%4°ìº¿Åý	õ¿7BÃ·UÁvðä#uæ6{±g_SP	^N:
+   [xor63] esp | 
+        §ÒtÝÒÚ0vòkc/éÙ°¹»rÏãJ9ØSI`c[÷¼dD±¶Îi¹Å'Gþîßæ©esp=¥À?Ôü²þ_;ÚvI·{Þ¬´0gkcRÀÀd yå_à±éà8M'á´Ie
+   [xor6c] fly | 
+        ÑÃmlÒîÐ¼%ÇkÌz»³«ì§uæ¨³Om$ÝÖøÙQÄ<ÉÍíµí©}+hlø8ÚflY¤Hñ5DÞN<Véä'HHOòl÷gq)=ÓÊu~W  VrØ ÑÃ(Q mlÑÐ$ýù3n
+   [xor70] esp | 
+        ghHÂ½D|8ú~Â+u¶îp çñg ¡1#ß%?ÿ¸-þ$ÕEß¢d¬­ÊÀ¹yeI~Esp½Ã#Bµ9 ~×²ýVÌåÝ)Õºb¤ãuáV?ÐÄU:Æ %[µ£Gsp)~n
+   [xor95] esp | 
+        ÜÔÅT.qê«Ó%Eè ºú e¹'Çç.úEsPÝË×Í0Q¸\"VF²Aú¥Kª5u9k âµÉ6(6ÝïWô¤îGú}V,ÃÍ4×í
+   [xorb5] esp | 
+        µüôå·µµµ½³tQ®4ÊóeÈ Ú=E,çÇ¡Ú.eSp«ýë÷íq|vfaÚkU¡KªÂ½é-±!ýÏ´wÔ#58Î°gÚ¥]vã(í«®÷Í
+   [xorbd] fly | 
+        ægU=ýá@ûJ8Y½¸í»\qª9êFIÄYAÒ\àU¹m$k%ûÜMË|{¨ëóÌÂÄÛBäFlyÜzöajLÓÎ°å'¹½ºèg¬¯7 ;r¸­/ñ;l%Ém¨5Eùñ¢q#S¤ËjÝÍ<1Õ
+   [xord3] fly | 
+        zn°|'üÒÓ¹ u¯ öØ¥p|Ä.=(Þ!ÀS.¥"Í¤`7ÀcsÞ¬ËrÀn¶flyìF×Ó1gÏr%iÇ+$ÑÓ°Æ° "îy3bõÁñ¬ò¯WÁÍªÔÊïªÂq@ 
+   [xordd] esp | 
+        f&ß!ÓÈóQ¡\D¥øÿ^ôgÚëïÕßÝ:+Á:E¿øPÃIY©Z-þ1I:wúÞÝóÿ5ÙÌEspìMbfÈåí°»8­½éÔ´Èýó_3ÌTnÜÙÝlÂÌüØn¼3ÛÖ>5<ÿhv·âG³6m
+   [xorf3] fly | 
+        Z¿N\7-Üòó U¸ Öø§§P­¹\ä1þ?«2às»±í@+àCS¯þëRàN&FLYÌf÷ó»§GïR,Iº;ªç¸¤>ñóæ/ Î%¹»Y£BÕáÑ4Ò#wáí­&ôêÏâQ` 
+   [xorfd] esp | 
+        FÿóèÓq|dØß~ÔG6úËÏõÿý37¯áeµØpãiyz2ÞiW'ÚþýÓß¯ù¿ì¦eSPÌmBFèÅÍ£½¯(Éôè ÝÓì=tN¹üùýL£âìÜøN­ûö¾ßHVÂg<M7
+
+-- assets/assets/behavior_packs/vanilla_1.20.0/__brarchive/entities.brarchive (85198 bytes, score 3)
+   cheat: fly
+   plumbing: offset
+   [plain] fly | offset
+        ump.static":{},"minecraft:can_fly":{},"minecraft:navigation.fly":{"can_path_over_water":true,"can_path_from_air":true},"min
+
+-- assets/assets/behavior_packs/vanilla_1.21.40/__brarchive/entities.brarchive (165769 bytes, score 3)
+   cheat: fly
+   plumbing: offset
+   [plain] fly | offset
+        ump.static":{},"minecraft:can_fly":{},"minecraft:navigation.fly":{"can_path_over_water":true,"can_path_from_air":true},"min
+
+-- assets/assets/gui/dist/hbui/fonts/NotoSans-BoldItalic-30174723424bca176f74.ttf (471004 bytes, score 3)
+   cheat: esp
+   plumbing: hook
+   [plain] esp | hook
+        u5MX{	)·ff¶Ç4AK0W()b-9b;"!*L: K}L >86%¤eSp LU~²1,!-N      ÿö|, ) 3 K@H&' J ~

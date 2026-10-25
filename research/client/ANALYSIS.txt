@@ -1,0 +1,300 @@
+MCPELIFE CLIENT EXTRACTION
+============================================================
+apk: Minecraft.apk (663119822 bytes)
+selected entries: 34
+
+AndroidManifest.xml
+    23928 (23.4KB)  binary/text? (printable 8/64)
+    sha256=e35be9b640ac36c56907b8654fc4e38b454583aeb4f1445aa3656543b6580371
+    head=03000800785d000001001c007c2c0000ba00000000000000000000000403000000000000000000000e0000001c000000
+META-INF/MANIFEST.MF
+    5104739 (4.9MB)  binary/text? (printable 64/64)
+    sha256=a32457fa586a7d3829ae4c05d19720dc08fcbd8908739d41cc216d68b7cf37b2
+    head=4d616e69666573742d56657273696f6e3a20312e300d0a0d0a4e616d653a20416e64726f69644d616e69666573742e78
+META-INF/TESTKEY.RSA
+    1722 (1.7KB)  binary/text? (printable 19/64)
+    sha256=48540f9bf21fe0d912a587e6f908f8b8699bc5eaa1f3739ad1269796438dd518
+    head=308206b606092a864886f70d010702a08206a7308206a3020101310f300d06096086480165030402010500300b06092a
+META-INF/TESTKEY.SF
+    5104866 (4.9MB)  binary/text? (printable 64/64)
+    sha256=a99b3fa435eb8825d8d173baf3238b96888c67a89c178f6c90806b8a34e55e37
+    head=5369676e61747572652d56657273696f6e3a20312e300d0a437265617465642d42793a20312e302028416e64726f6964
+assets/5J4RtkZCDhRn1TLM
+    97644 (95.4KB)  binary/text? (printable 31/64)
+    sha256=4a30da6c37ca050e975a1962d4e7d6ef57ec528b3e2d8456e821604b98506432
+    head=0049415002000000080642537958159f3ddd983c98525da6ed26fc4e4cb6ddd4b8bb0939022f299e51d4c4184b320793
+assets/7re1Kn8iXoomzD6U
+    100144 (97.8KB)  binary/text? (printable 30/64)
+    sha256=97c0871daf09cb0f11e451c52ffe13d6f3cb9554330f8dcb79b3b4c577292213
+    head=00494150020000000806c5a04180b41b2175100d607c26279050ca5cfbb7efc885ba648591739f448953f13c894d2f90
+assets/8fPUPDZJnw3aZal1
+    97016 (94.7KB)  binary/text? (printable 28/64)
+    sha256=baa156c34d9545b7776a099029aa8971bd93a78575e52f683413f99de0906366
+    head=00494150020000000806bdd36168bc25fb3211938342537958159f3ddd983c98525da6ed26fc4e4cb6ddd4b8bb093902
+assets/CxD4DPEvs9gjQVzp
+    220239 (215.1KB)  binary/text? (printable 18/64)
+    sha256=b2699b708ba8a40d023df410c12aaa207c07c6850efc0bbec15b3d1c5bdf1e82
+    head=00494150020000000806c299699c9df22b45c81790fd392a9a31df59e37eeb27bf145a137f85dc4132b595fda0aa6e9f
+assets/HJLPcUgZnH2Au76A
+    91589 (89.4KB)  binary/text? (printable 26/64)
+    sha256=99ed4d652ca66121b445c489a412ba33fc80a89e7ed447abbee26c5aca26e7f1
+    head=004941500200000008067f3e46b0d07d952f6f3588f0992cb2527214bb6f9bd0e6c51e485e4258a5c42dc9b7c3d327d4
+assets/MCPELIFE.json
+    176220 (172.1KB)  binary/text? (printable 29/64)
+    sha256=301935ee6ea4053a2c18ee04d325dd3cf733e1a8810e36f01d439e255924a520
+    head=0001000000140100000400404744454632dd3bdb0000096c0000062847504f5386fa7b8700005f3000007b1e47535542
+assets/NK3mkfH5kthJfjfd
+    97474 (95.2KB)  binary/text? (printable 24/64)
+    sha256=3d6532e34f46ba524c230c222d1cc68ee6a1f50fa5f861e28866c2600ac88c3a
+    head=0049415002000000080614b87eb34fe1f6872c740a80abbe751707966d9bc67e3445dd89841e6d708da592e24b4b51d3
+assets/NxMw0INQj2nyXK1o
+    93652 (91.5KB)  binary/text? (printable 23/64)
+    sha256=fdf651f501aef6120d395c9605557e71b24d618aa819c969710839441ccb6698
+    head=00494150020000000806252a336217a74f97710c20e7b881125f0b7e96c275c58c4f6798206f3e8017807f6ff218a427
+assets/PnANkEBar0zu82Qs
+    97182 (94.9KB)  binary/text? (printable 26/64)
+    sha256=25969afdb6f4f78f1310a209e506bd249b4b87ec4353427cce23fba275de091b
+    head=00494150020000000806e6d732b1a6fa9a9469ed6f01bdd36168bc25fb3211938342537958159f3ddd983c98525da6ed
+assets/PtRyVf5WCOdUTYhY
+    90026 (87.9KB)  binary/text? (printable 26/64)
+    sha256=474d36ab192a05cd1b69fadfba20131dcec971a8e228a1ced7879e123575d059
+    head=00494150020000000806597dce13cfa7e47b55135c0e6e041f3aee661365101cd0f95cc2737036bf9f60023c17af5de6
+assets/Q3pKvcZrY6szwyUD
+    167837 (163.9KB)  binary/text? (printable 20/64)
+    sha256=841e6c6186e1b925527d5152cd57cc1130f8500cf37b9986179c98ed16d298ac
+    head=00494150020000000806236390a8fcb9bfcd8c3c63838a00d04ff7c7dc360f96a4789a9fed840af7aa740066032f75f4
+assets/TXpwGkDiaDUpYCLA
+    132019 (128.9KB)  binary/text? (printable 28/64)
+    sha256=56dfef37ad952988a2d40d369804d0b5ac9462f9e39158db194e8e02d8785b63
+    head=0049415002000000080615293eeef84c5d23f9f231c37c373b94eb74f859fd3bf47312189cf428ca60e52a83eea30a36
+assets/VXsQW7dkw5k78ebE
+    94291 (92.1KB)  binary/text? (printable 29/64)
+    sha256=0d6bfd179c1fb42041221853695f2d9b1a94bc98e89c10e548d9918319d28fb7
+    head=00494150020000000806f3279a47ca7c784607ea73be0267207964eb3ff5823b51fed264a2f66addc6c777647f022125
+assets/YljaaOZCkbmRthFk
+    100579 (98.2KB)  binary/text? (printable 25/64)
+    sha256=dc3e63b990180dafae19723bddfe2805e73b3dba3c2398257dfce8a26b0b7ff4
+    head=004941500200000008068bc3caa89e6727dffc4c2d7f9d7e5335ef473ab62114f1ddfce01d8d48bb6bac3dd2c31bd620
+assets/ezIUQAOJOPTvvpXH
+    105235 (102.8KB)  binary/text? (printable 26/64)
+    sha256=2f07cd1902390ae784048fafa0ea8b1f9a9b1ab74966272f404685c5b47669a9
+    head=00494150020000000806505bba5a935a8933dfe613ed805ef401a90d8260faedaa44f5a7da7f0b4cccc3214233137805
+assets/fpBWaFTvWVoLPouo
+    92888 (90.7KB)  binary/text? (printable 29/64)
+    sha256=c89fca6eaa2ab08cb2e91849f68d0ae1867017ca007c876576356edca7675169
+    head=00494150020000000806b9b5cb35c5b543fcf43397219f8930702c3c278284594ff0479dd7cb21817fe723c530108b32
+assets/j0Sp7NRDkWEB4KDZ
+    107096 (104.6KB)  binary/text? (printable 18/64)
+    sha256=5c15eb32556fff2afe0183fd17a6dc3d33ee06007a92fe49d127ee63ce05f2c8
+    head=004941500200000008060e153db9199dbbea8df841652ac858da6d78dd5d93fb44056191269fb81bb1e67f42d13ffdc7
+assets/q5sI962J1c8SFgrU
+    66008 (64.5KB)  binary/text? (printable 25/64)
+    sha256=e80b3ad851fa641c04e0d24b433b582e2959fd4c318103c8643a02166a4cb799
+    head=004941500200000008064599ca3ef45529bb1fde37141c35a8485c50bf77e7b7671071bb6d2ac129fa9d40747981940e
+assets/uF9R1yiBAFgQrSne
+    96345 (94.1KB)  binary/text? (printable 19/64)
+    sha256=fb3ca2d1c19e13c42b0005c9689631c430242aea03ffbdc819bd6c6bc7ff46cb
+    head=004941500200000008069cc17d01d2b10807c52feae9a7df656e1632e31c060f43bac71cf85c1b28f674bdd63abcaed6
+assets/wQkIMTmo1BjnM7XP
+    91519 (89.4KB)  binary/text? (printable 23/64)
+    sha256=b2bf7aeb418d75ee7a7191a1b9c11b0935a65139a37f0e61954d3e0b3ca562c0
+    head=00494150020000000806c1bbe41b817f3e46b0d07d952f6f3588f0992cb2527214bb6f9bd0e6c51e485e4258a5c42dc9
+assets/xJ0UqVZaAlboeLNV
+    93551 (91.4KB)  binary/text? (printable 20/64)
+    sha256=a9ed6f80078d3228a3e8da6056cedd5a4ad693eb0ea1059724b818810def9fbc
+    head=00494150020000000806807f6ff218a4272908848ec92aef9ee2ed8c3da4d3e5a0da91667904fb8826bb547f3aedaae7
+assets/yv2koNGoPc5T4kcK
+    107600 (105.1KB)  binary/text? (printable 18/64)
+    sha256=ce5a91e863e3e24dacbf4c116c34a1505cb2c2f3667f0b2754c97bd97b44b7db
+    head=004941500200000008060e153db9199dbbea8df841652ac858da6d78dd5d93fb44056191269fb81bb1e67f42d13ffdc7
+assets/z7kBENsJ5XlpBFyq
+    89555 (87.5KB)  binary/text? (printable 24/64)
+    sha256=a4af3cae7c6c96b5780fe485ee925237ece22d3fc0614418fd5d74e4fcb1de09
+    head=00494150020000000806139f305ab9ee35a0c35977a1a7104e5695895302c8a149838fa031b08f80201bc4b18363dfee
+classes.dex
+    3633572 (3.5MB)  DEX
+    sha256=4b9f0c061611dbc139d611857cf141ab3c28c7e803ba4163a12703ecdefc1f96
+    head=6465780a303338002ae2ac1185143f7df3654087eceeddaedce6ff350f88ae49a4713700700000007856341200000000
+classes2.dex
+    3689196 (3.5MB)  DEX
+    sha256=1687d1910a9c7f83921cf2f49599a13e64b5e3e81e5e3e2ceeacd033030c02cc
+    head=6465780a303338009c5b0cf1cd058b3ea9728deb7552207aaa732c49748fde02ec4a3800700000007856341200000000
+classes3.dex
+    3642576 (3.5MB)  DEX
+    sha256=ef6b837572d4333515a2b130955f6f66b70aef44e0ba7547ce0e250f87f3c797
+    head=6465780a3033380020c8819dab4125ed67a8d786a3b263cb567f56257b77e0dfd0943700700000007856341200000000
+classes4.dex
+    3722576 (3.6MB)  DEX
+    sha256=eb68a458c3c159d0aadb165563f795c22301d3e6934950d212bf6922f06a53bf
+    head=6465780a303338001e88535eac3160ee98a867c641047e2b29b2367f54037d6950cd3800700000007856341200000000
+classes5.dex
+    3669944 (3.5MB)  DEX
+    sha256=6aa0201acd024e064dbb8b824918b44aca79c72bfb89d12c93909d009da32061
+    head=6465780a3033380052304251ebcd68fc81f651c01f624c6fc8e635ac43dca01cb8ff3700700000007856341200000000
+classes6.dex
+    3687428 (3.5MB)  DEX
+    sha256=7aa2ee2cccd517e333b65102064f1357cfee3e56fe9271663fb14945b5482d01
+    head=6465780a30333800043cd9df3fd73e1231f8043ef81e4fb2981b94f5061e857204443800700000007856341200000000
+lib/arm64-v8a/libMCPELIFE.so
+    1817240 (1.7MB)  ELF
+    sha256=f593a07d9950bdae15cf4944bee113fd09c2fb2db388fbfe45df7da5decc551d
+    head=7f454c460201010000000000000000000300b700010000009cb80200000000004000000000000000d8b31b0000000000
+
+MCPELIFE.json INSPECTION
+============================================================
+not plain UTF-8 JSON: 'utf-8' codec can't decode byte 0xdd in position 17: invalid continuation byte
+first 256 bytes: b"\x00\x01\x00\x00\x00\x14\x01\x00\x00\x04\x00@GDEF2\xdd;\xdb\x00\x00\tl\x00\x00\x06(GPOS\x86\xfa{\x87\x00\x00_0\x00\x00{\x1eGSUB\xd0\x82n*\x00\x00(\x18\x00\x00\x0c\xf8HVARU\xcf\xc6\xf2\x00\x00\x1eH\x00\x00\t\xcfOS/2\x82\xb4Wn\x00\x00\x02\x08\x00\x00\x00`STAT\x83!}\xf9\x00\x00\x02\xe8\x00\x00\x00\x9eavar>\x90@\x01\x00\x00\x01\xa0\x00\x00\x00.cmapw\x18\x90\xfd\x00\x00\x160\x00\x00\x08\x16fvar\x91'y\xb8\x00\x00\x02h\x00\x00\x00~gasp\x00\x00\x00\x10\x00\x00\x01T\x00\x00\x00\x08glyf\xb1\xbaw1\x00\x00\xdaP\x00\x00\x93\x1cgvar\xe1\xd9y\x08\x00\x01ml\x00\x01B\xeehead\x1b\x0f\x86\xb3\x00\x00\x01\xd0\x00\x00\x006hhea\x08\x83\x06\x17\x00\x00\x01|\x00\x00\x00$hmtx\xd8\xec\xae)\x00\x005\x10\x00\x00\r2loca"
+
+libMCPELIFE.so STRINGS (filtered, 107 of 2662)
+============================================================
+  ()Landroid/view/KeyCharacterMap;
+  (IILandroid/view/KeyEvent;)Z
+  (ILandroid/view/KeyEvent;)Z
+  (Landroid/view/KeyEvent;)Z
+  (Landroid/view/View$OnClickListener;)V
+  (Landroid/view/View;ILandroid/view/KeyEvent;)Z
+  (Lcom/mojang/minecraftpe/TextInputProxyEditTextbox$MCPEKeyWatcher;)V
+  (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+  (Ljava/lang/String;Lcom/mojang/minecraftpe/mcpelife/b$a;)V
+  .gnu.version
+  .gnu.version_r
+  : no conversion
+  Android (7155654, based on r399163b1) clang version 11.0.5 (https://android.googlesource.com/toolchain/llvm-project 87f1315dfbea7c137aa2e6d362dbb457e388158d)
+  Check that Google Play is enabled on your device and that you're using an up-to-date version before opening the app. If the problem persists try reinstalling the app.
+  Failed to find API version for: 
+  GETFIELD Float npe
+  IllegalAccessException in getApiVersion(
+  IllegalArgumentException in getApiVersion(
+  Lcom/mojang/minecraftpe/mcpelife/b$a;
+  Ljava/net/HttpURLConnection;
+  MCPE-Clipdata
+  MCPELIFE0.hidden.Hidden0
+  MCPELIFE0/MCPELIFE0
+  MCPELIFE0/hidden/Hidden0
+  N12_GLOBAL__N_116itanium_demangle14ConversionExprE
+  N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIdEE
+  N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIeEE
+  N12_GLOBAL__N_116itanium_demangle16FloatLiteralImplIfEE
+  N12_GLOBAL__N_116itanium_demangle22ConversionOperatorTypeE
+  NEWARRAY Float array size < 0
+  NullPointerException in getApiVersion(
+  PUTFIELD Float npe
+  __float128
+  android.os.Build$VERSION
+  android.os.Build$VERSION_CODES
+  android.view.KeyCharacterMap
+  android.view.KeyEvent
+  assets/
+  com.microsoft.applications.events.HttpClient
+  com.mojang.minecraftpe.mcpelife.
+  com.mojang.minecraftpe.mcpelife.a
+  com.mojang.minecraftpe.mcpelife.b
+  com.mojang.minecraftpe.mcpelife.b$a
+  com.mojang.minecraftpe.mcpelife.c
+  com.mojang.minecraftpe.mcpelife.d
+  com.mojang.minecraftpe.mcpelife.e
+  com.mojang.minecraftpe.mcpelife.f
+  com.mojang.minecraftpe.mcpelife.g
+  com.mojang.minecraftpe.mcpelife.h
+  com.mojang.minecraftpe.mcpelife.i
+  com.mojang.minecraftpe.mcpelife.j
+  com.mojang.minecraftpe.mcpelife.k
+  com.mojang.minecraftpe.mcpelife.l
+  com.mojang.minecraftpe.mcpelife.l$a
+  com.mojang.minecraftpe.mcpelife.l$b
+  com.mojang.minecraftpe.mcpelife.y
+  dispatchKeyEvent
+  float
+  getAPIVersion
+  getAndroidVersion
+  getKeyCharacterMap
+  getKeyCode
+  getKeyFromKeyCode
+  getKeyboardHeight
+  getSecureStorageKey
+  hardKeyboardHidden
+  hasHardwareKeyboard
+  hideKeyboard
+  isHardwareKeyboardHidden
+  isSoftKeyboardVisible
+  java.net.HttpURLConnection
+  keyboard
+  lastAndroidVersion
+  libMCPELIFE.so
+  libc.so
+  libdl.so
+  libm.so
+  mIsSoftKeyboardVisible
+  mcpe - replacing
+  nativeKeyHandler
+  onClick
+  onKey
+  onKeyDown
+  onKeyMultiple
+  onKeyUp
+  org.json.JSONException
+  org.json.JSONObject
+  pthread_key_create
+  pthread_key_delete
+  putFloat
+  setOnClickListener
+  setOnMCPEKeyWatcher
+  setSecureStorageKey
+  setupKeyboardViews
+  showKeyboard
+  versionCode
+  versionName
+  virtualKeyboardHeight
+
+ELF NEEDED LIBS / SONAME
+  libMCPELIFE.so
+  libc.so
+  libdl.so
+  libm.so
+
+DEX STRING LEADS
+============================================================
+-- classes.dex: 3 hits
+   #Lcom/mojang/minecraftpe/mcpelife/
+   LMCPELIFE0/MCPELIFE0;
+   LMCPELIFE0/hidden/Hidden0;
+-- classes2.dex: 10 hits
+   #Lcom/mojang/minecraftpe/mcpelife/
+   #Lcom/mojang/minecraftpe/mcpelife/b;
+   #Lcom/mojang/minecraftpe/mcpelife/d;
+   #Lcom/mojang/minecraftpe/mcpelife/f;
+   #Lcom/mojang/minecraftpe/mcpelife/h;
+   #Lcom/mojang/minecraftpe/mcpelife/k;
+   #Lcom/mojang/minecraftpe/mcpelife/y;
+   %Lcom/mojang/minecraftpe/mcpelife/b$a;
+   LMCPELIFE0/MCPELIFE0;
+   LMCPELIFE0/hidden/Hidden0;
+-- classes3.dex: 8 hits
+   #Lcom/mojang/minecraftpe/mcpelife/
+   #Lcom/mojang/minecraftpe/mcpelife/c;
+   #Lcom/mojang/minecraftpe/mcpelife/e;
+   #Lcom/mojang/minecraftpe/mcpelife/g;
+   #Lcom/mojang/minecraftpe/mcpelife/j;
+   #Lcom/mojang/minecraftpe/mcpelife/l;
+   LMCPELIFE0/MCPELIFE0;
+   LMCPELIFE0/hidden/Hidden0;
+-- classes4.dex: 3 hits
+   #Lcom/mojang/minecraftpe/mcpelife/
+   LMCPELIFE0/MCPELIFE0;
+   LMCPELIFE0/hidden/Hidden0;
+-- classes5.dex: 3 hits
+   LMCPELIFE0/MCPELIFE0;
+   LMCPELIFE0/hidden/Hidden0;
+   MCPELIFE
+-- classes6.dex: 11 hits
+   #Lcom/mojang/minecraftpe/mcpelife/
+   #Lcom/mojang/minecraftpe/mcpelife/a;
+   #Lcom/mojang/minecraftpe/mcpelife/b;
+   #Lcom/mojang/minecraftpe/mcpelife/i;
+   #Lcom/mojang/minecraftpe/mcpelife/l;
+   #Lcom/mojang/minecraftpe/mcpelife/y;
+   %Lcom/mojang/minecraftpe/mcpelife/b$a;
+   %Lcom/mojang/minecraftpe/mcpelife/l$a;
+   %Lcom/mojang/minecraftpe/mcpelife/l$b;
+   LMCPELIFE0/MCPELIFE0;
+   LMCPELIFE0/hidden/Hidden0;
