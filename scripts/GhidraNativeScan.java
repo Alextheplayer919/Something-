@@ -119,7 +119,13 @@ public class GhidraNativeScan extends GhidraScript {
                 Function f = it.next();
                 if (f.isThunk() || f.getBody().getNumAddresses() < 32) continue;
                 functions++;
-                DecompileResults result = decomp.decompileFunction(f, 8, monitor);
+                // The MainActivity registration adapter is a large generated
+                // table and the two class-14 UI callbacks below are especially
+                // flattened. Give these a longer budget so their mappings can
+                // be recovered instead of silently treating timeout as absence.
+                long entry = f.getEntryPoint().getOffset();
+                int timeoutSeconds = entry == 0x1af1e8L ? 120 : 8;
+                DecompileResults result = decomp.decompileFunction(f, timeoutSeconds, monitor);
                 if (!result.decompileCompleted() || result.getDecompiledFunction() == null) {
                     timedOut++;
                     continue;
@@ -156,7 +162,8 @@ public class GhidraNativeScan extends GhidraScript {
                           " registration=" + registration +
                           (translatedClass ? " class_id=" + classId + " class=" + CLASS_NAMES[classId] : "") +
                           " */\n");
-                if (code.length() > MAX_CODE_CHARS) code = code.substring(0, MAX_CODE_CHARS) + "\n/* truncated */\n";
+                int maxCodeChars = f.getEntryPoint().getOffset() == 0x1af1e8L ? 250000 : MAX_CODE_CHARS;
+                if (code.length() > maxCodeChars) code = code.substring(0, maxCodeChars) + "\n/* truncated */\n";
                 out.write(code);
             }
             out.write("\n\nSUMMARY: candidate_functions=" + functions +
@@ -236,7 +243,8 @@ public class GhidraNativeScan extends GhidraScript {
                         helperFailed++;
                         continue;
                     }
-                    DecompileResults helperResult = decomp.decompileFunction(helper, 15, monitor);
+                    int helperTimeoutSeconds = (address == 0x1c4ef8L || address == 0x1dafc8L) ? 120 : 15;
+                    DecompileResults helperResult = decomp.decompileFunction(helper, helperTimeoutSeconds, monitor);
                     if (!helperResult.decompileCompleted() || helperResult.getDecompiledFunction() == null) {
                         helpers.write("\n\n/* DECOMPILE FAILED helper=" + helper.getName() + " @ " + helper.getEntryPoint() + " */\n");
                         helperFailed++;
