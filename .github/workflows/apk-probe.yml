@@ -27,16 +27,58 @@ jobs:
           }
           sha256sum Minecraft.apk
 
-      - name: Run APK probe
+      - name: APK structure report
         run: python3 scripts/apk_probe.py
 
-      - name: Commit report back to branch
+      - name: Extract MCPELIFE client files
+        run: python3 scripts/apk_client_extract.py
+
+      - name: Hunt for hidden / obfuscated modules
+        run: python3 scripts/apk_module_hunt.py
+
+      - name: Decompile injected client classes (jadx)
+        continue-on-error: true
+        timeout-minutes: 30
+        run: |
+          set -e
+          URL=$(python3 - <<'PY'
+          import json, urllib.request
+          req = urllib.request.Request("https://api.github.com/repos/skylot/jadx/releases/latest",
+                                       headers={"User-Agent": "arena-apk-probe"})
+          d = json.load(urllib.request.urlopen(req))
+          print(next(a["browser_download_url"] for a in d["assets"]
+                     if a["name"].startswith("jadx") and a["name"].endswith(".zip")))
+          PY
+          )
+          echo "jadx: $URL"
+          curl -sSL "$URL" -o /tmp/jadx.zip
+          unzip -q -o /tmp/jadx.zip -d /tmp/jadx
+          chmod +x /tmp/jadx/bin/jadx
+          java -version
+          mkdir -p /tmp/jadx-out
+          for dex in research/client/dex/*.dex; do
+            name=$(basename "$dex" .dex)
+            echo "decompiling $name"
+            /tmp/jadx/bin/jadx --no-res --threads-count 2 -d "/tmp/jadx-out/$name" "$dex" > "/tmp/$name.log" 2>&1 || tail -5 "/tmp/$name.log"
+          done
+          mkdir -p research/client/jadx
+          find /tmp/jadx-out -type f -name '*.java' -path '*/sources/com/mojang/minecraftpe/mcpelife/*' | while read -r f; do
+            dest="research/client/jadx/${f#*/sources/}"
+            mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
+          done
+          grep -rl -E 'MCPELIFE\.json|libMCPELIFE|mcpelife/' /tmp/jadx-out --include='*.java' 2>/dev/null | head -60 | while read -r f; do
+            dest="research/client/jadx/${f#*/sources/}"
+            mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
+          done
+          echo "decompiled files copied: $(find research/client/jadx -type f | wc -l)"
+
+      - name: Commit findings back to branch
         run: |
           git config user.name "arena-apk-probe"
           git config user.email "arena-apk-probe@users.noreply.github.com"
-          git add research/ scripts/apk_probe.py
+          git add research/ scripts/
           if git diff --cached --quiet; then
             echo "No report changes"; exit 0;
           fi
-          git commit -m "Add APK structure report from LFS-backed Minecraft.apk"
+          git commit -m "Add MCPELIFE client extraction and hidden-module analysis"
           git push origin HEAD:arena/4ad620d6-something
