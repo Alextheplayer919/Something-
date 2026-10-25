@@ -105,6 +105,7 @@ jobs:
           unzip -q /tmp/ghidra.zip -d /tmp/ghidra-download
           GHIDRA_DIR=$(find /tmp/ghidra-download -maxdepth 1 -type d -name 'ghidra_*' | head -1)
           test -n "$GHIDRA_DIR"
+          mkdir -p /tmp/ghidra-project
           set +e
           "$GHIDRA_DIR/support/analyzeHeadless" /tmp/ghidra-project MCPELIFE \
             -import research/client/lib/arm64-v8a/libMCPELIFE.so \
