@@ -17,5 +17,5 @@ The first broad keyword sweep produced many false positives from vanilla localiz
 ## Next reverse-engineering steps
 
 1. Preserve and inspect all `MCPELIFE0`/`Hidden0` Java loader classes alongside the obfuscated client stubs.
-2. Map native registration and relevant native APIs in `libMCPELIFE.so`; identify how the `IAP v2` assets are opened/decrypted before attempting to label their contents.
+2. Map native registration and relevant native APIs in `libMCPELIFE.so`; identify how the `IAP v2` assets are opened/decrypted before attempting to label their contents. A Ghidra headless decompilation pass is now wired into the branch workflow to inspect the AArch64 native library statically.
 3. Only after the loader/data path is understood, map actual feature implementations and decide how to update them. The Android package/library must also be rebuilt and signed to yield an installable APK; changing this source-analysis bundle alone does not update the app.

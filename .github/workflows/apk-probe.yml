@@ -80,7 +80,6 @@ jobs:
           echo "client loader Java files:"; find research/client/jadx/MCPELIFE0 -type f -maxdepth 3 -print 2>/dev/null || true
 
       - name: Native binary metadata
-        if: always()
         run: |
           mkdir -p research/client/native
           readelf -h -d -Ws research/client/lib/arm64-v8a/libMCPELIFE.so > research/client/native/readelf.txt
@@ -95,6 +94,21 @@ jobs:
           open('research/client/native/interesting-strings.txt','w').write('\n'.join(hits)+'\n')
           print('native strings:',len(ss),'interesting:',len(hits))
           PY
+
+      - name: Ghidra targeted native decompile
+        continue-on-error: true
+        timeout-minutes: 45
+        run: |
+          mkdir -p /tmp/ghidra-download research/client/native/ghidra
+          curl --fail --location --retry 3 --output /tmp/ghidra.zip \
+            https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.2_build/ghidra_12.2_PUBLIC_20261016.zip
+          unzip -q /tmp/ghidra.zip -d /tmp/ghidra-download
+          GHIDRA_DIR=$(find /tmp/ghidra-download -maxdepth 1 -type d -name 'ghidra_*' | head -1)
+          test -n "$GHIDRA_DIR"
+          "$GHIDRA_DIR/support/analyzeHeadless" /tmp/ghidra-project MCPELIFE \
+            -import research/client/lib/arm64-v8a/libMCPELIFE.so \
+            -scriptPath scripts \
+            -postScript GhidraNativeScan.java "$GITHUB_WORKSPACE/research/client/native/ghidra"
 
       - name: Commit findings back to branch
         run: |
