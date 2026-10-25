@@ -56,7 +56,7 @@
   "assets/MCPELIFE.json": {
     "size": 176220,
     "sha256": "301935ee6ea4053a2c18ee04d325dd3cf733e1a8810e36f01d439e255924a520",
-    "magic": "binary/text? (printable 29/64)",
+    "magic": "TrueType/OpenType font",
     "head_hex": "0001000000140100000400404744454632dd3bdb0000096c0000062847504f5386fa7b8700005f3000007b1e47535542"
   },
   "assets/NK3mkfH5kthJfjfd": {

@@ -40,7 +40,7 @@ assets/HJLPcUgZnH2Au76A
     sha256=99ed4d652ca66121b445c489a412ba33fc80a89e7ed447abbee26c5aca26e7f1
     head=004941500200000008067f3e46b0d07d952f6f3588f0992cb2527214bb6f9bd0e6c51e485e4258a5c42dc9b7c3d327d4
 assets/MCPELIFE.json
-    176220 (172.1KB)  binary/text? (printable 29/64)
+    176220 (172.1KB)  TrueType/OpenType font
     sha256=301935ee6ea4053a2c18ee04d325dd3cf733e1a8810e36f01d439e255924a520
     head=0001000000140100000400404744454632dd3bdb0000096c0000062847504f5386fa7b8700005f3000007b1e47535542
 assets/NK3mkfH5kthJfjfd
@@ -140,10 +140,10 @@ lib/arm64-v8a/libMCPELIFE.so
     sha256=f593a07d9950bdae15cf4944bee113fd09c2fb2db388fbfe45df7da5decc551d
     head=7f454c460201010000000000000000000300b700010000009cb80200000000004000000000000000d8b31b0000000000
 
-MCPELIFE.json INSPECTION
+assets/MCPELIFE.json CONTENT INSPECTION
 ============================================================
-not plain UTF-8 JSON: 'utf-8' codec can't decode byte 0xdd in position 17: invalid continuation byte
-first 256 bytes: b"\x00\x01\x00\x00\x00\x14\x01\x00\x00\x04\x00@GDEF2\xdd;\xdb\x00\x00\tl\x00\x00\x06(GPOS\x86\xfa{\x87\x00\x00_0\x00\x00{\x1eGSUB\xd0\x82n*\x00\x00(\x18\x00\x00\x0c\xf8HVARU\xcf\xc6\xf2\x00\x00\x1eH\x00\x00\t\xcfOS/2\x82\xb4Wn\x00\x00\x02\x08\x00\x00\x00`STAT\x83!}\xf9\x00\x00\x02\xe8\x00\x00\x00\x9eavar>\x90@\x01\x00\x00\x01\xa0\x00\x00\x00.cmapw\x18\x90\xfd\x00\x00\x160\x00\x00\x08\x16fvar\x91'y\xb8\x00\x00\x02h\x00\x00\x00~gasp\x00\x00\x00\x10\x00\x00\x01T\x00\x00\x00\x08glyf\xb1\xbaw1\x00\x00\xdaP\x00\x00\x93\x1cgvar\xe1\xd9y\x08\x00\x01ml\x00\x01B\xeehead\x1b\x0f\x86\xb3\x00\x00\x01\xd0\x00\x00\x006hhea\x08\x83\x06\x17\x00\x00\x01|\x00\x00\x00$hmtx\xd8\xec\xae)\x00\x005\x10\x00\x00\r2loca"
+Despite the .json filename, this is a TrueType/OpenType font (SFNT signature).
+It is not the module configuration; retain as an obfuscation/distraction clue only.
 
 libMCPELIFE.so STRINGS (filtered, 107 of 2662)
 ============================================================
