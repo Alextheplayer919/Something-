@@ -5,7 +5,7 @@ INFO  Using log config file: jar:file:/tmp/ghidra-download/ghidra_12.2_PUBLIC/Gh
 INFO  Using log file: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/application.log (LoggingInitialization)  
 INFO  Loading user preferences: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/preferences (Preferences)  
 INFO  Searching for classes... (ClassSearcher)  
-INFO  Class search complete (1094 ms) (ClassSearcher)  
+INFO  Class search complete (996 ms) (ClassSearcher)  
 INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
 INFO  Initializing Random Number Generator... (SecureRandomFactory)  
 INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
@@ -14,7 +14,7 @@ INFO  Loaded 121 trusted CA certificates from the OS trust store. (DefaultTrustM
 INFO  Loaded 121 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
 INFO  Starting cache cleanup: /var/tmp/runner-ghidra/fscache2 (FileCacheMaintenanceDaemon)  
 INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
-INFO  Headless startup complete (4671 ms) (AnalyzeHeadless)  
+INFO  Headless startup complete (2714 ms) (AnalyzeHeadless)  
 INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
 INFO  HEADLESS Script Paths:
     /tmp/ghidra-download/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
@@ -83,40 +83,40 @@ ERROR VarnodeContext: out of address spaces at @00257b80 for: d18-00257b80 (Varn
 INFO  Packed database cache: /var/tmp/runner-ghidra/packed-db-cache (PackedDatabaseCache)  
 INFO  Applied data type archive: generic_clib_64 (ApplyDataArchiveAnalyzer)  
 INFO  -----------------------------------------------------
-    AARCH64 ELF PLT Thunks                     0.209 secs
-    ASCII Strings                              0.683 secs
-    Apply Data Archives                        0.565 secs
-    Basic Constant Reference Analyzer         20.120 secs
-    Call Convention ID                         1.672 secs
-    Call-Fixup Installer                       0.022 secs
-    Create Address Tables                      0.352 secs
-    Create Address Tables - One Time           0.187 secs
-    Create Function                            0.077 secs
-    DWARF                                      0.011 secs
-    Data Reference                             0.581 secs
-    Decompiler Switch Analysis                 4.118 secs
-    Demangler GNU                              0.995 secs
-    Disassemble                                6.439 secs
-    Disassemble Entry Points                   0.250 secs
-    Embedded Media                             0.027 secs
-    External Entry References                  0.004 secs
-    Function ID                                0.022 secs
-    Function Start Search                      0.180 secs
-    Function Start Search After Code           0.082 secs
-    Function Start Search After Data           0.073 secs
-    Function Start Search delayed - One Time   0.011 secs
-    GCC Exception Handlers                     1.613 secs
-    Non-Returning Functions - Discovered       0.805 secs
-    Non-Returning Functions - Known            0.009 secs
-    Reference                                  0.832 secs
-    Shared Return Calls                        0.491 secs
-    Source Language Support                    0.005 secs
-    Stack                                      1.547 secs
-    Subroutine References                      0.251 secs
+    AARCH64 ELF PLT Thunks                     0.114 secs
+    ASCII Strings                              0.574 secs
+    Apply Data Archives                        0.390 secs
+    Basic Constant Reference Analyzer         14.708 secs
+    Call Convention ID                         1.553 secs
+    Call-Fixup Installer                       0.017 secs
+    Create Address Tables                      0.213 secs
+    Create Address Tables - One Time           0.256 secs
+    Create Function                            0.061 secs
+    DWARF                                      0.008 secs
+    Data Reference                             0.487 secs
+    Decompiler Switch Analysis                 3.550 secs
+    Demangler GNU                              0.694 secs
+    Disassemble                                4.732 secs
+    Disassemble Entry Points                   0.190 secs
+    Embedded Media                             0.026 secs
+    External Entry References                  0.003 secs
+    Function ID                                0.018 secs
+    Function Start Search                      0.152 secs
+    Function Start Search After Code           0.162 secs
+    Function Start Search After Data           0.045 secs
+    Function Start Search delayed - One Time   0.005 secs
+    GCC Exception Handlers                     1.099 secs
+    Non-Returning Functions - Discovered       0.621 secs
+    Non-Returning Functions - Known            0.006 secs
+    Reference                                  0.527 secs
+    Shared Return Calls                        0.341 secs
+    Source Language Support                    0.003 secs
+    Stack                                      0.905 secs
+    Subroutine References                      0.204 secs
     Subroutine References - One Time           0.000 secs
-    Variadic Function Signature Override       2.468 secs
+    Variadic Function Signature Override       2.333 secs
 -----------------------------------------------------
-     Total Time   44 secs
+     Total Time   33 secs
 -----------------------------------------------------
  (AutoAnalysisManager)  
 INFO  REPORT: Analysis succeeded for file: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
@@ -134,10 +134,10 @@ ERROR VarnodeContext: out of address spaces at @00222200 for: x9-00222200 (Varno
 INFO  -----------------------------------------------------
     Call-Fixup Installer                       0.001 secs
     Function Start Search                      0.000 secs
-    Shared Return Calls                        0.086 secs
-    Stack                                      7.913 secs
+    Shared Return Calls                        0.066 secs
+    Stack                                      5.549 secs
 -----------------------------------------------------
-     Total Time   8 secs
+     Total Time   5 secs
 -----------------------------------------------------
  (AutoAnalysisManager)  
 INFO  REPORT: Post-analysis succeeded for file: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
