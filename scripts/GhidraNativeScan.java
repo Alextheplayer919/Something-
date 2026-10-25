@@ -120,9 +120,10 @@ public class GhidraNativeScan extends GhidraScript {
                     if (f.getBody().contains(toAddr(CLASS_TARGETS[i]))) classId = i;
                 }
                 boolean translatedClass = classId >= 0;
-                // Class IDs 16..25 are the opaque MCPELIFE utility/feature group.
+                // IDs 1..25 are MCPELIFE client classes (ID 0 is the stock
+                // MainActivity adapter; 26..28 are PairIP licensing/runtime).
                 // Their registration arrays contain native method function pointers.
-                if (classId >= 16 && classId <= 25) {
+                if (classId >= 1 && classId <= 25) {
                     Matcher pointerMatcher = METHOD_POINTER.matcher(code);
                     while (pointerMatcher.find()) {
                         long target = Long.parseLong(pointerMatcher.group(1), 16);
@@ -164,14 +165,18 @@ public class GhidraNativeScan extends GhidraScript {
             int nativeFailed = 0;
             try (BufferedWriter methods = new BufferedWriter(new FileWriter(methodsFile))) {
                 methods.write("MCPELIFE HIDDEN NATIVE METHOD IMPLEMENTATIONS (static Ghidra output)\n");
-                methods.write("Sources: function-pointer tables registered for client class IDs 16-25.\n");
-                methods.write("Class names for IDs 16-25: " + CLASS_NAMES[16] + ", " + CLASS_NAMES[17] +
-                              ", " + CLASS_NAMES[18] + ", " + CLASS_NAMES[19] + ", " + CLASS_NAMES[20] +
-                              ", " + CLASS_NAMES[21] + ", " + CLASS_NAMES[22] + ", " + CLASS_NAMES[23] +
-                              ", " + CLASS_NAMES[24] + ", " + CLASS_NAMES[25] + "\n");
+                methods.write("Sources: function-pointer tables registered for client class IDs 1-25.\n");
+                methods.write("Class names by ID: ");
+                for (int i = 1; i <= 25; i++) {
+                    if (i > 1) methods.write("; ");
+                    methods.write(i + "=" + CLASS_NAMES[i]);
+                }
+                methods.write("\n");
                 methods.write("Native method pointer labels found: " + nativeMethodOwners.size() +
                               "; unique functions: " + methodFunctions.size() + "\n");
+                int consideredNative = 0;
                 for (Map.Entry<Long, Set<Integer>> entry : methodFunctions.entrySet()) {
+                    if (consideredNative++ >= MAX_NATIVE_METHODS) break;
                     Function nativeFunction = currentProgram.getFunctionManager().getFunctionAt(toAddr(entry.getKey()));
                     if (nativeFunction == null) continue;
                     DecompileResults nativeResult = decomp.decompileFunction(nativeFunction, 8, monitor);
