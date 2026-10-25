@@ -12,6 +12,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class GhidraNativeScan extends GhidraScript {
@@ -25,6 +30,9 @@ public class GhidraNativeScan extends GhidraScript {
         "RegisterNatives|registerNativesForClass|dl_iterate_phdr|libminecraftpe|" +
         "getAssets|decrypt|decode|assets/|JNI_OnLoad)"
     );
+    private static final Pattern METHOD_POINTER = Pattern.compile("=\\s*&LAB_([0-9a-fA-F]{6,16})");
+    private static final int MAX_NATIVE_METHODS = 450;
+    private static final int MAX_NATIVE_CODE_CHARS = 16000;
     private static final int MAX_MATCHED = 120;
     private static final int MAX_CODE_CHARS = 24000;
     private static final long[] REGISTRATION_FUNCTIONS = {
@@ -48,9 +56,9 @@ public class GhidraNativeScan extends GhidraScript {
         "MainActivity", "mcpelife.a", "mcpelife.b", "mcpelife.c", "mcpelife.d",
         "mcpelife.e", "mcpelife.f", "mcpelife.g", "mcpelife.h", "mcpelife.i",
         "mcpelife.j", "mcpelife.k", "mcpelife.l$a", "mcpelife.l$b", "mcpelife.l",
-        "mcpelife.y", "unknown-16", "unknown-17", "mcpelife.C0001", "mcpelife.C0000",
-        "mcpelife.C0003", "unknown-21", "unknown-22", "unknown-23", "unknown-24",
-        "mcpelife.C0002", "unknown-26", "unknown-27", "unknown-28"
+        "mcpelife.y", "mcpelife.̅", "mcpelife.̍", "mcpelife.C0001", "mcpelife.C0000",
+        "mcpelife.C0003", "mcpelife.̓", "mcpelife.̔", "mcpelife.̕", "mcpelife.̖",
+        "mcpelife.C0002", "com.pairip.SignatureCheck", "com.pairip.VMRunner", "com.pairip.licensecheck.LicenseActivity"
     };
 
     @Override
@@ -63,6 +71,7 @@ public class GhidraNativeScan extends GhidraScript {
         int completed = 0;
         int timedOut = 0;
         int matched = 0;
+        Map<Long, Set<Integer>> nativeMethodOwners = new LinkedHashMap<>();
         DecompInterface decomp = new DecompInterface();
         decomp.openProgram(currentProgram);
         // Auto-analysis may leave the JNI callback as a label rather than a
@@ -111,6 +120,15 @@ public class GhidraNativeScan extends GhidraScript {
                     if (f.getBody().contains(toAddr(CLASS_TARGETS[i]))) classId = i;
                 }
                 boolean translatedClass = classId >= 0;
+                // Class IDs 16..25 are the opaque MCPELIFE utility/feature group.
+                // Their registration arrays contain native method function pointers.
+                if (classId >= 16 && classId <= 25) {
+                    Matcher pointerMatcher = METHOD_POINTER.matcher(code);
+                    while (pointerMatcher.find()) {
+                        long target = Long.parseLong(pointerMatcher.group(1), 16);
+                        nativeMethodOwners.computeIfAbsent(target, k -> new LinkedHashSet<>()).add(classId);
+                    }
+                }
                 if (!feature && !context && !registration && !translatedClass) continue;
                 if (matched >= MAX_MATCHED) continue;
                 matched++;
@@ -126,6 +144,56 @@ public class GhidraNativeScan extends GhidraScript {
             out.write("\n\nSUMMARY: candidate_functions=" + functions +
                       " decompiled=" + completed + " failed_or_timed_out=" + timedOut +
                       " retained=" + matched + "\n");
+
+            File methodsFile = new File(outDir, "hidden-native-methods.txt");
+            Map<Long, Set<Integer>> methodFunctions = new LinkedHashMap<>();
+            for (Map.Entry<Long, Set<Integer>> entry : nativeMethodOwners.entrySet()) {
+                Address target = toAddr(entry.getKey());
+                Function targetFunction = currentProgram.getFunctionManager().getFunctionAt(target);
+                if (targetFunction == null) targetFunction = currentProgram.getFunctionManager().getFunctionContaining(target);
+                if (targetFunction == null) {
+                    disassemble(target);
+                    targetFunction = createFunction(target, null);
+                }
+                if (targetFunction != null) {
+                    long functionAddress = targetFunction.getEntryPoint().getOffset();
+                    methodFunctions.computeIfAbsent(functionAddress, k -> new LinkedHashSet<>()).addAll(entry.getValue());
+                }
+            }
+            int nativeDecompiled = 0;
+            int nativeFailed = 0;
+            try (BufferedWriter methods = new BufferedWriter(new FileWriter(methodsFile))) {
+                methods.write("MCPELIFE HIDDEN NATIVE METHOD IMPLEMENTATIONS (static Ghidra output)\n");
+                methods.write("Sources: function-pointer tables registered for client class IDs 16-25.\n");
+                methods.write("Class names for IDs 16-25: " + CLASS_NAMES[16] + ", " + CLASS_NAMES[17] +
+                              ", " + CLASS_NAMES[18] + ", " + CLASS_NAMES[19] + ", " + CLASS_NAMES[20] +
+                              ", " + CLASS_NAMES[21] + ", " + CLASS_NAMES[22] + ", " + CLASS_NAMES[23] +
+                              ", " + CLASS_NAMES[24] + ", " + CLASS_NAMES[25] + "\n");
+                methods.write("Native method pointer labels found: " + nativeMethodOwners.size() +
+                              "; unique functions: " + methodFunctions.size() + "\n");
+                for (Map.Entry<Long, Set<Integer>> entry : methodFunctions.entrySet()) {
+                    Function nativeFunction = currentProgram.getFunctionManager().getFunctionAt(toAddr(entry.getKey()));
+                    if (nativeFunction == null) continue;
+                    DecompileResults nativeResult = decomp.decompileFunction(nativeFunction, 8, monitor);
+                    if (!nativeResult.decompileCompleted() || nativeResult.getDecompiledFunction() == null) {
+                        nativeFailed++;
+                        continue;
+                    }
+                    nativeDecompiled++;
+                    String nativeCode = nativeResult.getDecompiledFunction().getC();
+                    methods.write("\n\n/* FUNCTION " + nativeFunction.getName() + " @ " +
+                                  nativeFunction.getEntryPoint() + " bytes=" + nativeFunction.getBody().getNumAddresses() +
+                                  " class_ids=" + entry.getValue() + " feature=" + FEATURE.matcher(nativeCode).find() +
+                                  " context=" + CONTEXT.matcher(nativeCode).find() + " */\n");
+                    if (nativeCode.length() > MAX_NATIVE_CODE_CHARS) {
+                        nativeCode = nativeCode.substring(0, MAX_NATIVE_CODE_CHARS) + "\n/* truncated */\n";
+                    }
+                    methods.write(nativeCode);
+                }
+                methods.write("\n\nSUMMARY: native_pointer_labels=" + nativeMethodOwners.size() +
+                              " unique_functions=" + methodFunctions.size() + " decompiled=" + nativeDecompiled +
+                              " failed=" + nativeFailed + "\n");
+            }
         } finally {
             decomp.dispose();
         }
