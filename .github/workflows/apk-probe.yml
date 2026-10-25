@@ -70,7 +70,31 @@ jobs:
             dest="research/client/jadx/${f#*/sources/}"
             mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
           done
+          # MCPELIFE0 is the native-loader/registration package imported by
+          # every obfuscated class; keep it even if it has no obvious keywords.
+          find /tmp/jadx-out/ -type f -name '*.java' -path '*/sources/MCPELIFE0/*' | while read -r f; do
+            dest="research/client/jadx/${f#*/sources/}"
+            mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
+          done
           echo "decompiled files copied: $(find research/client/jadx -type f | wc -l)"
+          echo "client loader Java files:"; find research/client/jadx/MCPELIFE0 -type f -maxdepth 3 -print 2>/dev/null || true
+
+      - name: Native binary metadata
+        if: always()
+        run: |
+          mkdir -p research/client/native
+          readelf -h -d -Ws research/client/lib/arm64-v8a/libMCPELIFE.so > research/client/native/readelf.txt
+          strings -a -n 4 research/client/lib/arm64-v8a/libMCPELIFE.so > research/client/native/strings.txt
+          objdump -T research/client/lib/arm64-v8a/libMCPELIFE.so > research/client/native/dynsymbols.txt 2>&1 || true
+          python3 - <<'PY'
+          import json, re
+          p='research/client/native/strings.txt'
+          ss=open(p, errors='replace').read().splitlines()
+          rx=re.compile(r'(?i)(mcpelife|mcpe|module|xray|x-ray|esp|aura|cheat|hack|hook|inject|offset|decrypt|encrypt|asset|\.so|\.json|http|https|jni|native|class|method|register|loadlibrary|texture|shader|render|entity|player|block|world|version|key|menu|float|gl[A-Z])')
+          hits=[s for s in ss if rx.search(s)]
+          open('research/client/native/interesting-strings.txt','w').write('\n'.join(hits)+'\n')
+          print('native strings:',len(ss),'interesting:',len(hits))
+          PY
 
       - name: Commit findings back to branch
         run: |

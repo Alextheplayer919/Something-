@@ -27,6 +27,8 @@ def human(n):
 def sniff(b):
     if b.startswith(b"PK\x03\x04"):
         return "ZIP"
+    if b.startswith(b"\x00\x01\x00\x00") or b.startswith(b"OTTO") or b.startswith(b"true"):
+        return "TrueType/OpenType font"
     if b.startswith(b"dex\n"):
         return "DEX"
     if b.startswith(b"\x7fELF"):
@@ -94,24 +96,28 @@ def main():
         with open(os.path.join(OUT, "FILES.json"), "w") as fh:
             json.dump(hashes, fh, indent=2)
 
-        # If MCPELIFE.json is readable JSON, describe its structure.
+        # Inspect the oddly named MCPELIFE.json asset before assuming it is JSON.
         cfg_path = os.path.join(OUT, "assets/MCPELIFE.json")
         raw = open(cfg_path, "rb").read()
-        report += ["", "MCPELIFE.json INSPECTION", "=" * 60]
-        try:
-            cfg = json.loads(raw.decode("utf-8"))
-            report.append(f"type: {type(cfg).__name__}")
-            if isinstance(cfg, dict):
-                report.append(f"top-level keys ({len(cfg)}):")
-                for k, v in list(cfg.items())[:80]:
-                    report.append(f"  {k}: {type(v).__name__} {str(v)[:160]}")
-            elif isinstance(cfg, list):
-                report.append(f"length: {len(cfg)}; first item: {str(cfg[:1])[:400]}")
-            with open(os.path.join(OUT, "MCPELIFE.pretty.json"), "w") as fh:
-                json.dump(cfg, fh, indent=2, ensure_ascii=False)
-        except Exception as e:
-            report.append(f"not plain UTF-8 JSON: {e}")
-            report.append(f"first 256 bytes: {raw[:256]!r}")
+        report += ["", "assets/MCPELIFE.json CONTENT INSPECTION", "=" * 60]
+        if raw.startswith((b"\x00\x01\x00\x00", b"OTTO", b"true")):
+            report.append("Despite the .json filename, this is a TrueType/OpenType font (SFNT signature).")
+            report.append("It is not the module configuration; retain as an obfuscation/distraction clue only.")
+        else:
+            try:
+                cfg = json.loads(raw.decode("utf-8"))
+                report.append(f"type: {type(cfg).__name__}")
+                if isinstance(cfg, dict):
+                    report.append(f"top-level keys ({len(cfg)}):")
+                    for k, v in list(cfg.items())[:80]:
+                        report.append(f"  {k}: {type(v).__name__} {str(v)[:160]}")
+                elif isinstance(cfg, list):
+                    report.append(f"length: {len(cfg)}; first item: {str(cfg[:1])[:400]}")
+                with open(os.path.join(OUT, "MCPELIFE.pretty.json"), "w") as fh:
+                    json.dump(cfg, fh, indent=2, ensure_ascii=False)
+            except Exception as e:
+                report.append(f"not plain UTF-8 JSON: {e}")
+                report.append(f"first 256 bytes: {raw[:256]!r}")
 
         # Readable strings in the client's native library, filtered to likely
         # configuration / module / version / path material.
