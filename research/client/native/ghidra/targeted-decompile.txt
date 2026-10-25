@@ -2181,7 +2181,7 @@ void FUN_001f2ad4(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_002120ec @ 002120ec bytes=7196 feature=false context=false registration=false class_id=16 class=unknown-16 */
+/* FUNCTION FUN_002120ec @ 002120ec bytes=7196 feature=false context=false registration=false class_id=16 class=mcpelife.̅ */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -2636,7 +2636,7 @@ void FUN_002120ec(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_00233880 @ 00233880 bytes=7096 feature=false context=false registration=false class_id=17 class=unknown-17 */
+/* FUNCTION FUN_00233880 @ 00233880 bytes=7096 feature=false context=false registration=false class_id=17 class=mcpelife.̍ */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -3862,7 +3862,7 @@ void FUN_00263da8(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_00266178 @ 00266178 bytes=1120 feature=false context=false registration=false class_id=21 class=unknown-21 */
+/* FUNCTION FUN_00266178 @ 00266178 bytes=1120 feature=false context=false registration=false class_id=21 class=mcpelife.̓ */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -3981,7 +3981,7 @@ void FUN_00266178(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_00268100 @ 00268100 bytes=1244 feature=false context=false registration=false class_id=22 class=unknown-22 */
+/* FUNCTION FUN_00268100 @ 00268100 bytes=1244 feature=false context=false registration=false class_id=22 class=mcpelife.̔ */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -4106,7 +4106,7 @@ void FUN_00268100(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_002686bc @ 002686bc bytes=488 feature=false context=false registration=false class_id=23 class=unknown-23 */
+/* FUNCTION FUN_002686bc @ 002686bc bytes=488 feature=false context=false registration=false class_id=23 class=mcpelife.̕ */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -4170,7 +4170,7 @@ void FUN_002686bc(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_0026a96c @ 0026a96c bytes=1396 feature=false context=false registration=false class_id=24 class=unknown-24 */
+/* FUNCTION FUN_0026a96c @ 0026a96c bytes=1396 feature=false context=false registration=false class_id=24 class=mcpelife.̖ */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -4539,7 +4539,7 @@ void FUN_0026ffb8(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_002770bc @ 002770bc bytes=4244 feature=false context=false registration=false class_id=28 class=unknown-28 */
+/* FUNCTION FUN_002770bc @ 002770bc bytes=4244 feature=false context=false registration=false class_id=28 class=com.pairip.licensecheck.LicenseActivity */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -4838,7 +4838,7 @@ void FUN_002770bc(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_00278a28 @ 00278a28 bytes=760 feature=false context=false registration=false class_id=26 class=unknown-26 */
+/* FUNCTION FUN_00278a28 @ 00278a28 bytes=760 feature=false context=false registration=false class_id=26 class=com.pairip.SignatureCheck */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
@@ -4921,7 +4921,7 @@ void FUN_00278a28(long *param_1,long param_2)
 
 
 
-/* FUNCTION FUN_00284e40 @ 00284e40 bytes=5516 feature=false context=false registration=false class_id=27 class=unknown-27 */
+/* FUNCTION FUN_00284e40 @ 00284e40 bytes=5516 feature=false context=false registration=false class_id=27 class=com.pairip.VMRunner */
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
