@@ -1,0 +1,42 @@
+name: APK probe
+on:
+  push:
+    branches: [arena/4ad620d6-something]
+    paths-ignore:
+      - 'research/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (with LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Verify real APK was fetched
+        run: |
+          ls -lh Minecraft.apk
+          test "$(stat -c %s Minecraft.apk)" -gt 100000000 || {
+            echo "LFS object did not download"; head -c 200 Minecraft.apk; exit 1;
+          }
+          sha256sum Minecraft.apk
+
+      - name: Run APK probe
+        run: python3 scripts/apk_probe.py
+
+      - name: Commit report back to branch
+        run: |
+          git config user.name "arena-apk-probe"
+          git config user.email "arena-apk-probe@users.noreply.github.com"
+          git add research/ scripts/apk_probe.py
+          if git diff --cached --quiet; then
+            echo "No report changes"; exit 0;
+          fi
+          git commit -m "Add APK structure report from LFS-backed Minecraft.apk"
+          git push origin HEAD:arena/4ad620d6-something
