@@ -5,7 +5,7 @@ INFO  Using log config file: jar:file:/tmp/ghidra-download/ghidra_12.2_PUBLIC/Gh
 INFO  Using log file: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/application.log (LoggingInitialization)  
 INFO  Loading user preferences: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/preferences (Preferences)  
 INFO  Searching for classes... (ClassSearcher)  
-INFO  Class search complete (1107 ms) (ClassSearcher)  
+INFO  Class search complete (1094 ms) (ClassSearcher)  
 INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
 INFO  Initializing Random Number Generator... (SecureRandomFactory)  
 INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
@@ -14,7 +14,7 @@ INFO  Loaded 121 trusted CA certificates from the OS trust store. (DefaultTrustM
 INFO  Loaded 121 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
 INFO  Starting cache cleanup: /var/tmp/runner-ghidra/fscache2 (FileCacheMaintenanceDaemon)  
 INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
-INFO  Headless startup complete (4785 ms) (AnalyzeHeadless)  
+INFO  Headless startup complete (9178 ms) (AnalyzeHeadless)  
 INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
 INFO  HEADLESS Script Paths:
     /tmp/ghidra-download/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
@@ -71,7 +71,6 @@ INFO  DWARF external debug information found: [BuildIdDebugInfo [buildId=[106, 7
 INFO  Unable to find DWARF information, skipping DWARF analysis (DWARFAnalyzer)  
 ERROR VarnodeContext: out of address spaces at @00222398 for: d24-00222398 (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @001fee88 for: d18-001fee88 (VarnodeContext)  
-ERROR VarnodeContext: out of address spaces at @00223c5c for: x16-00223c5c (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @00206684 for: d29-00206684 (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @00222218 for: d23-00222218 (VarnodeContext)  
 ERROR VarnodeContext: out of address spaces at @001fd458 for: d23-001fd458 (VarnodeContext)  
@@ -84,46 +83,46 @@ ERROR VarnodeContext: out of address spaces at @00257b80 for: d18-00257b80 (Varn
 INFO  Packed database cache: /var/tmp/runner-ghidra/packed-db-cache (PackedDatabaseCache)  
 INFO  Applied data type archive: generic_clib_64 (ApplyDataArchiveAnalyzer)  
 INFO  -----------------------------------------------------
-    AARCH64 ELF PLT Thunks                     0.164 secs
-    ASCII Strings                              0.447 secs
-    Apply Data Archives                        0.695 secs
-    Basic Constant Reference Analyzer         21.141 secs
-    Call Convention ID                         1.649 secs
-    Call-Fixup Installer                       0.103 secs
-    Create Address Tables                      0.293 secs
-    Create Address Tables - One Time           0.288 secs
+    AARCH64 ELF PLT Thunks                     0.158 secs
+    ASCII Strings                              0.733 secs
+    Apply Data Archives                        0.520 secs
+    Basic Constant Reference Analyzer         19.896 secs
+    Call Convention ID                         1.736 secs
+    Call-Fixup Installer                       0.022 secs
+    Create Address Tables                      0.282 secs
+    Create Address Tables - One Time           0.324 secs
     Create Function                            0.070 secs
-    DWARF                                      0.010 secs
-    Data Reference                             0.570 secs
-    Decompiler Switch Analysis                 4.086 secs
-    Demangler GNU                              1.029 secs
-    Disassemble                                6.321 secs
-    Disassemble Entry Points                   0.216 secs
-    Embedded Media                             0.038 secs
-    External Entry References                  0.004 secs
-    Function ID                                0.020 secs
-    Function Start Search                      0.191 secs
-    Function Start Search After Code           0.178 secs
-    Function Start Search After Data           0.153 secs
+    DWARF                                      0.009 secs
+    Data Reference                             0.615 secs
+    Decompiler Switch Analysis                 4.217 secs
+    Demangler GNU                              1.001 secs
+    Disassemble                                6.115 secs
+    Disassemble Entry Points                   0.207 secs
+    Embedded Media                             0.036 secs
+    External Entry References                  0.003 secs
+    Function ID                                0.021 secs
+    Function Start Search                      0.218 secs
+    Function Start Search After Code           0.095 secs
+    Function Start Search After Data           0.070 secs
     Function Start Search delayed - One Time   0.011 secs
-    GCC Exception Handlers                     1.726 secs
-    Non-Returning Functions - Discovered       0.713 secs
-    Non-Returning Functions - Known            0.007 secs
-    Reference                                  0.728 secs
-    Shared Return Calls                        0.453 secs
+    GCC Exception Handlers                     1.471 secs
+    Non-Returning Functions - Discovered       0.638 secs
+    Non-Returning Functions - Known            0.006 secs
+    Reference                                  0.741 secs
+    Shared Return Calls                        0.482 secs
     Source Language Support                    0.004 secs
-    Stack                                      1.357 secs
-    Subroutine References                      0.243 secs
-    Subroutine References - One Time           0.000 secs
-    Variadic Function Signature Override       2.419 secs
+    Stack                                      1.473 secs
+    Subroutine References                      0.261 secs
+    Subroutine References - One Time           0.001 secs
+    Variadic Function Signature Override       2.454 secs
 -----------------------------------------------------
-     Total Time   45 secs
+     Total Time   43 secs
 -----------------------------------------------------
  (AutoAnalysisManager)  
 INFO  REPORT: Analysis succeeded for file: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
 INFO  REPORT: Execute script: GhidraNativeScan.java '/home/runner/work/Something-/Something-/research/client/native/ghidra'  (HeadlessAnalyzer)  
 INFO  SCRIPT: /home/runner/work/Something-/Something-/scripts/GhidraNativeScan.java (HeadlessAnalyzer)  
-INFO  GhidraNativeScan.java> Deep helper decompile: targets=19 decompiled=17 failed=2 output=/home/runner/work/Something-/Something-/research/client/native/ghidra/deep-helpers.txt (GhidraScript)  
+INFO  GhidraNativeScan.java> Deep helper decompile: targets=31 decompiled=29 failed=2 output=/home/runner/work/Something-/Something-/research/client/native/ghidra/deep-helpers.txt (GhidraScript)  
 INFO  GhidraNativeScan.java> Ghidra static scan: candidates=441 decompiled=440 timeouts=1 retained=33 output=/home/runner/work/Something-/Something-/research/client/native/ghidra/targeted-decompile.txt (GhidraScript)  
 INFO  ANALYZING changes made by post scripts: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
 ERROR VarnodeContext: out of address spaces at @00257b80 for: d18-00257b80 (VarnodeContext)  
@@ -136,8 +135,8 @@ ERROR VarnodeContext: out of address spaces at @00222200 for: x9-00222200 (Varno
 INFO  -----------------------------------------------------
     Call-Fixup Installer                       0.001 secs
     Function Start Search                      0.000 secs
-    Shared Return Calls                        0.103 secs
-    Stack                                      7.651 secs
+    Shared Return Calls                        0.139 secs
+    Stack                                      7.622 secs
 -----------------------------------------------------
      Total Time   7 secs
 -----------------------------------------------------
