@@ -1,0 +1,39 @@
+name: Export Minecraft APK
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository with LFS object
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Verify full APK and expected SHA-256
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f Minecraft.apk
+          size=$(stat -c %s Minecraft.apk)
+          echo "APK size: $size bytes"
+          test "$size" -eq 663119822
+          actual=$(sha256sum Minecraft.apk | cut -d ' ' -f 1)
+          expected=d2f78dcc3fa321d175f07d160cee6e570e62c45f8f817454fe2a704124d93639
+          echo "APK SHA-256: $actual"
+          test "$actual" = "$expected"
+
+      - name: Upload full APK as a short-lived private Actions artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Minecraft-apk-full-663119822-bytes
+          path: Minecraft.apk
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 1

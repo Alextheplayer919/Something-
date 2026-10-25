@@ -6,6 +6,7 @@ on:
       - 'research/**'
       - 'scripts/build_native_method_map.py'
       - '.github/workflows/apk-probe.yml'
+      - '.github/workflows/export-minecraft-apk.yml'
   workflow_dispatch:
 
 permissions:

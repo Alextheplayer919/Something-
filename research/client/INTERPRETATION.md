@@ -12,9 +12,13 @@
 - `assets/MCPELIFE.json` is **not JSON**: its SFNT signature and font name table identify a Lexend variable font. The client references Android's `Typeface.createFromAsset`, so this is likely a UI font resource, not a module list.
 - Twenty-two root-level randomly named assets begin with the same `\0IAP\x02\0\0\0\x08\x06` header and then high-entropy bytes. This looks like a structured/protected asset format, but its payload and purpose are not decoded yet.
 
+## User-provided lead: Spiral in-game click GUI
+
+The user identifies the injected client as **Spiral** and reports that it renders an in-game click GUI. Treat that as a concrete lead and do not mistake the earlier failure to find readable branding/module keywords for evidence that the client or GUI is absent. The static sweep still has not independently recovered the `Spiral` string or the GUI implementation. The recovered native UI helpers (`mcpelife.l`, class ID 14) include Android `View` creation, layout parameters, outline handling, callbacks, and dialog-related routines; that confirms substantial UI plumbing but, by itself, does not establish which parts render the in-game click GUI. Prioritize tracing the UI entry points, string/asset decoding, and any bridge into Minecraft's rendering/input path.
+
 ## Do not over-interpret keyword hits
 
-The first broad keyword sweep produced many false positives from vanilla localization/resources (for example, words occurring in translated text) and from random binary data transformed with every possible single-byte XOR key. Those are leads only, not proof that a module exists. The meaningful path forward is native code and the structured root assets, not raw match counts. No module name such as Xray/ESP/Aura has yet been confirmed from decoded client code.
+The first broad keyword sweep produced many false positives from vanilla localization/resources (for example, words occurring in translated text) and from random binary data transformed with every possible single-byte XOR key. Those are leads only, not proof that a module exists. The meaningful path forward is native code and the structured root assets, not raw match counts. No feature name such as Xray/ESP/Aura has yet been recovered from decoded client code; this does not contradict the user's report of the Spiral click GUI.
 
 ## Next reverse-engineering steps
 
