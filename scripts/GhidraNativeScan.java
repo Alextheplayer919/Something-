@@ -27,6 +27,12 @@ public class GhidraNativeScan extends GhidraScript {
     );
     private static final int MAX_MATCHED = 120;
     private static final int MAX_CODE_CHARS = 24000;
+    private static final long[] REGISTRATION_FUNCTIONS = {
+        0x12d0c8L, // MCPELIFE0.registerNativesForClass JNI implementation
+        0x12cddcL, // JNI_OnLoad helper
+        0x12d06cL, // registration table bootstrap
+        0x12b8d8L  // JNI class/method lookup bootstrap
+    };
 
     @Override
     protected void run() throws Exception {
@@ -60,12 +66,17 @@ public class GhidraNativeScan extends GhidraScript {
                 String code = result.getDecompiledFunction().getC();
                 boolean feature = FEATURE.matcher(code).find();
                 boolean context = CONTEXT.matcher(code).find();
-                if (!feature && !context) continue;
+                boolean registration = false;
+                for (long address : REGISTRATION_FUNCTIONS) {
+                    if (f.getEntryPoint().getOffset() == address) registration = true;
+                }
+                if (!feature && !context && !registration) continue;
                 if (matched >= MAX_MATCHED) continue;
                 matched++;
                 out.write("\n\n/* FUNCTION " + f.getName() + " @ " + f.getEntryPoint() +
                           " bytes=" + f.getBody().getNumAddresses() +
-                          " feature=" + feature + " context=" + context + " */\n");
+                          " feature=" + feature + " context=" + context +
+                          " registration=" + registration + " */\n");
                 if (code.length() > MAX_CODE_CHARS) code = code.substring(0, MAX_CODE_CHARS) + "\n/* truncated */\n";
                 out.write(code);
             }
