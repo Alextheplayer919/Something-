@@ -40,11 +40,13 @@ public class GhidraNativeScan extends GhidraScript {
     // omitted by the normal size/keyword filter; force decompilation so the
     // string-table bootstrap and reflection/asset bridge can be traced.
     private static final long[] DEEP_HELPER_TARGETS = {
-        0x12d06cL, // helper immediately after JNI_OnLoad; called as string-table bootstrap
+        0x12d06cL, // helper immediately after JNI_OnLoad; returns the string-pool base
         0x12cc34L, 0x12c758L, 0x12c508L, 0x12c8d0L,
         0x12ca10L, 0x12cab0L, 0x12ccc8L, 0x12cd84L,
         0x12d9d8L, 0x12da78L, 0x12dbbcL, 0x12e8d4L,
-        0x141204L
+        0x141204L,
+        // Follow the Android-view and dialog callbacks from the user's ClickGUI lead.
+        0x1c4ef8L, 0x1dafc8L, 0x1bfd10L, 0x1c0500L, 0x1bf3b8L
     };
     private static final long[] REGISTRATION_FUNCTIONS = {
         0x12cdc8L, // registerNativesForClass pointer installed by JNI_OnLoad
