@@ -630,4 +630,509 @@ void FUN_00141204(long *param_1,undefined8 param_2,undefined8 param_3,undefined8
 
 
 
-SUMMARY: helper_targets=14 decompiled=14 failed=0
+/* DECOMPILE FAILED helper=FUN_001c4ef8 @ 001c4ef8 */
+
+
+/* DECOMPILE FAILED helper=FUN_001dafc8 @ 001dafc8 */
+
+
+/* FUNCTION FUN_001bfd10 @ 001bfd10 bytes=1112 requested=001bfd10 */
+
+void FUN_001bfd10(long *param_1,long param_2,undefined8 param_3)
+
+{
+  long lVar1;
+  void *pvVar2;
+  undefined8 *puVar3;
+  char cVar4;
+  undefined8 uVar5;
+  long lVar6;
+  long lVar7;
+  void *pvVar8;
+  undefined8 uStack_90;
+  long lStack_88;
+  undefined8 uStack_80;
+  long lStack_78;
+  void *pvStack_70;
+  undefined8 uStack_68;
+  undefined8 *puStack_60;
+  undefined8 uStack_58;
+  undefined4 uStack_50;
+  long lStack_48;
+  
+  lVar1 = tpidr_el0;
+  lStack_48 = *(long *)(lVar1 + 0x28);
+  uVar5 = FUN_0012cbf0();
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001bfd88;
+  lVar6 = FUN_0012cc34(param_1,uVar5);
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001bfd88;
+  if (lVar6 == 0) {
+    (**(code **)(*param_1 + 0x90))(param_1,DAT_002c6d80);
+    goto LAB_001bfd88;
+  }
+  (**(code **)(*param_1 + 0xb8))(param_1,uVar5);
+  FUN_0012c758(param_1,lVar6,DAT_002c6d88);
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001bfd88;
+  uStack_80 = 0;
+  uStack_68 = 0;
+  pvStack_70 = (void *)0x0;
+  uStack_58 = 0;
+  puStack_60 = (undefined8 *)0x0;
+  uStack_50 = 0x3f800000;
+  lStack_88 = param_2;
+  FUN_001b8db8(&pvStack_70,&lStack_88,&lStack_88);
+  uStack_90 = param_3;
+  FUN_001b8db8(&pvStack_70,&uStack_90,&uStack_90);
+  lStack_78 = lStack_88;
+  FUN_001b8db8(&pvStack_70,&lStack_78,&lStack_78);
+  if ((DAT_002c6de8 == 0) ||
+     (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6de8,0), cVar4 != '\0')) {
+    std::__ndk1::mutex::lock((mutex *)&DAT_002c6d98);
+    if (((DAT_002c6de8 == 0) ||
+        (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6de8,0), cVar4 != '\0')) &&
+       (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c6d88), lVar7 != 0)) {
+      DAT_002c6de8 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+      (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+    }
+    std::__ndk1::mutex::unlock((mutex *)&DAT_002c6d98);
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_70;
+    puVar3 = puStack_60;
+    if (cVar4 == '\0') goto LAB_001bff04;
+  }
+  else {
+LAB_001bff04:
+    if (DAT_002c6e00 == 0) {
+      DAT_002c6e00 = (**(code **)(*param_1 + 0x2f0))
+                               (param_1,DAT_002c6de8,DAT_002c6d80 + 0x6379,DAT_002c6d80 + 0x54e);
+      cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+      pvVar2 = pvStack_70;
+      puVar3 = puStack_60;
+      if (cVar4 != '\0') goto joined_r0x001c0134;
+    }
+    if (lStack_78 == 0) {
+      FUN_0012c508(param_1,DAT_002c6d80 + 0xe6,DAT_002c6d80 + 0x105,0xffffffff);
+    }
+    else {
+      lStack_78 = (**(code **)(*param_1 + 0x2f8))(param_1,lStack_78,DAT_002c6e00);
+      FUN_001b8db8(&pvStack_70,&lStack_78,&lStack_78);
+    }
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_70;
+    puVar3 = puStack_60;
+    if (cVar4 == '\0') {
+      uStack_80 = uStack_90;
+      FUN_001b8db8(&pvStack_70,&uStack_80,&uStack_80);
+      if ((DAT_002c6df0 == 0) ||
+         (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6df0,0), cVar4 != '\0')) {
+        std::__ndk1::mutex::lock((mutex *)&DAT_002c6dc0);
+        if (((DAT_002c6df0 == 0) ||
+            (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6df0,0), cVar4 != '\0')) &&
+           (lVar6 = FUN_0012c758(param_1,lVar6,DAT_002c6d90), lVar6 != 0)) {
+          DAT_002c6df0 = (**(code **)(*param_1 + 0x710))(param_1,lVar6);
+          (**(code **)(*param_1 + 0xb8))(param_1,lVar6);
+        }
+        std::__ndk1::mutex::unlock((mutex *)&DAT_002c6dc0);
+        cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+        if (cVar4 != '\0') goto joined_r0x001c0134;
+      }
+      if (DAT_002c6df8 == 0) {
+        DAT_002c6df8 = (**(code **)(*param_1 + 0x388))
+                                 (param_1,DAT_002c6df0,DAT_002c6d80 + 0x6440,DAT_002c6d80 + 0x67dc);
+        cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+        if (cVar4 != '\0') goto joined_r0x001c0134;
+      }
+      FUN_0012d9d8(param_1,DAT_002c6df0,DAT_002c6df8,lStack_78,uStack_80);
+      (**(code **)(*param_1 + 0x720))(param_1);
+      pvVar2 = pvStack_70;
+      puVar3 = puStack_60;
+    }
+  }
+joined_r0x001c0134:
+  while (puVar3 != (void *)0x0) {
+    pvVar8 = (void *)*puVar3;
+    pvStack_70 = pvVar2;
+    operator_delete(puVar3);
+    pvVar2 = pvStack_70;
+    puVar3 = pvVar8;
+  }
+  pvStack_70 = (void *)0x0;
+  if (pvVar2 != (void *)0x0) {
+    operator_delete(pvVar2);
+  }
+LAB_001bfd88:
+  if (*(long *)(lVar1 + 0x28) != lStack_48) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
+/* FUNCTION FUN_001c0500 @ 001c0500 bytes=1528 requested=001c0500 */
+
+void FUN_001c0500(long *param_1,long param_2,undefined8 param_3)
+
+{
+  long lVar1;
+  void *pvVar2;
+  undefined8 *puVar3;
+  char cVar4;
+  undefined8 uVar5;
+  long lVar6;
+  long lVar7;
+  void *pvVar8;
+  undefined8 uStack_98;
+  long lStack_90;
+  undefined8 uStack_88;
+  long lStack_80;
+  long lStack_78;
+  void *pvStack_70;
+  undefined8 uStack_68;
+  undefined8 *puStack_60;
+  undefined8 uStack_58;
+  undefined4 uStack_50;
+  long lStack_48;
+  
+  lVar1 = tpidr_el0;
+  lStack_48 = *(long *)(lVar1 + 0x28);
+  uVar5 = FUN_0012cbf0();
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001c0578;
+  lVar6 = FUN_0012cc34(param_1,uVar5);
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001c0578;
+  if (lVar6 == 0) {
+    (**(code **)(*param_1 + 0x90))(param_1,DAT_002c6e08);
+    goto LAB_001c0578;
+  }
+  (**(code **)(*param_1 + 0xb8))(param_1,uVar5);
+  FUN_0012c758(param_1,lVar6,DAT_002c6e10);
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001c0578;
+  lStack_80 = 0;
+  lStack_78 = 0;
+  uStack_88 = 0;
+  uStack_98 = 0;
+  uStack_68 = 0;
+  pvStack_70 = (void *)0x0;
+  uStack_58 = 0;
+  puStack_60 = (undefined8 *)0x0;
+  uStack_50 = 0x3f800000;
+  lStack_90 = param_2;
+  FUN_001b8db8(&pvStack_70,&lStack_90,&lStack_90);
+  uStack_98 = param_3;
+  FUN_001b8db8(&pvStack_70,&uStack_98,&uStack_98);
+  lStack_78 = lStack_90;
+  FUN_001b8db8(&pvStack_70,&lStack_78,&lStack_78);
+  if ((DAT_002c6e70 == 0) ||
+     (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6e70,0), cVar4 != '\0')) {
+    std::__ndk1::mutex::lock((mutex *)&DAT_002c6e20);
+    if (((DAT_002c6e70 == 0) ||
+        (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6e70,0), cVar4 != '\0')) &&
+       (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c6e10), lVar7 != 0)) {
+      DAT_002c6e70 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+      (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+    }
+    std::__ndk1::mutex::unlock((mutex *)&DAT_002c6e20);
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_70;
+    puVar3 = puStack_60;
+    if (cVar4 == '\0') goto LAB_001c06fc;
+  }
+  else {
+LAB_001c06fc:
+    if (DAT_002c6e88 == 0) {
+      DAT_002c6e88 = (**(code **)(*param_1 + 0x2f0))
+                               (param_1,DAT_002c6e70,DAT_002c6e08 + 0x6379,DAT_002c6e08 + 0x6753);
+      cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+      pvVar2 = pvStack_70;
+      puVar3 = puStack_60;
+      if (cVar4 != '\0') goto joined_r0x001c0ac4;
+    }
+    if (lStack_78 == 0) {
+      FUN_0012c508(param_1,DAT_002c6e08 + 0xe6,DAT_002c6e08 + 0x105,0xffffffff);
+    }
+    else {
+      lStack_78 = (**(code **)(*param_1 + 0x2f8))(param_1,lStack_78,DAT_002c6e88);
+      FUN_001b8db8(&pvStack_70,&lStack_78,&lStack_78);
+    }
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_70;
+    puVar3 = puStack_60;
+    if (cVar4 == '\0') {
+      lStack_80 = lStack_90;
+      FUN_001b8db8(&pvStack_70,&lStack_80,&lStack_80);
+      if ((DAT_002c6e70 == 0) ||
+         (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6e70,0), cVar4 != '\0')) {
+        std::__ndk1::mutex::lock((mutex *)&DAT_002c6e20);
+        if (((DAT_002c6e70 == 0) ||
+            (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6e70,0), cVar4 != '\0')) &&
+           (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c6e10), lVar7 != 0)) {
+          DAT_002c6e70 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+          (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+        }
+        std::__ndk1::mutex::unlock((mutex *)&DAT_002c6e20);
+        cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+        if (cVar4 != '\0') goto joined_r0x001c0ac4;
+      }
+      if (DAT_002c6e90 == 0) {
+        DAT_002c6e90 = (**(code **)(*param_1 + 0x2f0))
+                                 (param_1,DAT_002c6e70,DAT_002c6e08 + 0x6440,DAT_002c6e08 + 0xaca);
+        cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+        if (cVar4 != '\0') goto joined_r0x001c0ac4;
+      }
+      if (lStack_80 == 0) {
+        FUN_0012c508(param_1,DAT_002c6e08 + 0xe6,DAT_002c6e08 + 0x105,0xffffffff);
+      }
+      else {
+        lStack_80 = (**(code **)(*param_1 + 0x2f8))(param_1,lStack_80,DAT_002c6e90);
+        FUN_001b8db8(&pvStack_70,&lStack_80,&lStack_80);
+      }
+      cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+      pvVar2 = pvStack_70;
+      puVar3 = puStack_60;
+      if (cVar4 == '\0') {
+        uStack_88 = uStack_98;
+        FUN_001b8db8(&pvStack_70,&uStack_88,&uStack_88);
+        if ((DAT_002c6e78 == 0) ||
+           (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6e78,0), cVar4 != '\0')) {
+          std::__ndk1::mutex::lock((mutex *)&DAT_002c6e48);
+          if (((DAT_002c6e78 == 0) ||
+              (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6e78,0), cVar4 != '\0')) &&
+             (lVar6 = FUN_0012c758(param_1,lVar6,DAT_002c6e18), lVar6 != 0)) {
+            DAT_002c6e78 = (**(code **)(*param_1 + 0x710))(param_1,lVar6);
+            (**(code **)(*param_1 + 0xb8))(param_1,lVar6);
+          }
+          std::__ndk1::mutex::unlock((mutex *)&DAT_002c6e48);
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          pvVar2 = pvStack_70;
+          puVar3 = puStack_60;
+          if (cVar4 != '\0') goto joined_r0x001c0ac4;
+        }
+        if (DAT_002c6e80 == 0) {
+          DAT_002c6e80 = (**(code **)(*param_1 + 0x388))
+                                   (param_1,DAT_002c6e78,DAT_002c6e08 + 0x6379,DAT_002c6e08 + 0x6842
+                                   );
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          pvVar2 = pvStack_70;
+          puVar3 = puStack_60;
+          if (cVar4 != '\0') goto joined_r0x001c0ac4;
+        }
+        FUN_0012d9d8(param_1,DAT_002c6e78,DAT_002c6e80,lStack_78,lStack_80,uStack_88);
+        (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+      }
+    }
+  }
+joined_r0x001c0ac4:
+  while (puVar3 != (void *)0x0) {
+    pvVar8 = (void *)*puVar3;
+    pvStack_70 = pvVar2;
+    operator_delete(puVar3);
+    pvVar2 = pvStack_70;
+    puVar3 = pvVar8;
+  }
+  pvStack_70 = (void *)0x0;
+  if (pvVar2 != (void *)0x0) {
+    operator_delete(pvVar2);
+  }
+LAB_001c0578:
+  if (*(long *)(lVar1 + 0x28) != lStack_48) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
+/* FUNCTION FUN_001bf3b8 @ 001bf3b8 bytes=1472 requested=001bf3b8 */
+
+void FUN_001bf3b8(long *param_1,long param_2)
+
+{
+  long lVar1;
+  void *pvVar2;
+  undefined8 *puVar3;
+  char cVar4;
+  undefined8 uVar5;
+  long lVar6;
+  long lVar7;
+  void *pvVar8;
+  long lStack_88;
+  long lStack_80;
+  long lStack_78;
+  void *pvStack_70;
+  undefined8 uStack_68;
+  undefined8 *puStack_60;
+  undefined8 uStack_58;
+  undefined4 uStack_50;
+  long lStack_48;
+  
+  lVar1 = tpidr_el0;
+  lStack_48 = *(long *)(lVar1 + 0x28);
+  uVar5 = FUN_0012cbf0();
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001bf42c;
+  lVar6 = FUN_0012cc34(param_1,uVar5);
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001bf42c;
+  if (lVar6 == 0) {
+    (**(code **)(*param_1 + 0x90))(param_1,DAT_002c6cf0);
+    goto LAB_001bf42c;
+  }
+  (**(code **)(*param_1 + 0xb8))(param_1,uVar5);
+  FUN_0012c758(param_1,lVar6,DAT_002c6cf8);
+  cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar4 != '\0') goto LAB_001bf42c;
+  lStack_80 = 0;
+  lStack_78 = 0;
+  uStack_68 = 0;
+  pvStack_70 = (void *)0x0;
+  uStack_58 = 0;
+  puStack_60 = (undefined8 *)0x0;
+  uStack_50 = 0x3f800000;
+  lStack_88 = param_2;
+  FUN_001b8db8(&pvStack_70,&lStack_88,&lStack_88);
+  lStack_78 = lStack_88;
+  FUN_001b8db8(&pvStack_70,&lStack_78,&lStack_78);
+  if ((DAT_002c6d58 == 0) ||
+     (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6d58,0), cVar4 != '\0')) {
+    std::__ndk1::mutex::lock((mutex *)&DAT_002c6d08);
+    if (((DAT_002c6d58 == 0) ||
+        (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6d58,0), cVar4 != '\0')) &&
+       (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c6cf8), lVar7 != 0)) {
+      DAT_002c6d58 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+      (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+    }
+    std::__ndk1::mutex::unlock((mutex *)&DAT_002c6d08);
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_70;
+    puVar3 = puStack_60;
+    if (cVar4 == '\0') goto LAB_001bf598;
+  }
+  else {
+LAB_001bf598:
+    if (DAT_002c6d70 == 0) {
+      DAT_002c6d70 = (**(code **)(*param_1 + 0x2f0))
+                               (param_1,DAT_002c6d58,DAT_002c6cf0 + 0x6379,DAT_002c6cf0 + 0xaca);
+      cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+      pvVar2 = pvStack_70;
+      puVar3 = puStack_60;
+      if (cVar4 != '\0') goto joined_r0x001bf944;
+    }
+    if (lStack_78 == 0) {
+      FUN_0012c508(param_1,DAT_002c6cf0 + 0xe6,DAT_002c6cf0 + 0x105,0xffffffff);
+    }
+    else {
+      lStack_78 = (**(code **)(*param_1 + 0x2f8))(param_1,lStack_78,DAT_002c6d70);
+      FUN_001b8db8(&pvStack_70,&lStack_78,&lStack_78);
+    }
+    cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+    pvVar2 = pvStack_70;
+    puVar3 = puStack_60;
+    if (cVar4 == '\0') {
+      lStack_80 = lStack_88;
+      FUN_001b8db8(&pvStack_70,&lStack_80,&lStack_80);
+      if ((DAT_002c6d58 == 0) ||
+         (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6d58,0), cVar4 != '\0')) {
+        std::__ndk1::mutex::lock((mutex *)&DAT_002c6d08);
+        if (((DAT_002c6d58 == 0) ||
+            (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6d58,0), cVar4 != '\0')) &&
+           (lVar7 = FUN_0012c758(param_1,lVar6,DAT_002c6cf8), lVar7 != 0)) {
+          DAT_002c6d58 = (**(code **)(*param_1 + 0x710))(param_1,lVar7);
+          (**(code **)(*param_1 + 0xb8))(param_1,lVar7);
+        }
+        std::__ndk1::mutex::unlock((mutex *)&DAT_002c6d08);
+        cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+        if (cVar4 != '\0') goto joined_r0x001bf944;
+      }
+      if (DAT_002c6d78 == 0) {
+        DAT_002c6d78 = (**(code **)(*param_1 + 0x2f0))
+                                 (param_1,DAT_002c6d58,DAT_002c6cf0 + 0x6440,DAT_002c6cf0 + 0x6753);
+        cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+        if (cVar4 != '\0') goto joined_r0x001bf944;
+      }
+      if (lStack_80 == 0) {
+        FUN_0012c508(param_1,DAT_002c6cf0 + 0xe6,DAT_002c6cf0 + 0x105,0xffffffff);
+      }
+      else {
+        lStack_80 = (**(code **)(*param_1 + 0x2f8))(param_1,lStack_80,DAT_002c6d78);
+        FUN_001b8db8(&pvStack_70,&lStack_80,&lStack_80);
+      }
+      cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+      pvVar2 = pvStack_70;
+      puVar3 = puStack_60;
+      if (cVar4 == '\0') {
+        if ((DAT_002c6d60 == 0) ||
+           (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6d60,0), cVar4 != '\0')) {
+          std::__ndk1::mutex::lock((mutex *)&DAT_002c6d30);
+          if (((DAT_002c6d60 == 0) ||
+              (cVar4 = (**(code **)(*param_1 + 0xc0))(param_1,DAT_002c6d60,0), cVar4 != '\0')) &&
+             (lVar6 = FUN_0012c758(param_1,lVar6,DAT_002c6d00), lVar6 != 0)) {
+            DAT_002c6d60 = (**(code **)(*param_1 + 0x710))(param_1,lVar6);
+            (**(code **)(*param_1 + 0xb8))(param_1,lVar6);
+          }
+          std::__ndk1::mutex::unlock((mutex *)&DAT_002c6d30);
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          pvVar2 = pvStack_70;
+          puVar3 = puStack_60;
+          if (cVar4 != '\0') goto joined_r0x001bf944;
+        }
+        if (DAT_002c6d68 == 0) {
+          DAT_002c6d68 = (**(code **)(*param_1 + 0x388))
+                                   (param_1,DAT_002c6d60,DAT_002c6cf0 + 0x676d,DAT_002c6cf0 + 0x676f
+                                   );
+          cVar4 = (**(code **)(*param_1 + 0x720))(param_1);
+          pvVar2 = pvStack_70;
+          puVar3 = puStack_60;
+          if (cVar4 != '\0') goto joined_r0x001bf944;
+        }
+        FUN_0012d9d8(param_1,DAT_002c6d60,DAT_002c6d68,lStack_78,lStack_80);
+        (**(code **)(*param_1 + 0x720))(param_1);
+        pvVar2 = pvStack_70;
+        puVar3 = puStack_60;
+      }
+    }
+  }
+joined_r0x001bf944:
+  while (puVar3 != (void *)0x0) {
+    pvVar8 = (void *)*puVar3;
+    pvStack_70 = pvVar2;
+    operator_delete(puVar3);
+    pvVar2 = pvStack_70;
+    puVar3 = pvVar8;
+  }
+  pvStack_70 = (void *)0x0;
+  if (pvVar2 != (void *)0x0) {
+    operator_delete(pvVar2);
+  }
+LAB_001bf42c:
+  if (*(long *)(lVar1 + 0x28) != lStack_48) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
+SUMMARY: helper_targets=19 decompiled=17 failed=2
