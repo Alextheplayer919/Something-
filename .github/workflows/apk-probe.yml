@@ -6,8 +6,13 @@ on:
       - 'research/**'
       - 'scripts/build_native_method_map.py'
       - '.github/workflows/apk-probe.yml'
-      - '.github/workflows/export-minecraft-apk.yml'
   workflow_dispatch:
+    inputs:
+      export_full_apk:
+        description: Upload the 663 MB APK as a short-lived downloadable artifact
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -29,6 +34,18 @@ jobs:
             echo "LFS object did not download"; head -c 200 Minecraft.apk; exit 1;
           }
           sha256sum Minecraft.apk
+          test "$(stat -c %s Minecraft.apk)" -eq 663119822
+          echo "d2f78dcc3fa321d175f07d160cee6e570e62c45f8f817454fe2a704124d93639  Minecraft.apk" | sha256sum --check
+
+      - name: Export full APK for download
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.export_full_apk }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Minecraft-apk-full-663119822-bytes
+          path: Minecraft.apk
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 1
 
       - name: APK structure report
         run: python3 scripts/apk_probe.py
