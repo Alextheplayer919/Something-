@@ -143,7 +143,7 @@ lib/arm64-v8a/libMCPELIFE.so
 assets/MCPELIFE.json CONTENT INSPECTION
 ============================================================
 Despite the .json filename, this is a TrueType/OpenType font (SFNT signature).
-It is not the module configuration; retain as an obfuscation/distraction clue only.
+It is not the module configuration; likely a UI font resource (the client calls Typeface.createFromAsset).
 
 libMCPELIFE.so STRINGS (filtered, 107 of 2662)
 ============================================================

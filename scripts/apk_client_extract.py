@@ -102,7 +102,7 @@ def main():
         report += ["", "assets/MCPELIFE.json CONTENT INSPECTION", "=" * 60]
         if raw.startswith((b"\x00\x01\x00\x00", b"OTTO", b"true")):
             report.append("Despite the .json filename, this is a TrueType/OpenType font (SFNT signature).")
-            report.append("It is not the module configuration; retain as an obfuscation/distraction clue only.")
+            report.append("It is not the module configuration; likely a UI font resource (the client calls Typeface.createFromAsset).")
         else:
             try:
                 cfg = json.loads(raw.decode("utf-8"))

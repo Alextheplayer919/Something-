@@ -66,7 +66,7 @@ jobs:
             dest="research/client/jadx/${f#*/sources/}"
             mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
           done
-          grep -rl -E 'MCPELIFE\.json|libMCPELIFE|mcpelife/' /tmp/jadx-out --include='*.java' 2>/dev/null | head -60 | while read -r f; do
+          grep -rl -E 'MCPELIFE\.json|libMCPELIFE|mcpelife/|MCPELIFE0|Hidden0|special_clinit_' /tmp/jadx-out --include='*.java' 2>/dev/null | head -120 | while read -r f; do
             dest="research/client/jadx/${f#*/sources/}"
             mkdir -p "$(dirname "$dest")"; cp "$f" "$dest"
           done

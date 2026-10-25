@@ -3,8 +3,9 @@
 ## Confirmed
 
 - The APK contains an additional Android package namespace, `com.mojang.minecraftpe.mcpelife`, plus `lib/arm64-v8a/libMCPELIFE.so` (about 1.8 MB). The DEX class stubs register native methods through `MCPELIFE0` and `Hidden0`; their Java sources are not where the actual client behavior lives.
-- The client classes are heavily obfuscated and report `Dex2C` as their compilation origin. The native library exports `JNI_OnLoad` and contains native method-registration strings for the injected namespace.
-- `assets/MCPELIFE.json` is **not JSON**: its SFNT signature and font name table identify a Lexend variable font. Treat the filename as misleading, not as a module list.
+- The client classes are heavily obfuscated and report `Dex2C` as their compilation origin. `MCPELIFE0` loads `libMCPELIFE.so`; its `registerNativesForClass` entry point and `Hidden0.special_clinit_*` methods indicate that the Java stubs hand execution to native implementations. The native library exports `JNI_OnLoad` and contains native method-registration strings for the injected namespace.
+- The decompiled surface includes a custom UI layer (dialogs, rounded views, bitmap/font setup), JSON parsing, and an `HttpURLConnection` request/response path. The request method is supplied as the byte string `R0VU` to an overloaded native `decode` method; `R0VU` is Base64 for `GET`, but that specific decoder behavior still needs confirmation from native code. This points to a client UI/config or network path, not yet to any particular gameplay module.
+- `assets/MCPELIFE.json` is **not JSON**: its SFNT signature and font name table identify a Lexend variable font. The client references Android's `Typeface.createFromAsset`, so this is likely a UI font resource, not a module list.
 - Twenty-two root-level randomly named assets begin with the same `\0IAP\x02\0\0\0\x08\x06` header and then high-entropy bytes. This looks like a structured/protected asset format, but its payload and purpose are not decoded yet.
 
 ## Do not over-interpret keyword hits
