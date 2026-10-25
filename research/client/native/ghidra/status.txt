@@ -1,1 +1,1 @@
-Ghidra exit status: 1
+Ghidra exit status: 0

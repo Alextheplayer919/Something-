@@ -5,7 +5,7 @@ INFO  Using log config file: jar:file:/tmp/ghidra-download/ghidra_12.2_PUBLIC/Gh
 INFO  Using log file: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/application.log (LoggingInitialization)  
 INFO  Loading user preferences: /home/runner/.config/ghidra/ghidra_12.2_PUBLIC/preferences (Preferences)  
 INFO  Searching for classes... (ClassSearcher)  
-INFO  Class search complete (643 ms) (ClassSearcher)  
+INFO  Class search complete (1174 ms) (ClassSearcher)  
 INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
 INFO  Initializing Random Number Generator... (SecureRandomFactory)  
 INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
@@ -14,7 +14,7 @@ INFO  Loaded 121 trusted CA certificates from the OS trust store. (DefaultTrustM
 INFO  Loaded 121 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
 INFO  Starting cache cleanup: /var/tmp/runner-ghidra/fscache2 (FileCacheMaintenanceDaemon)  
 INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
-INFO  Headless startup complete (4890 ms) (AnalyzeHeadless)  
+INFO  Headless startup complete (4564 ms) (AnalyzeHeadless)  
 INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
 INFO  HEADLESS Script Paths:
     /tmp/ghidra-download/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
@@ -42,4 +42,90 @@ INFO  HEADLESS Script Paths:
     /home/runner/work/Something-/Something-/scripts (HeadlessAnalyzer)  
 INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
 INFO  Creating project: /tmp/ghidra-project/MCPELIFE (HeadlessAnalyzer)  
-ERROR Abort due to error: Directory not found: /tmp/ghidra-project (HeadlessAnalyzer)  
+INFO  Creating project: /tmp/ghidra-project/MCPELIFE (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: /tmp/ghidra-project/MCPELIFE (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
+INFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  
+INFO  Using Language/Compiler: AARCH64:LE:64:v8A:default (ProgramLoader)  
+INFO  Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so?MD5=f410f2e3a738899abb355d347e7c1c12...
+Setting block .data.rel.ro to read-only
+Setting block .fini_array to read-only
+Setting block .init_array to read-only
+Setting block .dynamic to read-only
+------------------------------------------------
+
+Linking the External Programs of 'libMCPELIFE.so' to imported libraries...
+  [libc.so] -> not found in project
+  [libm.so] -> not found in project
+  [libdl.so] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/libMCPELIFE.so] - 82 unresolved symbols, no external libraries configured - skipping
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
+INFO  DWARF external debug information found: [BuildIdDebugInfo [buildId=[106, 7, -4, 61, 108, 90, 49, -37, 127, -74, -29, -81, -25, 60, 22, 122, 10, -117, 43, 29], objectType=DEBUGINFO, ]] (ExternalDebugFileSectionProvider)  
+INFO  Unable to find DWARF information, skipping DWARF analysis (DWARFAnalyzer)  
+ERROR VarnodeContext: out of address spaces at @00222398 for: d24-00222398 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @001fee88 for: d18-001fee88 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @00223c5c for: x16-00223c5c (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @00206684 for: d29-00206684 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @00222218 for: d23-00222218 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @001fd458 for: d23-001fd458 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @0013e8bc for: d19-0013e8bc (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @0018921c for: d28-0018921c (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @001b568c for: d21-001b568c (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @001ccc30 for: x9-001ccc30 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @001e48e4 for: d24-001e48e4 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @00257b80 for: d18-00257b80 (VarnodeContext)  
+INFO  Packed database cache: /var/tmp/runner-ghidra/packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib_64 (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.142 secs
+    ASCII Strings                              0.414 secs
+    Apply Data Archives                        0.543 secs
+    Basic Constant Reference Analyzer         23.369 secs
+    Call Convention ID                         1.608 secs
+    Call-Fixup Installer                       0.026 secs
+    Create Address Tables                      0.374 secs
+    Create Address Tables - One Time           0.186 secs
+    Create Function                            0.071 secs
+    DWARF                                      0.010 secs
+    Data Reference                             0.558 secs
+    Decompiler Switch Analysis                 4.236 secs
+    Demangler GNU                              0.825 secs
+    Disassemble                                6.124 secs
+    Disassemble Entry Points                   0.212 secs
+    Embedded Media                             0.037 secs
+    External Entry References                  0.004 secs
+    Function ID                                0.016 secs
+    Function Start Search                      0.198 secs
+    Function Start Search After Code           0.084 secs
+    Function Start Search After Data           0.067 secs
+    Function Start Search delayed - One Time   0.010 secs
+    GCC Exception Handlers                     1.379 secs
+    Non-Returning Functions - Discovered       0.800 secs
+    Non-Returning Functions - Known            0.006 secs
+    Reference                                  0.808 secs
+    Shared Return Calls                        0.424 secs
+    Source Language Support                    0.003 secs
+    Stack                                      1.531 secs
+    Subroutine References                      0.259 secs
+    Subroutine References - One Time           0.000 secs
+    Variadic Function Signature Override       2.398 secs
+-----------------------------------------------------
+     Total Time   46 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: GhidraNativeScan.java '/home/runner/work/Something-/Something-/research/client/native/ghidra'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/runner/work/Something-/Something-/scripts/GhidraNativeScan.java (HeadlessAnalyzer)  
+INFO  GhidraNativeScan.java> Ghidra static scan: candidates=411 decompiled=411 timeouts=0 retained=3 output=/home/runner/work/Something-/Something-/research/client/native/ghidra/targeted-decompile.txt (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///home/runner/work/Something-/Something-/research/client/lib/arm64-v8a/libMCPELIFE.so (HeadlessAnalyzer)  
+INFO  /libMCPELIFE.so: file created (runner) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /libMCPELIFE.so (MCPELIFE:/libMCPELIFE.so) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

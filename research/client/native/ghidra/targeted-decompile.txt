@@ -1,0 +1,238 @@
+MCPELIFE NATIVE STATIC DECOMPILE (Ghidra)
+Program: libMCPELIFE.so
+This file contains selected pseudocode only; all analysis is static.
+
+
+
+/* FUNCTION FUN_0012cddc @ 0012cddc bytes=548 feature=false context=true */
+
+void FUN_0012cddc(long *param_1)
+
+{
+  long lVar1;
+  char cVar2;
+  undefined8 uVar3;
+  char *local_78;
+  char *pcStack_70;
+  undefined1 *local_68;
+  char local_60 [8];
+  char acStack_58 [6];
+  char acStack_52 [2];
+  char acStack_50 [16];
+  char local_40 [8];
+  char acStack_38 [8];
+  char local_30 [8];
+  long local_28;
+  
+  lVar1 = tpidr_el0;
+  local_28 = *(long *)(lVar1 + 0x28);
+  FUN_0012b8d8();
+  cVar2 = (**(code **)(*param_1 + 0x720))(param_1);
+  if (cVar2 == '\0') {
+    FUN_0012d06c();
+    DAT_002c3208 = PTR_LAB_002b5760;
+    DAT_002c3210 = PTR_LAB_002b5768;
+    DAT_002c3218 = PTR_LAB_002b5770;
+    DAT_002c3220 = PTR_LAB_002b5778;
+    DAT_002c3228 = PTR_LAB_002b5780;
+    DAT_002c3230 = PTR_LAB_002b5788;
+    DAT_002c3238 = PTR_LAB_002b5790;
+    DAT_002c3240 = PTR_LAB_002b5798;
+    DAT_002c3248 = PTR_LAB_002b57a0;
+    DAT_002c3250 = PTR_LAB_002b57a8;
+    DAT_002c3258 = PTR_LAB_002b57b0;
+    DAT_002c3260 = PTR_LAB_002b57b8;
+    DAT_002c3268 = PTR_LAB_002b57c0;
+    DAT_002c3270 = PTR_LAB_002b57c8;
+    DAT_002c3278 = PTR_LAB_002b57d0;
+    DAT_002c3280 = PTR_LAB_002b57d8;
+    DAT_002c3288 = PTR_LAB_002b57e0;
+    DAT_002c3290 = PTR_LAB_002b57e8;
+    DAT_002c3298 = PTR_LAB_002b57f0;
+    DAT_002c32a0 = PTR_LAB_002b57f8;
+    DAT_002c32a8 = PTR_LAB_002b5800;
+    DAT_002c32b0 = PTR_LAB_002b5808;
+    DAT_002c32b8 = PTR_LAB_002b5810;
+    DAT_002c32c0 = PTR_LAB_002b5818;
+    DAT_002c32c8 = PTR_LAB_002b5820;
+    DAT_002c32d0 = PTR_LAB_002b5828;
+    DAT_002c32d8 = PTR_LAB_002b5830;
+    DAT_002c32e0 = PTR_LAB_002b5838;
+    DAT_002c32e8 = PTR_LAB_002b5840;
+    cVar2 = (**(code **)(*param_1 + 0x720))(param_1);
+    if (cVar2 == '\0') {
+      acStack_58[0] = s__ILjava_lang_Class__V_00119937[8];
+      acStack_58[1] = s__ILjava_lang_Class__V_00119937[9];
+      acStack_58[2] = s__ILjava_lang_Class__V_00119937[10];
+      acStack_58[3] = s__ILjava_lang_Class__V_00119937[0xb];
+      acStack_58[4] = s__ILjava_lang_Class__V_00119937[0xc];
+      acStack_58[5] = s__ILjava_lang_Class__V_00119937[0xd];
+      local_60[0] = s__ILjava_lang_Class__V_00119937[0];
+      local_60[1] = s__ILjava_lang_Class__V_00119937[1];
+      local_60[2] = s__ILjava_lang_Class__V_00119937[2];
+      local_60[3] = s__ILjava_lang_Class__V_00119937[3];
+      local_60[4] = s__ILjava_lang_Class__V_00119937[4];
+      local_60[5] = s__ILjava_lang_Class__V_00119937[5];
+      local_60[6] = s__ILjava_lang_Class__V_00119937[6];
+      local_60[7] = s__ILjava_lang_Class__V_00119937[7];
+      acStack_52[0] = s__ILjava_lang_Class__V_00119937[0xe];
+      acStack_52[1] = s__ILjava_lang_Class__V_00119937[0xf];
+      acStack_50[0] = s__ILjava_lang_Class__V_00119937[0x10];
+      acStack_50[1] = s__ILjava_lang_Class__V_00119937[0x11];
+      acStack_50[2] = s__ILjava_lang_Class__V_00119937[0x12];
+      acStack_50[3] = s__ILjava_lang_Class__V_00119937[0x13];
+      acStack_50[4] = s__ILjava_lang_Class__V_00119937[0x14];
+      acStack_50[5] = s__ILjava_lang_Class__V_00119937[0x15];
+      local_78 = local_40;
+      pcStack_70 = local_60;
+      local_30[0] = s_registerNativesForClass_00119c02[0x10];
+      local_30[1] = s_registerNativesForClass_00119c02[0x11];
+      local_30[2] = s_registerNativesForClass_00119c02[0x12];
+      local_30[3] = s_registerNativesForClass_00119c02[0x13];
+      local_30[4] = s_registerNativesForClass_00119c02[0x14];
+      local_30[5] = s_registerNativesForClass_00119c02[0x15];
+      local_30[6] = s_registerNativesForClass_00119c02[0x16];
+      local_30[7] = s_registerNativesForClass_00119c02[0x17];
+      acStack_38[0] = s_registerNativesForClass_00119c02[8];
+      acStack_38[1] = s_registerNativesForClass_00119c02[9];
+      acStack_38[2] = s_registerNativesForClass_00119c02[10];
+      acStack_38[3] = s_registerNativesForClass_00119c02[0xb];
+      acStack_38[4] = s_registerNativesForClass_00119c02[0xc];
+      acStack_38[5] = s_registerNativesForClass_00119c02[0xd];
+      acStack_38[6] = s_registerNativesForClass_00119c02[0xe];
+      acStack_38[7] = s_registerNativesForClass_00119c02[0xf];
+      local_40[0] = s_registerNativesForClass_00119c02[0];
+      local_40[1] = s_registerNativesForClass_00119c02[1];
+      local_40[2] = s_registerNativesForClass_00119c02[2];
+      local_40[3] = s_registerNativesForClass_00119c02[3];
+      local_40[4] = s_registerNativesForClass_00119c02[4];
+      local_40[5] = s_registerNativesForClass_00119c02[5];
+      local_40[6] = s_registerNativesForClass_00119c02[6];
+      local_40[7] = s_registerNativesForClass_00119c02[7];
+      local_68 = &LAB_0012cdc8;
+      uVar3 = (**(code **)(*param_1 + 0x30))(param_1,"MCPELIFE0/MCPELIFE0");
+      (**(code **)(*param_1 + 0x6b8))(param_1,uVar3,&local_78,1);
+    }
+  }
+  if (*(long *)(lVar1 + 0x28) != local_28) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
+/* FUNCTION JNI_OnLoad @ 0012d000 bytes=108 feature=false context=true */
+
+undefined8 JNI_OnLoad(long *param_1)
+
+{
+  long lVar1;
+  undefined8 local_30;
+  long local_28;
+  
+  lVar1 = tpidr_el0;
+  local_28 = *(long *)(lVar1 + 0x28);
+  local_30 = 0;
+  (**(code **)(*param_1 + 0x30))(param_1,&local_30,0x10006);
+  FUN_0012cddc(local_30);
+  if (*(long *)(lVar1 + 0x28) != local_28) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return 0x10006;
+}
+
+
+
+/* FUNCTION FUN_002ad06c @ 002ad06c bytes=452 feature=false context=true */
+
+long FUN_002ad06c(ulong param_1,ulong *param_2)
+
+{
+  ulong uVar1;
+  undefined1 uVar2;
+  int iVar3;
+  long lVar4;
+  undefined8 uVar5;
+  ulong *puVar6;
+  ulong *puVar7;
+  ulong *puVar8;
+  ulong local_30;
+  ulong local_28;
+  ulong local_20;
+  ulong local_18;
+  long local_10;
+  undefined4 local_8;
+  
+  if (PTR_pthread_create_002b59b8 != (undefined *)0x0) {
+    pthread_mutex_lock((pthread_mutex_t *)&DAT_002cb8e8);
+  }
+  for (puVar8 = DAT_002cb918; puVar8 != (ulong *)0x0; puVar8 = (ulong *)puVar8[5]) {
+    if (*puVar8 <= param_1) {
+      lVar4 = FUN_002ac820(puVar8,param_1);
+      if (lVar4 != 0) goto LAB_002ad208;
+      break;
+    }
+  }
+  do {
+    puVar8 = DAT_002cb910;
+    if (DAT_002cb910 == (ulong *)0x0) {
+      lVar4 = 0;
+      if (PTR_pthread_create_002b59b8 != (undefined *)0x0) goto LAB_002ad148;
+      goto LAB_002ad1ac;
+    }
+    DAT_002cb910 = (ulong *)DAT_002cb910[5];
+    lVar4 = FUN_002ac820(puVar8,param_1);
+    puVar7 = (ulong *)&DAT_002cb918;
+    for (puVar6 = DAT_002cb918; (puVar6 != (ulong *)0x0 && (*puVar8 <= *puVar6));
+        puVar6 = (ulong *)puVar6[5]) {
+      puVar7 = puVar6 + 5;
+    }
+    puVar8[5] = (ulong)puVar6;
+    *puVar7 = (ulong)puVar8;
+  } while (lVar4 == 0);
+LAB_002ad208:
+  if (PTR_pthread_create_002b59b8 != (undefined *)0x0) {
+LAB_002ad148:
+    pthread_mutex_unlock((pthread_mutex_t *)&DAT_002cb8e8);
+    if (lVar4 == 0) {
+LAB_002ad1ac:
+      local_8 = 1;
+      local_28 = 0;
+      local_20 = 0;
+      local_18 = 0;
+      local_10 = 0;
+      local_30 = param_1;
+      iVar3 = dl_iterate_phdr(FUN_002ac0d4,&local_30);
+      if (iVar3 < 0) {
+        return 0;
+      }
+      if (local_10 == 0) {
+        return 0;
+      }
+      *param_2 = local_28;
+      param_2[1] = local_20;
+      local_30 = local_18;
+      goto LAB_002ad200;
+    }
+  }
+  *param_2 = puVar8[1];
+  uVar1 = puVar8[4];
+  param_2[1] = puVar8[2];
+  uVar2 = (undefined1)((ushort)puVar8[4] >> 3);
+  if (((byte)uVar1 >> 2 & 1) != 0) {
+    uVar2 = FUN_002ac0c4(lVar4);
+  }
+  uVar5 = FUN_002abc28(uVar2,puVar8);
+  FUN_002abce8(uVar2,uVar5,lVar4 + 8,&local_30);
+  local_10 = lVar4;
+LAB_002ad200:
+  param_2[2] = local_30;
+  return local_10;
+}
+
+
+
+SUMMARY: candidate_functions=411 decompiled=411 failed_or_timed_out=0 retained=3
