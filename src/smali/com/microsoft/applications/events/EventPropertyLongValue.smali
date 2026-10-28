@@ -1,0 +1,31 @@
+.class public Lcom/microsoft/applications/events/EventPropertyLongValue;
+.super Lcom/microsoft/applications/events/EventPropertyValue;
+.source "EventPropertyLongValue.java"
+
+
+# instance fields
+.field private m_value:J
+
+
+# direct methods
+.method public constructor <init>(J)V
+    .locals 1
+
+    sget-object v0, Lcom/microsoft/applications/events/EventPropertyType;->TYPE_LONG:Lcom/microsoft/applications/events/EventPropertyType;
+
+    invoke-direct {p0, v0}, Lcom/microsoft/applications/events/EventPropertyValue;-><init>(Lcom/microsoft/applications/events/EventPropertyType;)V
+
+    iput-wide p1, p0, Lcom/microsoft/applications/events/EventPropertyLongValue;->m_value:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getLong()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/microsoft/applications/events/EventPropertyLongValue;->m_value:J
+
+    return-wide v0
+.end method
